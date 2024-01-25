@@ -1,13 +1,23 @@
 import React from "react";
+import home_bg_img from "./assets/home_bg_img.png";
+import enigmaLogo from "./assets/enigma_logo.svg";
+import "./App.css";
 import CountdownTimer from "./components/CountdownTimer";
 
 const App = () => {
-  const targetDate = "2024-10-01T00:00:00";
-
   return (
-    <div className="app">
-      <CountdownTimer targetDate={targetDate} />
-    </div>
+    <section id="home" className="home-section">
+      <img src={home_bg_img} alt="home-bg-image" className="home-bg-img" />
+      <img src={enigmaLogo} alt="enigma-logo" className="enigma-logo" />
+      <CountdownTimer
+        style={{
+          position: "absolute",
+          top: "70%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+        }}
+      ></CountdownTimer>
+    </section>
   );
 };
 

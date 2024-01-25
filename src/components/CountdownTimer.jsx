@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import moment from "moment";
 import "./CountdownTimer.css";
 
-const CountdownTimer = () => {
+const CountdownTimer = ({ style }) => {
   const [countdown, setCountdown] = useState({
     days: 0,
     hours: 0,
@@ -36,7 +36,7 @@ const CountdownTimer = () => {
   const { days, hours, minutes, seconds } = countdown;
 
   return (
-    <div className="countdown-timer">
+    <div className="countdown-timer" style={style}>
       <div className="elipse-container">
         <div className="elipse-number" style={{ color: "#F2B924" }}>
           {days}
