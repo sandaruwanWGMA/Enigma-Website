@@ -19,27 +19,57 @@
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.SovietTroops {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.div1 {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    70deg,
+    rgb(15.87, 17, 15.91, 1) 0%,
+    rgba(11.31, 44.36, 34.09, 0.84) 48.19%,
+    rgba(7.19, 69.06, 50.5, 0.69) 90.6%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.home-bg-img {
+.div2 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(44, 68, 61, 0.41);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.div3 {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    180deg,
+    rgb(1, 1, 1, 1) 0%,
+    rgba(27, 24, 24, 0.68) 0%,
+    transparent
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.dic4 {
   width: 100%;
   height: 100vh;
   z-index: -2;
