@@ -71,7 +71,7 @@ const App = () => {
           <span className="reg-text">REGISTER NOW</span>
         </button>
       </section>
-      <section>
+      <section id="timeline">
         <div className="frame">
           <div className="div5"></div>
           <div className="div4"></div>
