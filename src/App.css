@@ -58,6 +58,44 @@
   font-family: PatrickHandSC;
   src: url(../src/assets/fonts/PatrickHandSC-Regular.ttf);
 }
+.guidelineTexts {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  @font-face {
+    font-family: codePredators;
+    src: url(../src/assets/fonts/CodePredators-Regular.ttf);
+  }
+}
+
+@font-face {
+  font-family: PatrickHandSC;
+  src: url(../src/assets/fonts/PatrickHandSC-Regular.ttf);
+}
+
+@font-face {
+  font-family: Quantico;
+  src: url(../src/assets/fonts/Quantico-Regular.ttf);
+}
+
+.frame {
+  background-color: rgba(255, 255, 255, 1);
 
 @font-face {
   font-family: Quantico;
