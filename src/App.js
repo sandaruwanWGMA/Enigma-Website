@@ -17,6 +17,7 @@ import { ReactComponent as InstagramIcon } from "./assets/Images-home-page/insta
 import { ReactComponent as Enigma } from "./assets/Images-home-page/Enigma.svg";
 import rectangle from "./assets/Images-home-page/Rectangle 1.png";
 import "./styles/HomeStyles.css";
+import "./styles/TimelineGuidelineStyles.css";
 
 const App = () => {
   return (
