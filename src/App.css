@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Quantico:wght@700&display=swap");
+
 @font-face {
   font-family: codePredators;
   src: url(../src/assets/fonts/CodePredators-Regular.ttf);
@@ -131,192 +133,193 @@
 
 #eventTimeline {
   color: #f2b924;
-@import url("https://fonts.googleapis.com/css2?family=Quantico:wght@700&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Quantico:wght@700&display=swap");
 
-.App {
-  text-align: center;
-  font-family: "CodePredators";
-  font-size: 66px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 48px; /* 72.727% */
-}
+  .App {
+    text-align: center;
+    font-family: "CodePredators";
+    font-size: 66px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px; /* 72.727% */
+  }
 
-.guideline {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
+  .guideline {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
 
-.backgroundImg {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: relative;
-}
+  .backgroundImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+  }
 
-.guidelinePicture > img {
-  position: absolute;
-  width: 40%;
-  height: 100%;
-  top: -5px;
-  left: 0px;
-}
-.guidelineTexts {
-  position: absolute;
-  width: 60%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  top: 0px;
-  right: 0px;
-}
+  .guidelinePicture > img {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: -5px;
+    left: 0px;
+  }
+  .guidelineTexts {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0px;
+    right: 0px;
+  }
 
-.guidelineTopic {
-  width: 100%;
-  height: 20%;
-  flex-shrink: 0;
-}
+  .guidelineTopic {
+    width: 100%;
+    height: 20%;
+    flex-shrink: 0;
+  }
 
-#guidelineTopic {
-  color: #f2b924;
-  text-align: center;
-  font-family: "Code Predators";
-  font-size: 66px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 48px;
-  /* margin: 80px 0px 0px 0px; */
-}
+  #guidelineTopic {
+    color: #f2b924;
+    text-align: center;
+    font-family: "Code Predators";
+    font-size: 66px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    /* margin: 80px 0px 0px 0px; */
+  }
 
-#guidelineContent {
-  width: 80%;
-  height: 60%;
-  flex-shrink: 0;
-  margin-top: 0px;
-  /* margin-right: 70px; */
-}
+  #guidelineContent {
+    width: 80%;
+    height: 60%;
+    flex-shrink: 0;
+    margin-top: 0px;
+    /* margin-right: 70px; */
+  }
 
-.guidelineContent {
-  color: #fff;
-  text-align: justify;
-  font-family: "PatrickHandSC";
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
-  margin-top: 20px;
-  margin-bottom: 8px;
-}
+  .guidelineContent {
+    color: #fff;
+    text-align: justify;
+    font-family: "PatrickHandSC";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
 
-#guidelineBooklet {
-  width: 100%;
-  height: 20%;
-  position: "relative";
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  #guidelineBooklet {
+    width: 100%;
+    height: 20%;
+    position: "relative";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.guidelineBookletdiv1 {
-  width: 40%;
-  height: 30%;
-  background: linear-gradient(
-      180deg,
-      #f2b924 100%,
-      rgba(240.12, 198.08, 49.03, 0) 100%
-    ),
-    radial-gradient(
-      100% 100%,
-      rgba(42.95, 245.44, 99.65, 0.2) 45%,
-      rgba(250.75, 250.42, 242.39, 0) 100%
-    );
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 50px;
-  border: 1px #8c7548 solid;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 10px;
-}
+  .guidelineBookletdiv1 {
+    width: 40%;
+    height: 30%;
+    background: linear-gradient(
+        180deg,
+        #f2b924 100%,
+        rgba(240.12, 198.08, 49.03, 0) 100%
+      ),
+      radial-gradient(
+        100% 100%,
+        rgba(42.95, 245.44, 99.65, 0.2) 45%,
+        rgba(250.75, 250.42, 242.39, 0) 100%
+      );
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border: 1px #8c7548 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+  }
 
-.guidelineBookletdiv2 {
-  color: "#09320A";
-  font-size: 23px;
-  font-family: "Quantico";
-  font-weight: "400";
-  word-wrap: "break-word";
-  margin: 0px 0px 0px 0px;
-  text-align: center;
-  height: 100vh;
-  z-index: -2;
-  position: relative;
-}
+  .guidelineBookletdiv2 {
+    color: "#09320A";
+    font-size: 23px;
+    font-family: "Quantico";
+    font-weight: "400";
+    word-wrap: "break-word";
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    height: 100vh;
+    z-index: -2;
+    position: relative;
+  }
 
-.home-section {
-  position: relative;
-}
+  .home-section {
+    position: relative;
+  }
 
-.enigma-logo {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+  .enigma-logo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-.image-overlay {
-  position: absolute;
-  z-index: -1;
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 100vw;
-  height: 100vh;
-}
+  .image-overlay {
+    position: absolute;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+  }
 
-.social-media {
-  position: absolute;
-  right: 5em;
-  padding-top: 40px;
-  height: calc(100vh - 40px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+  .social-media {
+    position: absolute;
+    right: 5em;
+    padding-top: 40px;
+    height: calc(100vh - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-.rectangle {
-  position: relative;
-}
+  .rectangle {
+    position: relative;
+  }
 
-.reg-btn {
-  padding: 0;
-  margin: 0;
-  border: none;
-  position: absolute;
-  left: 50vw;
-  transform: translate(-50%, 0);
-  bottom: 3em;
-  background-color: transparent;
-}
+  .reg-btn {
+    padding: 0;
+    margin: 0;
+    border: none;
+    position: absolute;
+    left: 50vw;
+    transform: translate(-50%, 0);
+    bottom: 3em;
+    background-color: transparent;
+  }
 
-.reg-btn:hover {
-  cursor: pointer;
-}
+  .reg-btn:hover {
+    cursor: pointer;
+  }
 
-.reg-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  margin: 0;
-  transform: translate(-50%, -50%);
-  color: #09320a;
-  font-size: 23px;
-  font-family: "Quantico", sans-serif;
-  font-weight: 900;
-}
-.enigma {
-  position: absolute;
-  left: 5em;
-  padding-top: 30px;
+  .reg-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    color: #09320a;
+    font-size: 23px;
+    font-family: "Quantico", sans-serif;
+    font-weight: 900;
+  }
+  .enigma {
+    position: absolute;
+    left: 5em;
+    padding-top: 30px;
+  }
 }
