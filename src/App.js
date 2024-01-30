@@ -5,6 +5,7 @@ import guidelineBackground from "./assets/Guidelines/guidelineBackground.svg";
 import soldier from "./assets/Guidelines/soldier.svg";
 import Cloud from "./assets/Guidelines/Cloud.svg";
 import "./App.css";
+import "./styles/TimelineGuidelineStyles.css";
 
 const App = () => {
   return (
