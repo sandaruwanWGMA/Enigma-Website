@@ -1,7 +1,7 @@
-import elipseLogo from "../assets/Images-home-page/Ellipse 2.png";
+import elipseLogo from "../../../assets/Images-home-page/Ellipse 2.png";
 import React, { useState, useEffect } from "react";
 import moment from "moment";
-import "../styles/CountdownTimer.css";
+import "../Home Section Styles/CountdownTimer.css";
 
 const CountdownTimer = ({ style }) => {
   const [countdown, setCountdown] = useState({
