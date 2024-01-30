@@ -1,7 +1,7 @@
-import elipseLogo from "../assets/Ellipse 2.png";
+import elipseLogo from "../assets/Images-home-page/Ellipse 2.png";
 import React, { useState, useEffect } from "react";
 import moment from "moment";
-import "./CountdownTimer.css";
+import "../styles/CountdownTimer.css";
 
 const CountdownTimer = ({ style }) => {
   const [countdown, setCountdown] = useState({
@@ -11,7 +11,7 @@ const CountdownTimer = ({ style }) => {
     seconds: 0,
   });
 
-  const targetDate = moment("2024-04-01T00:00:00");
+  const targetDate = moment("2024-08-20T00:00:00");
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -19,10 +19,13 @@ const CountdownTimer = ({ style }) => {
       const difference = targetDate.diff(now);
 
       if (difference > 0) {
-        const days = moment.duration(difference).days();
-        const hours = moment.duration(difference).hours() % 24;
-        const minutes = moment.duration(difference).minutes() % 60;
-        const seconds = moment.duration(difference).seconds() % 60;
+        const duration = moment.duration(difference);
+
+        const totalDays = duration.asDays();
+        const days = Math.floor(totalDays);
+        const hours = duration.hours() % 24;
+        const minutes = duration.minutes() % 60;
+        const seconds = duration.seconds() % 60;
 
         setCountdown({ days, hours, minutes, seconds });
       } else {
