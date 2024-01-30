@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Quantico:wght@700&display=swap");
+
 .App {
   text-align: center;
 }
@@ -58,7 +60,7 @@
 .image-overlay {
   position: absolute;
   z-index: -1;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   width: 100vw;
   height: 100vh;
 }
@@ -70,12 +72,43 @@
   height: calc(100vh - 40px);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.social-icons a {
-  display: block;
-  font-size: 24px;
-  color: #333;
-  margin-right: 15px;
-  text-decoration: none;
+.rectangle {
+  position: relative;
+}
+
+.reg-btn {
+  padding: 0;
+  margin: 0;
+  border: none;
+  position: absolute;
+  left: 50vw;
+  transform: translate(-50%, 0);
+  bottom: 3em;
+  background-color: transparent;
+}
+
+.reg-btn:hover {
+  cursor: pointer;
+}
+
+.reg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  color: #09320a;
+  font-size: 23px;
+  font-family: "Quantico", sans-serif;
+  font-weight: 900;
+}
+.enigma {
+  position: absolute;
+  left: 5em;
+  padding-top: 30px;
 }

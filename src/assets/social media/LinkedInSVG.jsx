@@ -1,16 +1,16 @@
 import React from "react";
 
-function LinkedInSVG(props) {
+function LinkedInSVG({ width, height }) {
   return (
     <svg
-      width={props.width}
-      height={props.height}
-      viewBox={`0 0 ${props.width} ${props.width}`}
+      width={width}
+      height={height}
+      viewBox={`0 0 ${width} ${width}`}
       fill="none"
       xlinkHref="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >
-      <rect width="54" height="43" fill="url(#pattern0)" />
+      <rect width={width} height={height} fill="url(#pattern0)" />
       <defs>
         <pattern
           id="pattern0"

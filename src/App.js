@@ -5,18 +5,17 @@ import "./App.css";
 import CountdownTimer from "./components/CountdownTimer";
 import NavBar from "./components/NabBar";
 import "./components/VerticalLine.css";
-import "./components/SocialIcons.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebookF,
-  faLinkedinIn,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
-import LinkedInSVG from "./assets/social media/LinkedInSVG";
+import "./styles/SocialIcons.css";
+import { ReactComponent as FacebookIcon } from "./assets/facebook-icon.svg";
+import { ReactComponent as LinkedInIcon } from "./assets/linkedin-icon.svg";
+import { ReactComponent as InstagramIcon } from "./assets/instagram-icon.svg";
+import { ReactComponent as Enigma } from "./assets/Enigma.svg";
+import rectangle from "./assets/Rectangle 1.png";
 
 const App = () => {
   return (
     <section id="home" className="home-section">
+      <Enigma className="enigma"></Enigma>
       <NavBar
         style={{
           position: "absolute",
@@ -26,30 +25,28 @@ const App = () => {
       <div className="social-media">
         <div className="vertical-line"></div>
         <a
-          href="https://www.facebook.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <LinkedInSVG width={48} height={48}></LinkedInSVG>
-        </a>
-        <a
           href="https://www.linkedin.com/"
           target="_blank"
           rel="noopener noreferrer"
+          className="linkedin-icon"
         >
-          <FontAwesomeIcon icon={faLinkedinIn} />
+          <LinkedInIcon className="linkedin-icon" />
+        </a>
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="facebook-icon"
+        >
+          <FacebookIcon className="facebook-icon" />
         </a>
         <a
           href="https://www.instagram.com/"
           target="_blank"
           rel="noopener noreferrer"
+          className="instagram-icon"
         >
-          <FontAwesomeIcon
-            icon={faInstagram}
-            style={{
-              color: "white",
-            }}
-          />
+          <InstagramIcon className="instagram-icon" />
         </a>
       </div>
       <div className="image-overlay"></div>
@@ -63,6 +60,10 @@ const App = () => {
           transform: "translate(-50%, -50%)",
         }}
       ></CountdownTimer>
+      <button className="reg-btn">
+        <img src={rectangle} alt="rectangle" className="rectangle"></img>
+        <span className="reg-text">REGISTER NOW</span>
+      </button>
     </section>
   );
 };
