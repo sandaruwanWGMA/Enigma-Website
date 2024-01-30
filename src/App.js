@@ -1,5 +1,5 @@
 import React from "react";
-import home_bg_img from "./assets/home_bg_img.png";
+import home_bg_img from "./assets/home_bg_img.jpeg";
 import enigmaLogo from "./assets/enigma_logo.svg";
 import "./App.css";
 import CountdownTimer from "./components/CountdownTimer";
