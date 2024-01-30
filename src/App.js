@@ -1,22 +1,12 @@
-// import React from "react";
-// import home_bg_img from "./assets/Images-home-page/home_bg_img.jpeg";
-// import enigmaLogo from "./assets/Images-home-page/enigma_logo.svg";
-// import SovietTroops from "./assets/EventTimeline/SovietTroops.png";
-// import airplaneBig from "./assets/EventTimeline/Group35.png";
-// import guidelineBackground from "./assets/Guidelines/guidelineBackground.svg";
-// import soldier from "./assets/Guidelines/soldier.svg";
-// import Cloud from "./assets/Guidelines/Cloud.svg";
-// import "./App.css";
-// <<<<<<< verosha
-// import "./styles/TimelineGuidelineStyles.css";
-
-// const App = () => {
-//   return (
-//     <section id="timeline">
-//       <div className="frame">
-//         <div className="div5"></div>
-//         <div className="div4"></div>
-// =======
+import React from "react";
+import home_bg_img from "./assets/Images-home-page/home_bg_img.jpeg";
+import enigmaLogo from "./assets/Images-home-page/enigma_logo.svg";
+import SovietTroops from "./assets/EventTimeline/SovietTroops.png";
+import airplaneBig from "./assets/EventTimeline/Group35.png";
+import guidelineBackground from "./assets/Guidelines/guidelineBackground.svg";
+import soldier from "./assets/Guidelines/soldier.svg";
+import Cloud from "./assets/Guidelines/Cloud.svg";
+import "./App.css";
 import CountdownTimer from "./components/CountdownTimer";
 import NavBar from "./components/NabBar";
 import "./components/VerticalLine.css";
@@ -86,7 +76,6 @@ const App = () => {
         <div className="frame">
           <div className="div5"></div>
           <div className="div4"></div>
-// >>>>>>> dev
 
           <div className="div3"></div>
 
