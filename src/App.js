@@ -1,16 +1,16 @@
 import React from "react";
-import home_bg_img from "./assets/home_bg_img.jpeg";
-import enigmaLogo from "./assets/enigma_logo.svg";
+import home_bg_img from "./assets/Images-home-page/home_bg_img.jpeg";
+import enigmaLogo from "./assets/Images-home-page/enigma_logo.svg";
 import "./App.css";
 import CountdownTimer from "./components/CountdownTimer";
 import NavBar from "./components/NabBar";
 import "./components/VerticalLine.css";
 import "./styles/SocialIcons.css";
-import { ReactComponent as FacebookIcon } from "./assets/facebook-icon.svg";
-import { ReactComponent as LinkedInIcon } from "./assets/linkedin-icon.svg";
-import { ReactComponent as InstagramIcon } from "./assets/instagram-icon.svg";
-import { ReactComponent as Enigma } from "./assets/Enigma.svg";
-import rectangle from "./assets/Rectangle 1.png";
+import { ReactComponent as FacebookIcon } from "./assets/Images-home-page/facebook-icon.svg";
+import { ReactComponent as LinkedInIcon } from "./assets/Images-home-page/linkedin-icon.svg";
+import { ReactComponent as InstagramIcon } from "./assets/Images-home-page/instagram-icon.svg";
+import { ReactComponent as Enigma } from "./assets/Images-home-page/Enigma.svg";
+import rectangle from "./assets/Images-home-page/Rectangle 1.png";
 
 const App = () => {
   return (
