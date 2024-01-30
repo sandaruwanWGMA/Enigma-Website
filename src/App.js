@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import HomeSection from "./Sections/Home Section/HomeSection";
 import Guidelines from "./Sections/Guidelines/Guidelines.jsx";
 import EventTimeline from "./Sections/EventTimeline/EventTimeline.jsx";
 
