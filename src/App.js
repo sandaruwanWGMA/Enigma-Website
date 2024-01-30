@@ -11,6 +11,7 @@ import { ReactComponent as LinkedInIcon } from "./assets/Images-home-page/linked
 import { ReactComponent as InstagramIcon } from "./assets/Images-home-page/instagram-icon.svg";
 import { ReactComponent as Enigma } from "./assets/Images-home-page/Enigma.svg";
 import rectangle from "./assets/Images-home-page/Rectangle 1.png";
+import "./styles/HomeStyles.css";
 
 const App = () => {
   return (
