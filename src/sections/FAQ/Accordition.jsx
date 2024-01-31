@@ -47,7 +47,7 @@ export default function Accordition() {
   ]);
 
   return (
-    <div className="bg-cover bg-center h-screen overflow-hidden">
+    <div className="slides bg-cover bg-center h-screen overflow-hidden">
       <img className="w-full h-full z-0 absolute" src={BgCover} alt="bgcover" />
 
       <div className="z-2 relative">

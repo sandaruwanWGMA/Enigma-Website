@@ -5,7 +5,7 @@ import "./About Section Styles/AboutSectionStyles.css";
 
 function AboutSection(props) {
   return (
-    <section id="about" style={{ height: "100vh" }}>
+    <section id="about" style={{ height: "100vh" }} className="slides">
       <img src={about_bg_img} alt="about bg image" className="about-bg-img" />
       <div className="img-overlay"></div>
       <div className="content">

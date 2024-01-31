@@ -4,16 +4,9 @@ import AboutSection from "./Sections/About Section/AboutSection";
 import Accordition from "./Sections/FAQ/Accordition";
 import Guidelines from "./Sections/Guidelines/Guidelines.jsx";
 import EventTimeline from "./Sections/EventTimeline/EventTimeline.jsx";
+import FullPageScroll from "./FullPageScrolling.jsx";
 
 const App = () => {
-  return (
-    <div>
-      <HomeSection></HomeSection>
-      <AboutSection></AboutSection>
-      <EventTimeline></EventTimeline>
-      <Guidelines></Guidelines>
-      <Accordition />
-    </div>
-  );
+  return <AboutSection></AboutSection>;
 };
 export default App;
