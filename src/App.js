@@ -1,7 +1,6 @@
 import React from "react";
 
 import Accordition from "./Sections/FAQ/Accordition";
-import React, { useRef } from "react";
 import HomeSection from "./Sections/Home Section/HomeSection";
 import AboutSection from "./Sections/About Section/AboutSection";
 import "./App.css";
