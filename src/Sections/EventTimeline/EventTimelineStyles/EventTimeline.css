@@ -22,8 +22,8 @@
 }
 
 .timeline {
-  width: 105%;
-  height: 105%;
+  width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
