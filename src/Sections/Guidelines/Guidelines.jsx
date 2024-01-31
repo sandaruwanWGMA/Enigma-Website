@@ -6,7 +6,7 @@ import "./GuidelinesStyles/Guidelines.css";
 
 function Guidelines(props) {
   return (
-    <section>
+    <section style={{ height: "100vh" }}>
       <div className="guideline">
         <img
           className="backgroundImg"
