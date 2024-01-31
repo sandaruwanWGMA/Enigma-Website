@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-// import EventTimeline from "./Sections/EventTimeline/EventTimeline.jsx";
 import Guidelines from "./Sections/Guidelines/Guidelines.jsx";
 import EventTimeline from "./Sections/EventTimeline/EventTimeline.jsx";
 
@@ -12,5 +11,4 @@ const App = () => {
     </section>
   );
 };
-
 export default App;
