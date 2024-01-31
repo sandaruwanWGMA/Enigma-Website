@@ -3,6 +3,7 @@ import HomeSection from "./Sections/Home Section/HomeSection";
 import AboutSection from "./Sections/About Section/AboutSection.jsx";
 import Guidelines from "./Sections/Guidelines/Guidelines.jsx";
 import EventTimeline from "./Sections/EventTimeline/EventTimeline.jsx";
+import Accordition from "./sections/FAQ/Accordition";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <AboutSection />
       <EventTimeline></EventTimeline>
       <Guidelines></Guidelines>
+      <Accordition />
     </section>
   );
 };
