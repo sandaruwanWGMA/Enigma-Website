@@ -1,6 +1,6 @@
 import React from "react";
 
-import Accordition from "./Pages/FAQ/Accordition";
+import Accordition from "./sections/FAQ/Accordition";
 
 // import SovietTroops from "./assets/EventTimeline/SovietTroops.png";
 // import airplaneBig from "./assets/EventTimeline/Group35.png";

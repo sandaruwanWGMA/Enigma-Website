@@ -2,7 +2,16 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    colors: {
+      faqbgcolor: "#4d665e",
+      faqcolor: "#facc15",
+      white: "#ffffff",
+    },
+    extend: {
+      fontFamily: {
+        patrick: ["Patrick Hand SC", "cursive"],
+      },
+    },
   },
 
   plugins: [],
