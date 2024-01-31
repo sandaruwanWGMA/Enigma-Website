@@ -29,6 +29,7 @@ function HomeSection(props) {
           style={{
             position: "absolute",
             right: "10em",
+            zIndex: 1,
           }}
         />
       </div>

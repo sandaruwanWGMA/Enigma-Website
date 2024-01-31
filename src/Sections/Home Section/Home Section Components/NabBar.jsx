@@ -9,7 +9,7 @@ const NavBar = ({ style, scrollToAbout }) => {
       <a href="#home">Home</a>
       <a href="#guidelines">Guidelines</a>
       <a href="#contact">Contact Us</a>
-      <a onClick={scrollToAbout} href="#about">
+      <a onClick={scrollToAbout} href="#more">
         More{" "}
         <FontAwesomeIcon icon={faChevronDown} style={{ fontSize: "0.9em" }} />
       </a>
