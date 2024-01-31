@@ -7,6 +7,7 @@ function AboutSection(props) {
   return (
     <section id="about">
       <img src={about_bg_img} alt="about bg image" className="about-bg-img" />
+      <div className="img-overlay"></div>
       <div className="content">
         <div className="title">
           <p className="title-text">WHAT IS ENIGMA</p>
