@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import home_bg_img from "../../assets/Images-home-page/home_bg_img.jpeg";
 import enigmaLogo from "../../assets/Images-home-page/enigma_logo.svg";
 import "../Home Section/Home Section Styles/VerticalLine.css";
@@ -13,15 +13,25 @@ import CountdownTimer from "./Home Section Components/CountdownTimer";
 import NavBar from "./Home Section Components/NabBar";
 
 function HomeSection(props) {
+  const aboutSectionRef = useRef(null);
+
+  const scrollToAbout = () => {
+    if (aboutSectionRef.current) {
+      aboutSectionRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section id="home" className="home-section">
-      <Enigma className="enigma"></Enigma>
-      <NavBar
-        style={{
-          position: "absolute",
-          right: "10em",
-        }}
-      ></NavBar>
+      <div className="nav-bar">
+        <Enigma className="enigma"></Enigma>
+        <NavBar
+          scrollToAbout={scrollToAbout}
+          style={{
+            position: "absolute",
+            right: "10em",
+          }}
+        />
+      </div>
       <div className="social-media">
         <div className="vertical-line"></div>
         <a
