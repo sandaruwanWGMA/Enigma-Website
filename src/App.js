@@ -7,13 +7,13 @@ import EventTimeline from "./Sections/EventTimeline/EventTimeline.jsx";
 
 const App = () => {
   return (
-    <>
+    <div>
       <HomeSection></HomeSection>
       <AboutSection></AboutSection>
       <EventTimeline></EventTimeline>
       <Guidelines></Guidelines>
       <Accordition />
-    </>
+    </div>
   );
 };
 export default App;
