@@ -1,6 +1,6 @@
 import React from "react";
 
-import Accordition from "./sections/FAQ/Accordition";
+import Accordition from "./Sections/FAQ/Accordition";
 
 const App = () => {
   return <Accordition />;
