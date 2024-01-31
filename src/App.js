@@ -7,6 +7,6 @@ import EventTimeline from "./Sections/EventTimeline/EventTimeline.jsx";
 import FullPageScroll from "./FullPageScrolling.jsx";
 
 const App = () => {
-  return <AboutSection></AboutSection>;
+  return <FullPageScroll></FullPageScroll>;
 };
 export default App;

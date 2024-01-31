@@ -47,17 +47,18 @@
   bottom: 0;
   width: 40%; */
   position: absolute;
-  top: calc(100vh + 50%);
+  top: calc(50% - 100vh);
   left: 10%;
   transform: translate(0%, -50%);
   width: 40%;
   text-align: justify;
+  z-index: 2;
 }
 
 .floating-img {
   position: absolute;
   right: 0;
-  bottom: -100vh;
+  top: calc(- 100vh);
 }
 
 .img-overlay {
