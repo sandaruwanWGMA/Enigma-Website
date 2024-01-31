@@ -41,6 +41,11 @@ function AboutSection(props) {
           </p>
         </div>
       </div>
+      <img
+        src={floating_img}
+        alt="floating image"
+        className="floating-img"
+      ></img>
     </section>
   );
 }
