@@ -7,6 +7,9 @@ function AboutSection(props) {
     <section id="about">
       <img src={about_bg_img} alt="about bg image" className="about-bg-img" />
       <div>
+        <p>WHAT IS ENIGMA</p>
+      </div>
+      <div>
         <p>
           Enigma is an intra-university coding competition organized by
           MoraMaths, consisting of
