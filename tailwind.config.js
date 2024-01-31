@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./Accordition.jsx", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     colors: {
       faqbgcolor: "#4d665e",
@@ -12,6 +12,11 @@ module.exports = {
         patrick: ["Patrick Hand SC", "cursive"],
       },
     },
+  },
+  corePlugins: {
+    preflight: false,
+    container: false,
+    accessibility: false,
   },
 
   plugins: [],
