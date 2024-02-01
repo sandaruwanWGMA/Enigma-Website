@@ -13,6 +13,10 @@
   src: url(../../../assets/fonts/Quantico-Regular.ttf);
 }
 
+.about-sec {
+  position: relative;
+}
+
 .about-bg-img {
   position: relative;
   width: 100%;
