@@ -21,7 +21,7 @@ function HomeSection(props) {
     }
   };
   return (
-    <section id="home" className="home-section">
+    <section id="home" className="home-section slides">
       <div className="nav-bar">
         <Enigma className="enigma"></Enigma>
         <NavBar
