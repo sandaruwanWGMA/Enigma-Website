@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ListItem from "./components/ListItem";
-import BgCover from "./assets/bgcover.png";
+import BgCover from "./assests/bgcover.png";
 import "./Accordition.css";
 
 export default function Accordition() {

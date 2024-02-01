@@ -9,6 +9,7 @@ import AboutSection from "./Sections/About Section/AboutSection";
 import EventTimeline from "./Sections/EventTimeline/EventTimeline";
 import Guidelines from "./Sections/Guidelines/Guidelines";
 import Accordition from "./Sections/FAQ/Accordition";
+import AwardSection from "./Sections/AwardSection/AwardSection";
 import OfficialPartners from "./Sections/Official Partners/OfficialPartners";
 
 function FullPageScrolling(props) {
@@ -29,6 +30,9 @@ function FullPageScrolling(props) {
         </FullpageSection>{" "}
         <FullpageSection style={{ height: "100vh" }}>
           <OfficialPartners></OfficialPartners>
+        </FullpageSection>
+        <FullpageSection style={{ height: "100vh" }}>
+          <AwardSection></AwardSection>
         </FullpageSection>
         <FullpageSection style={{ height: "100vh" }}>
           <Accordition></Accordition>

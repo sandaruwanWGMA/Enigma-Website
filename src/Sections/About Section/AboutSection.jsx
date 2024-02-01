@@ -9,7 +9,7 @@ function AboutSection(props) {
       <img src={about_bg_img} alt="about bg image" className="about-bg-img" />
       <div className="img-overlay"></div>
       <div className="content">
-        <div className="title">
+        <div>
           <p className="title-text">WHAT IS ENIGMA</p>
         </div>
         <div className="description">
