@@ -1,0 +1,90 @@
+.cover {
+  display: flex;
+  height: 100vh;
+  background-image: url("../../assets/images-award-page/awardbg.svg");
+  position: relative;
+  background-size: cover;
+  justify-content: space-between;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 0px 1000px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  /* background-image: url("../../assets/aword/manbg.svg");
+  background-repeat: no-repeat; */
+  min-width: 200px;
+  display: flex;
+  margin-top: 15vh;
+
+  position: relative;
+  justify-content: center;
+}
+
+.prizes-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+  column-gap: 50px;
+  margin-left: 10vw;
+}
+
+.text-container {
+  padding: 100px;
+}
+
+.title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 75px;
+  font-family: "Code Predators";
+  color: #f2b924;
+  margin-left: 10vw;
+}
+
+.title-list {
+  color: aliceblue;
+  text-align: center;
+  font-size: 15px;
+}
+
+.desc {
+  text-align: center;
+  font-size: 30px;
+  font-family: "PatrickHandSC";
+  color: aliceblue;
+  font-weight: 800;
+}
+
+.image-item-one {
+  height: 100%;
+  width: 100%;
+}
+
+.list-item-one {
+  width: 150px;
+}
+
+.image-item-two {
+  height: 100%;
+  width: 100%;
+}
+
+.list-item-two {
+  width: 220px;
+  margin-bottom: 20vh;
+}
+
+.list-item-three {
+  margin-top: 5vh;
+}
+
+.man-image {
+  height: 100%;
+  max-width: none;
+  position: absolute;
+}
+
+.text {
+  margin-top: 2.5vh;
+}
