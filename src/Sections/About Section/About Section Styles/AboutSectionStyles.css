@@ -44,11 +44,6 @@
 }
 
 .content {
-  /* position: absolute;
-  top: calc(100vh + 50%);
-  transform: translate(0, 50%);
-  bottom: 0;
-  width: 40%; */
   position: absolute;
   top: 30px;
   left: 10%;
