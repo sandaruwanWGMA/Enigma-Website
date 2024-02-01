@@ -4,6 +4,7 @@ import ItemOne from "../../assets/images-award-page/itemone.svg";
 import ItemTwo from "../../assets/images-award-page/itemtwo.svg";
 import ItemThree from "../../assets/images-award-page/itemthree.svg";
 import ManBg from "../../assets/images-award-page/manbg.svg";
+import RotatedImage from "../../assets/images-award-page/rotated image.svg";
 
 import "./AwardSection.css";
 
@@ -52,6 +53,7 @@ export default function AwardSection() {
             </div>
           </div>
         </div>
+        <img src={RotatedImage} alt="1" border="0" className="rotated-img" />
         <div className="container">
           <img src={ManBg} alt="1" border="0" className="man-image" />
         </div>
