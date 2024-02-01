@@ -1,3 +1,32 @@
+@font-face {
+  font-family: codePredators;
+  src: url(../../../assets/fonts/CodePredators-Regular.ttf);
+}
+
+@font-face {
+  font-family: PatrickHandSC;
+  src: url(../../../assets/fonts/PatrickHandSC-Regular.ttf);
+}
+
+@font-face {
+  font-family: Quantico;
+  src: url(../../../assets/fonts/Quantico-Regular.ttf);
+}
+
+.official-partners-title {
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-family: "CodePredators";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 66px;
+  line-height: 48px;
+  text-align: center;
+  color: #f2b924;
+}
+
 .official-partners-section {
   width: 100vw;
   height: 100vh;

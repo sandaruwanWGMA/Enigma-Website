@@ -12,7 +12,6 @@ function OfficialPartners(props) {
   return (
     <section className="official-partners-section">
       <BGImage className="bg-world-war" />
-      <span>OFFICIAL PARTNERS</span>
       <img src={rec} alt="rectangle" className="rec"></img>
       <img src={army_man} alt="army man" className="army-man"></img>
       <div className="logos">
@@ -21,6 +20,7 @@ function OfficialPartners(props) {
         <img src={wso2} alt="wso2" className="logo wso2"></img>{" "}
         <img src={cisco} alt="cisco" className="logo cisco"></img>{" "}
       </div>
+      <span className="official-partners-title">OFFICIAL PARTNERS</span>
     </section>
   );
 }
