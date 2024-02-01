@@ -9,7 +9,7 @@ import AboutSection from "./Sections/About Section/AboutSection";
 import EventTimeline from "./Sections/EventTimeline/EventTimeline";
 import Guidelines from "./Sections/Guidelines/Guidelines";
 import Accordition from "./Sections/FAQ/Accordition";
-import OfficialPartners from "./Sections/Official Partners/";
+import OfficialPartners from "./Sections/Official Partners/OfficialPartners";
 
 function FullPageScrolling(props) {
   return (
