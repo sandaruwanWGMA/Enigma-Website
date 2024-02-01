@@ -52,7 +52,6 @@
   position: absolute;
   top: calc(50% - 200vh + 30px);
   left: 10%;
-  transform: translate(0%, 0);
   width: 40%;
   text-align: justify;
   z-index: 2;
