@@ -6,3 +6,28 @@
   width: 100vw;
   height: 100vh;
 }
+
+.rec {
+  position: absolute;
+  bottom: 12%;
+  width: 80%;
+  left: 10%;
+  height: 30%;
+}
+
+.army-man {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.logos {
+  display: flex;
+  position: absolute;
+  width: 80%;
+  bottom: calc(12% + 15vh);
+  transform: translate(0, 50%);
+  left: 8%;
+  justify-content: space-around;
+}
