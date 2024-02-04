@@ -16,25 +16,25 @@ function FullPageScrolling(props) {
   return (
     <Fullpage>
       <FullPageSections>
-        <FullpageSection style={{ height: "100vh" }}>
+        <FullpageSection style={{ height: "100vh" }} transitionTime={200}>
           <HomeSection></HomeSection>
         </FullpageSection>
-        <FullpageSection style={{ height: "100vh" }}>
+        <FullpageSection style={{ height: "100vh" }} transitionTime={50}>
           <AboutSection></AboutSection>
         </FullpageSection>{" "}
-        <FullpageSection style={{ height: "100vh" }}>
+        <FullpageSection style={{ height: "100vh" }} transitionTime={50}>
           <EventTimeline></EventTimeline>
         </FullpageSection>{" "}
-        <FullpageSection style={{ height: "100vh" }}>
+        <FullpageSection style={{ height: "100vh" }} transitionTime={50}>
           <Guidelines></Guidelines>
         </FullpageSection>{" "}
-        <FullpageSection style={{ height: "100vh" }}>
+        <FullpageSection style={{ height: "100vh" }} transitionTime={50}>
           <OfficialPartners></OfficialPartners>
         </FullpageSection>
-        <FullpageSection style={{ height: "100vh" }}>
+        <FullpageSection style={{ height: "100vh" }} transitionTime={50}>
           <AwardSection></AwardSection>
         </FullpageSection>
-        <FullpageSection style={{ height: "100vh" }}>
+        <FullpageSection style={{ height: "100vh" }} transitionTime={50}>
           <Accordition></Accordition>
         </FullpageSection>
       </FullPageSections>
