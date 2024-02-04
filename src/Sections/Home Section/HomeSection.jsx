@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import home_bg_img from "../../assets/Images-home-page/home_bg_img.jpeg";
+import home_bg_8_plus from "../../assets/Images-home-page/home-bg-iphone8plus.jpeg";
 import enigmaLogo from "../../assets/Images-home-page/enigma_logo.svg";
 import "../Home Section/Home Section Styles/VerticalLine.css";
 import "../Home Section/Home Section Styles/SocialIcons.css";
@@ -62,6 +63,11 @@ function HomeSection(props) {
       </div>
       <div className="image-overlay"></div>
       <img src={home_bg_img} alt="home-bg-image" className="home-bg-img" />
+      <img
+        src={home_bg_8_plus}
+        alt="home-bg-image-8-plus"
+        className="home-bg-img-8-plus"
+      />
       <img src={enigmaLogo} alt="enigma-logo" className="enigma-logo" />
       <CountdownTimer
         style={{

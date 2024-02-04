@@ -40,3 +40,69 @@
   margin: 0;
   color: #f2b924;
 }
+
+@media screen and (max-width: 1210px) {
+  .countdown-timer {
+    width: 344px;
+    height: 90px;
+    gap: 0.8rem;
+  }
+  .elipse-logo {
+    width: 92px;
+    height: 88px;
+  }
+  .elipse-container {
+    margin: 1px;
+  }
+  .elipse-number {
+    font-size: 40px;
+    transform: translateY(50%);
+  }
+  .label p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .countdown-timer {
+    width: 344px;
+    height: 90px;
+    gap: 0.6rem;
+  }
+  .elipse-logo {
+    width: 82px;
+    height: 82px;
+  }
+  .elipse-container {
+    margin: 1px;
+  }
+  .elipse-number {
+    font-size: 34px;
+    transform: translateY(50%);
+  }
+  .label p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .countdown-timer {
+    width: 344px;
+    height: 90px;
+    gap: 0.6rem;
+  }
+  .elipse-logo {
+    width: 75px;
+    height: 75px;
+  }
+  .elipse-container {
+    margin: 1px;
+  }
+  .elipse-number {
+    font-size: 30px;
+    transform: translateY(60%);
+  }
+  .label p {
+    font-size: 14px;
+  }
+}

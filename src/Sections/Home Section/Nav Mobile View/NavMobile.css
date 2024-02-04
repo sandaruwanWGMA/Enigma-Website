@@ -1,0 +1,14 @@
+.nav-mobile {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, #235e4b, #000c08 83.7%);
+}
+
+.nav-mobile a,
+li,
+ul {
+  list-style: none; /* Remove list item bullet */
+  text-decoration: none; /* Remove underline from anchor */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}

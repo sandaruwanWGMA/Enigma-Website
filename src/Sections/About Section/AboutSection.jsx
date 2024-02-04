@@ -1,5 +1,6 @@
 import React from "react";
 import about_bg_img from "../../assets/Images-about-page/about bg image.png";
+import about_bg_img_8_plus from "../../assets/Images-about-page/about-bg-8-plus.jpeg";
 import floating_img from "../../assets/Images-about-page/about floating image.png";
 import "./About Section Styles/AboutSectionStyles.css";
 
@@ -7,6 +8,11 @@ function AboutSection(props) {
   return (
     <section id="about">
       <img src={about_bg_img} alt="about bg image" className="about-bg-img" />
+      <img
+        src={about_bg_img_8_plus}
+        alt="about bg image2"
+        className="about-bg-img-8-plus"
+      />
       <div className="img-overlay"></div>
       <div className="content">
         <div className="title">

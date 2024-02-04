@@ -8,3 +8,9 @@
   /* padding-top: 42px; */
   margin-bottom: 2em;
 }
+
+@media screen and (max-width: 420px) {
+  .vertical-line {
+    display: none;
+  }
+}
