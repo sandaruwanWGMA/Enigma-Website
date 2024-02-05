@@ -14,6 +14,10 @@
 }
 
 .ContactUs {
+  display: none;
+}
+
+.ContactUsMobile {
   width: 100%;
   height: auto;
   position: relative;
@@ -21,27 +25,123 @@
   justify-content: center;
 }
 
-.contactUs {
+.contactUsMobile {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.ContactUsTopic {
+.ContactUsTopicMobile {
   position: absolute;
   top: 0px;
-  width: 773px;
+  width: 100%;
   height: 88px;
   flex-shrink: 0;
   z-index: 1;
+  text-align: center;
+  margin-top: 35px;
 }
 
-#contactUsTopic {
+#contactUsTopicMobile {
   color: #f2b924;
   text-align: center;
   font-family: "CodePredators";
-  font-size: 66px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 48px;
+  font-size: 40px;
+  height: 20%;
+}
+
+@media screen and (min-width: 475px) {
+  .ContactUsMobile {
+    display: none;
+  }
+
+  .ContactUs {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contactUs {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .ContactUsTopic {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 88px;
+    flex-shrink: 0;
+    z-index: 1;
+    text-align: center;
+    margin-top: 35px;
+  }
+
+  #contactUsTopic {
+    color: #f2b924;
+    text-align: center;
+    font-family: "CodePredators";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    font-size: 60px;
+    height: 20%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .ContactUsTopic {
+    margin-top: 0px;
+  }
+
+  #contactUsTopic {
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ContactUsTopic {
+    margin-top: 15px;
+  }
+
+  #contactUsTopic {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .ContactUsTopic {
+    margin-top: 15px;
+  }
+
+  #contactUsTopic {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .ContactUsTopic {
+    margin-top: 15px;
+  }
+
+  #contactUsTopic {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .ContactUsTopic {
+    margin-top: 30px;
+  }
+
+  #contactUsTopic {
+    font-size: 68px;
+  }
 }
