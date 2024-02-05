@@ -58,6 +58,40 @@ export default function AwardSection() {
           <img src={ManBg} alt="1" border="0" className="man-image" />
         </div>
       </section>
+
+      {/* =======================mobile version======================= */}
+      <div className="mobile-cover">
+        <div className="mobile-award-title-container">
+          <div className="mobile-award-title">Awards</div>
+        </div>
+        <div className="mobile-prizes-container">
+          <img src={ItemTwo} alt="1" border="0" className="mobile-image-one" />
+          <div className="mobile-text">
+            <div className="mobile-title-list">Winner</div>
+            <div className="mobile-desc">RS 100 000</div>
+          </div>
+        </div>
+        <div className="mobile-prizes-container-two">
+          <img src={ItemOne} alt="1" border="0" className="mobile-image-one" />
+          <div className="mobile-text">
+            <div className="mobile-title-list">1ND RUNNERS UP</div>
+            <div className="mobile-desc">RS 75 000</div>
+          </div>
+        </div>
+
+        <div className="mobile-prizes-container-three">
+          <img
+            src={ItemThree}
+            alt="1"
+            border="0"
+            className="mobile-image-one"
+          />
+          <div className="mobile-text">
+            <div className="mobile-title-list">2ND RUNNERS UP</div>
+            <div className="mobile-desc">RS 50 000</div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
