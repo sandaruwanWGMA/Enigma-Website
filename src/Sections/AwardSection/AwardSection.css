@@ -97,7 +97,7 @@
   max-width: none;
   position: absolute;
   right: 0;
-  z-index: 2;
+  z-index: 1;
 }
 
 .text {
@@ -111,4 +111,86 @@
   z-index: 0;
   width: 100vw;
   opacity: 0.45;
+}
+
+.mobile-cover {
+  display: none;
+}
+
+/* moble reponsive */
+@media (max-width: 768px) {
+  .cover {
+    display: none;
+  }
+
+  .mobile-cover {
+    height: 100vh;
+    background-image: url("../../assets/images-award-page/awardbg.svg");
+    position: relative;
+    background-size: cover;
+    z-index: -1;
+    display: block;
+    box-shadow: inset 0px 0px 0px 1000px rgba(0, 0, 0, 0.5);
+  }
+  .mobile-award-title {
+    color: #f2b924;
+    font-size: calc(40px + 1vw);
+    text-align: center;
+    font-family: codePredators;
+  }
+
+  .mobile-award-title-container {
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  .mobile-prizes-container {
+    display: block;
+    /* align-items: center; */
+    max-width: calc(11.5vw + 130px);
+    margin-left: 5%;
+    position: relative;
+    /* margin-bottom: calc(0.5vw + 1.5px); */
+  }
+
+  .mobile-image-one {
+    width: 100%;
+  }
+
+  .mobile-title-list {
+    text-align: center;
+    font-size: calc(10px + 0.5vw);
+    font-family: quantico;
+    color: aliceblue;
+  }
+  .mobile-desc {
+    text-align: center;
+    font-size: calc(20px + 0.5vw);
+    font-family: "Passion One";
+    color: aliceblue;
+  }
+
+  .mobile-prizes-container-two {
+    display: block;
+    /* align-items: center; */
+    /* justify-content: center; */
+    max-width: calc(5vw + 90px);
+
+    margin-left: 60%;
+    margin-right: 5%;
+    margin-top: calc(-16vw + 1px);
+    position: relative;
+  }
+
+  .mobile-prizes-container-three {
+    display: block;
+    /* align-items: center; */
+    max-width: calc(1vw + 100px);
+    /* margin-right: 50%; */
+    margin-left: 10%;
+
+    margin-top: calc(-12.5vw + 1px);
+
+    position: relative;
+  }
 }
