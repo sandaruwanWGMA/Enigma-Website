@@ -1,0 +1,70 @@
+@font-face {
+  font-family: codePredators;
+  src: url(../../../assets/fonts/CodePredators-Regular.ttf);
+}
+
+@font-face {
+  font-family: PatrickHandSC;
+  src: url(../../../assets/fonts/PatrickHandSC-Regular.ttf);
+}
+
+@font-face {
+  font-family: Quantico;
+  src: url(../../../assets/fonts/Quantico-Regular.ttf);
+}
+
+.about-bg-img {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: -2;
+}
+
+.title-text {
+  margin: 0;
+  font-family: codePredators;
+  font-size: 66px;
+  color: #f2b924;
+  margin-bottom: 0.8em;
+}
+
+.description p {
+  font-family: PatrickHandSC;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.description li {
+  font-family: PatrickHandSC;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.content {
+  /* position: absolute;
+  top: calc(100vh + 50%);
+  transform: translate(0, 50%);
+  bottom: 0;
+  width: 40%; */
+  position: absolute;
+  top: calc(100vh + 50%);
+  left: 10%;
+  transform: translate(0%, -50%);
+  width: 40%;
+  text-align: justify;
+}
+
+.floating-img {
+  position: absolute;
+  right: 0;
+  bottom: -100vh;
+}
+
+.img-overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  top: 100vh;
+}

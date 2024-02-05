@@ -1,0 +1,22 @@
+@font-face {
+  font-family: codePredators;
+  src: url(../../assets/fonts/CodePredators-Regular.ttf);
+}
+
+.list-container {
+  margin-top: 50px;
+  overflow-y: scroll;
+  display: flex;
+  height: 75vh;
+  justify-content: center;
+}
+
+.faq-container {
+  font-size: 5rem;
+  line-height: 2.5rem;
+  letter-spacing: 5px;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(250 204 21);
+  font-family: codePredators;
+}
