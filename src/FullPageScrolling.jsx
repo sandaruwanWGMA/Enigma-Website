@@ -4,13 +4,13 @@ import Fullpage, {
   FullpageSection,
   FullpageNavigation,
 } from "@ap.cx/react-fullpage";
-import HomeSection from "./sections/Home Section/HomeSection";
-import AboutSection from "./sections/About Section/AboutSection";
-import EventTimeline from "./sections/EventTimeline/EventTimeline";
-import Guidelines from "./sections/Guidelines/Guidelines";
-import Accordition from "./sections/FAQ/Accordition";
-import AwardSection from "./sections/AwardSection/AwardSection";
-import OfficialPartners from "./sections/Official Partners/OfficialPartners";
+import HomeSection from "./Sections/Home Section/HomeSection";
+import AboutSection from "./Sections/About Section/AboutSection";
+import EventTimeline from "./Sections/EventTimeline/EventTimeline";
+import Guidelines from "./Sections/Guidelines/Guidelines";
+import Accordition from "./Sections/FAQ/Accordition";
+import AwardSection from "./Sections/AwardSection/AwardSection";
+import OfficialPartners from "./Sections/Official Partners/OfficialPartners";
 
 function FullPageScrolling(props) {
   return (
