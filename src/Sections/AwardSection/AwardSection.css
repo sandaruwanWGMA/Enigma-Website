@@ -125,7 +125,7 @@
 
   .mobile-cover {
     height: 100vh;
-    background-image: url("../../assets/images-award-page/awardbg.svg");
+    background-image: url("../../assets/images-award-page/bgmobile.svg");
     position: relative;
     background-size: cover;
     z-index: -1;
@@ -134,14 +134,16 @@
   }
   .mobile-award-title {
     color: #f2b924;
-    font-size: calc(40px + 1vw);
+    font-size: calc(40px + 2vw);
     text-align: center;
+
     font-family: codePredators;
   }
 
   .mobile-award-title-container {
     display: block;
-    margin-bottom: 50px;
+    padding-top: calc(50px + 5vh);
+    margin-bottom: calc(50px + 5vh);
   }
 
   .mobile-prizes-container {
