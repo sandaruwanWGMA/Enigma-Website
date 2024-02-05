@@ -5,7 +5,7 @@ import "./EventTimelineStyles/EventTimeline.css";
 
 function EventTimeline(props) {
   return (
-    <section style={{ width: "100vw", height: "100vh" }}>
+    <section>
       <div className="Timeline">
         <img src={Timeline} alt="" className="timeline" />
         <div className="eventTimeline">
