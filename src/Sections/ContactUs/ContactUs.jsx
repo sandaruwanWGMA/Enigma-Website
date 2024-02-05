@@ -1,18 +1,18 @@
 import React from "react";
-import Timeline from "../../assets/EventTimeline/timeline.svg";
-import "./EventTimelineStyles/EventTimeline.css";
+import ContactUsBackgroungImg from "../../assets/ContactUs/ContactUs.svg";
+import "./ContactUsStyles/ContactUs.css";
 
-function EventTimeline(props) {
+function ContactUs(props) {
   return (
     <section>
-      <div className="Timeline">
-        <img src={Timeline} alt="" className="timeline" />
-        <div className="eventTimeline">
-          <h1 id="eventTimeline">Event TimeLine</h1>
+      <div className="ContactUs">
+        <img src={ContactUsBackgroungImg} alt="" className="contactUs" />
+        <div className="ContactUsTopic">
+          <h1 id="contactUsTopic">Contact Us</h1>
         </div>
       </div>
     </section>
   );
 }
 
-export default EventTimeline;
+export default ContactUs;
