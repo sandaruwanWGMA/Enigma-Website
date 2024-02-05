@@ -14,31 +14,24 @@
 }
 
 .guideline {
-  position: relative;
-  height: auto;
-  width: 100%;
+  display: none;
 }
 
-.backgroundImg {
-  top: 0px;
+.guidelineMobile {
+  position: relative;
+}
 
+.guidelineBackgroundMobile {
+  top: 0px;
   width: 100%;
   height: 100%;
   object-fit: cover;
   position: relative;
 }
 
-.guidelinePicture > img {
+.guidelineTextsMobile {
   position: absolute;
-  width: 40%;
-  height: 100%;
-  top: -5px;
-  left: 0px;
-}
-
-.guidelineTexts {
-  position: absolute;
-  width: 60%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -47,37 +40,43 @@
   right: 0px;
 }
 
-.guidelineTopic {
+.guidelineTopicMobile {
   width: 100%;
   flex-shrink: 0;
 }
 
-#guidelineTopic {
+#guidelineTopicMobile {
   color: #f2b924;
   text-align: center;
   font-family: "CodePredators";
   font-style: normal;
   font-weight: 400;
   line-height: 48px;
+  font-size: 40px;
+  margin-top: 20px;
+  height: 20%;
 }
 
-#guidelineContent {
+#guidelineContentMobile {
   width: 80%;
   flex-shrink: 0;
-  margin-top: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.guidelineContent {
+.guidelineContentMobile {
   color: #fff;
   text-align: justify;
   font-family: "PatrickHandSC";
   font-style: normal;
   font-weight: 400;
   margin-top: 20px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  line-height: 20px;
 }
 
-#guidelineBooklet {
+#guidelineBookletMobile {
   width: 100%;
   position: "relative";
   display: flex;
@@ -85,9 +84,9 @@
   justify-content: center;
 }
 
-.guidelineBookletdiv {
-  width: 40%;
-  height: 20%;
+.guidelineBookletdivMobile {
+  width: 70%;
+  height: 30%;
   border-radius: 50px;
   border: 1px solid #8c7548;
   background: radial-gradient(
@@ -100,152 +99,317 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 20px 10px 20px 20px;
 }
 
-.guidelineBookletText {
+.guidelineBookletTextMobile {
   color: "#09320A";
   font-family: "Quantico";
   font-weight: "400";
   word-wrap: "break-word";
   margin: 0px 0px 0px 0px;
   text-align: center;
+  font-size: 15px;
 }
 
-@media (max-width: 475px) {
+@media screen and (min-width: 475px) {
+  .guidelineMobile {
+    display: none;
+  }
+
+  .guideline {
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: block;
+  }
+
   .backgroundImg {
-    display: none;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
   }
+
   .guidelinePicture > img {
-    display: none;
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: -5px;
+    left: 0px;
   }
-}
 
-@media (min-width: 640px) {
-}
+  .guidelineTexts {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0px;
+    right: 0px;
+  }
 
-@media (min-width: 768px) {
   .guidelineTopic {
-    height: 15%;
-  }
-
-  #guidelineContent {
-    height: 70%;
-    padding-top: 10px;
-  }
-
-  #guidelineBooklet {
-    height: 15%;
+    width: 100%;
+    flex-shrink: 0;
+    height: auto;
   }
 
   #guidelineTopic {
-    font-size: 40px;
+    color: #f2b924;
+    text-align: center;
+    font-family: "CodePredators";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    font-size: 30px;
+  }
+
+  #guidelineContent {
+    width: 80%;
+    flex-shrink: 0;
+    margin-top: 0px;
   }
 
   .guidelineContent {
-    font-size: 18px;
+    color: #fff;
+    text-align: justify;
+    font-family: "PatrickHandSC";
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 10px;
+  }
+
+  #guidelineBooklet {
+    width: 100%;
+    position: "relative";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+  }
+
+  .guidelineBookletdiv {
+    width: 50%;
+    height: 20%;
+    border-radius: 50px;
+    border: 1px solid #8c7548;
+    background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(43, 245, 100, 0.2) 45%,
+        rgba(251, 250, 242, 0) 100%
+      ),
+      linear-gradient(180deg, #f2b924 99.99%, rgba(240, 198, 49, 0) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    margin-bottom: 20px;
+  }
+
+  .guidelineBookletText {
+    color: "#09320A";
+    font-family: "Quantico";
+    font-weight: "400";
+    word-wrap: "break-word";
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    font-size: 8px;
+  }
+
+  .cloud {
+    margin-left: 10px;
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #guidelineTopic {
+    font-size: 35px;
+  }
+
+  #guidelineContent {
+    width: 80%;
+    flex-shrink: 0;
+    margin-top: 10px;
+  }
+
+  .guidelineContent {
+    margin-bottom: 8px;
+    font-size: 15px;
+    line-height: 12px;
+  }
+
+  .guidelineBookletdiv {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .guidelineBookletText {
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .cloud {
+    margin-left: 10px;
+    width: 17px;
+    height: 17px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #guidelineTopic {
+    margin-top: 10px;
+    font-size: 40px;
+  }
+
+  #guidelineContent {
+    width: 80%;
+    flex-shrink: 0;
+    margin-top: 20px;
+  }
+
+  .guidelineContent {
+    margin-bottom: 8px;
+    font-size: 20px;
     line-height: 15px;
   }
 
   .guidelineBookletdiv {
-    margin-bottom: 30px;
+    padding: 13px;
+    margin-bottom: 10px;
   }
 
   .guidelineBookletText {
+    margin: 0px 0px 0px 0px;
+    text-align: center;
     font-size: 12px;
+  }
+
+  .cloud {
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
   }
 }
 
-@media (min-width: 1024px) {
-  .guidelineTopic {
-    height: 20%;
+@media screen and (min-width: 992px) {
+  #guidelineTopic {
+    margin-top: 15px;
+    font-size: 50px;
   }
 
   #guidelineContent {
-    height: 60%;
-  }
-
-  #guidelineBooklet {
-    height: 20%;
-  }
-
-  #guidelineTopic {
-    font-size: 54px;
+    width: 80%;
+    flex-shrink: 0;
+    margin-top: 25px;
   }
 
   .guidelineContent {
-    font-size: 20px;
+    margin-bottom: 12px;
+    font-size: 25px;
     line-height: 20px;
   }
 
-  /* .guidelineBookletdiv {
-    margin-bottom: 50px;
-  } */
+  .guidelineBookletdiv {
+    padding: 20px;
+    margin-bottom: 5px;
+  }
 
   .guidelineBookletText {
-    font-size: 15px;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .cloud {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
   }
 }
 
-@media (min-width: 1280px) {
-  .guidelineTopic {
-    height: 15%;
+@media screen and (min-width: 1400px) {
+  #guidelineTopic {
+    margin-top: 35px;
+    font-size: 70px;
   }
 
   #guidelineContent {
-    height: 70%;
-    padding-top: 10px;
-  }
-
-  #guidelineBooklet {
-    height: 15%;
-  }
-
-  #guidelineTopic {
-    font-size: 60px;
+    width: 80%;
+    flex-shrink: 0;
+    margin-top: 50px;
   }
 
   .guidelineContent {
-    font-size: 27px;
-    line-height: 30px;
+    margin-bottom: 12px;
+    font-size: 33px;
+    line-height: 35px;
   }
 
   .guidelineBookletdiv {
-    margin-bottom: 30px;
+    padding: 25px;
+    margin-bottom: 10px;
   }
 
   .guidelineBookletText {
-    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .cloud {
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
   }
 }
 
-@media (min-width: 1536px) {
-  .guidelineTopic {
-    height: 20%;
+@media screen and (min-width: 1530px) {
+  #guidelineTopic {
+    margin-top: 35px;
+    font-size: 76px;
   }
 
   #guidelineContent {
-    height: 60%;
-  }
-
-  #guidelineBooklet {
-    height: 20%;
-  }
-
-  #guidelineTopic {
-    font-size: 66px;
+    width: 80%;
+    flex-shrink: 0;
+    margin-top: 50px;
   }
 
   .guidelineContent {
-    font-size: 35px;
-    line-height: 30px;
+    margin-bottom: 12px;
+    font-size: 37px;
+    line-height: 35px;
   }
 
   .guidelineBookletdiv {
-    margin-bottom: 50px;
+    padding: 25px;
+    margin-bottom: 10px;
   }
 
   .guidelineBookletText {
-    font-size: 23px;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .cloud {
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
   }
 }

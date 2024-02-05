@@ -14,6 +14,10 @@
 }
 
 .Timeline {
+  display: none;
+}
+
+.TimelineMobile {
   width: 100%;
   height: 100%;
   position: relative;
@@ -22,12 +26,16 @@
 }
 
 .timeline {
+  display: none;
+}
+
+.timelineMobile {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.eventTimeline {
+.eventTimelineMobile {
   position: absolute;
   top: 0px;
   width: 773px;
@@ -36,7 +44,7 @@
   z-index: 1;
 }
 
-#eventTimeline {
+#eventTimelineMobile {
   color: #f2b924;
   text-align: center;
   font-family: "CodePredators";
@@ -44,4 +52,110 @@
   font-style: normal;
   font-weight: 400;
   line-height: 48px; /* 72.727% */
+}
+
+.TimelineMobile {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.timelineMobile {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.eventTimelineMobile {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 20%;
+  flex-shrink: 0;
+  z-index: 1;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#eventTimelineMobile {
+  color: #f2b924;
+  text-align: center;
+  font-family: "CodePredators";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  font-size: 40px;
+  margin-top: 20px;
+  height: 20%;
+}
+
+@media screen and (min-width: 475px) {
+  .TimelineMobile {
+    display: none;
+  }
+
+  .timeline {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  .eventTimeline {
+    position: absolute;
+    top: 0px;
+    width: 773px;
+    height: 88px;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+
+  #eventTimeline {
+    color: #f2b924;
+    text-align: center;
+    font-family: "CodePredators";
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+  }
+
+  .Timeline {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .timeline {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .eventTimeline {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 20%;
+    flex-shrink: 0;
+    z-index: 1;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  #eventTimeline {
+    color: #f2b924;
+    text-align: center;
+    font-family: "CodePredators";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    font-size: 40px;
+    margin-top: 20px;
+    height: 20%;
+  }
 }
