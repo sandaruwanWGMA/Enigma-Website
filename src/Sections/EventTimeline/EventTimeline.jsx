@@ -1,11 +1,16 @@
 import React from "react";
+<<<<<<< HEAD
 import SovietTroops from "../../assets/EventTimeline/SovietTroops.svg";
 import Group from "../../assets/EventTimeline/Group.svg";
+=======
+import Timeline from "../../assets/EventTimeline/timeline.svg";
+>>>>>>> 7631b9bb229fd4d2debdb1bd4bf12c2cf9a12383
 import "./EventTimelineStyles/EventTimeline.css";
 
 function EventTimeline(props) {
   return (
     <section>
+<<<<<<< HEAD
       <div className="frame">
         <div className="div5"></div>
         <div className="div4"></div>
@@ -54,6 +59,13 @@ function EventTimeline(props) {
             <h3 className="text12">Awarding Ceremony</h3>
           </div>
         </div>
+=======
+      <div className="Timeline">
+        <img src={Timeline} alt="" className="timeline" />
+        <div className="eventTimeline">
+          <h1 id="eventTimeline">Event TimeLine</h1>
+        </div>
+>>>>>>> 7631b9bb229fd4d2debdb1bd4bf12c2cf9a12383
       </div>
     </section>
   );
