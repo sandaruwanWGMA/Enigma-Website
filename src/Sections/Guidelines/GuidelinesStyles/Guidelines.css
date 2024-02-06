@@ -36,6 +36,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   top: 0px;
   right: 0px;
 }
@@ -73,7 +74,7 @@
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 25px;
-  line-height: 20px;
+  line-height: 30px;
 }
 
 #guidelineBookletMobile {
@@ -109,7 +110,7 @@
   word-wrap: "break-word";
   margin: 0px 0px 0px 0px;
   text-align: center;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 @media screen and (min-width: 475px) {
@@ -147,6 +148,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     top: 0px;
     right: 0px;
   }
@@ -170,7 +172,7 @@
   #guidelineContent {
     width: 80%;
     flex-shrink: 0;
-    margin-top: 0px;
+    margin-top: 10px;
   }
 
   .guidelineContent {
@@ -179,9 +181,9 @@
     font-family: "PatrickHandSC";
     font-style: normal;
     font-weight: 400;
-    margin-bottom: 8px;
-    font-size: 12px;
-    line-height: 10px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    line-height: 14px;
   }
 
   #guidelineBooklet {
@@ -209,7 +211,7 @@
     align-items: center;
     justify-content: center;
     padding: 8px;
-    margin-bottom: 20px;
+    margin-top: 10px;
   }
 
   .guidelineBookletText {
@@ -238,18 +240,18 @@
   #guidelineContent {
     width: 80%;
     flex-shrink: 0;
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   .guidelineContent {
     margin-bottom: 8px;
-    font-size: 15px;
-    line-height: 12px;
+    font-size: 18px;
+    line-height: 18px;
   }
 
   .guidelineBookletdiv {
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .guidelineBookletText {
@@ -275,13 +277,13 @@
   #guidelineContent {
     width: 80%;
     flex-shrink: 0;
-    margin-top: 20px;
+    margin-top: 35px;
   }
 
   .guidelineContent {
-    margin-bottom: 8px;
-    font-size: 20px;
-    line-height: 15px;
+    margin-bottom: 20px;
+    font-size: 23px;
+    line-height: 25px;
   }
 
   .guidelineBookletdiv {
@@ -312,13 +314,13 @@
   #guidelineContent {
     width: 80%;
     flex-shrink: 0;
-    margin-top: 25px;
+    margin-top: 50px;
   }
 
   .guidelineContent {
-    margin-bottom: 12px;
-    font-size: 25px;
-    line-height: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 33px;
   }
 
   .guidelineBookletdiv {
@@ -340,6 +342,43 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  #guidelineTopic {
+    margin-top: 35px;
+    font-size: 70px;
+  }
+
+  #guidelineContent {
+    width: 80%;
+    flex-shrink: 0;
+    margin-top: 60px;
+  }
+
+  .guidelineContent {
+    margin-bottom: 35px;
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .guidelineBookletdiv {
+    padding: 25px;
+    margin-bottom: 10px;
+  }
+
+  .guidelineBookletText {
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .cloud {
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+}
+
 @media screen and (min-width: 1400px) {
   #guidelineTopic {
     margin-top: 35px;
@@ -349,13 +388,13 @@
   #guidelineContent {
     width: 80%;
     flex-shrink: 0;
-    margin-top: 50px;
+    margin-top: 70px;
   }
 
   .guidelineContent {
-    margin-bottom: 12px;
-    font-size: 33px;
-    line-height: 35px;
+    margin-bottom: 35px;
+    font-size: 40px;
+    line-height: 37px;
   }
 
   .guidelineBookletdiv {
@@ -386,13 +425,13 @@
   #guidelineContent {
     width: 80%;
     flex-shrink: 0;
-    margin-top: 50px;
+    margin-top: 70px;
   }
 
   .guidelineContent {
-    margin-bottom: 12px;
-    font-size: 37px;
-    line-height: 35px;
+    margin-bottom: 40px;
+    font-size: 45px;
+    line-height: 40px;
   }
 
   .guidelineBookletdiv {
