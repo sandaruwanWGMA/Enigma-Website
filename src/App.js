@@ -6,7 +6,8 @@ import NavMobile from "./Sections/Home Section/Nav Mobile View/NavMobile";
 const App = () => {
   return (
     <>
-      <NavMobile></NavMobile>
+      <HomeSection></HomeSection>
+      <AboutSection></AboutSection>
     </>
   );
 };
