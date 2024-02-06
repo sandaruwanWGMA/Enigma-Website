@@ -136,11 +136,6 @@
 }
 
 @media screen and (min-width: 600px) {
-  .eventTimeline {
-    margin: 0px;
-    text-align: center;
-  }
-
   #eventTimeline {
     line-height: 48px;
     font-size: 35px;
@@ -150,11 +145,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .eventTimeline {
-    margin: 0px;
-    text-align: center;
-  }
-
   #eventTimeline {
     line-height: 48px;
     font-size: 48px;
@@ -164,11 +154,6 @@
 }
 
 @media screen and (min-width: 992px) {
-  .eventTimeline {
-    margin: 0px;
-    text-align: center;
-  }
-
   #eventTimeline {
     line-height: 48px;
     font-size: 55px;
@@ -178,11 +163,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .eventTimeline {
-    margin: 0px;
-    text-align: center;
-  }
-
   #eventTimeline {
     line-height: 48px;
     font-size: 68px;
@@ -191,12 +171,16 @@
   }
 }
 
-@media screen and (min-width: 1530px) {
-  .eventTimeline {
-    margin: 0px;
-    text-align: center;
+@media screen and (min-width: 1400px) {
+  #eventTimeline {
+    line-height: 48px;
+    font-size: 75px;
+    margin-top: 60px;
+    height: 20%;
   }
+}
 
+@media screen and (min-width: 1530px) {
   #eventTimeline {
     line-height: 48px;
     font-size: 85px;
