@@ -70,13 +70,13 @@
 }
 .enigma {
   position: absolute;
-  left: 5em;
-  padding-top: 30px;
+  left: 2em;
+  padding-top: 36px;
 }
 .enigma-mobile {
   display: none;
   position: absolute;
-  left: 5em;
+  left: 2em;
   padding-top: 30px;
 }
 .home-bg-img-8-plus {
@@ -97,7 +97,6 @@
   .enigma-mobile {
     display: inline;
     position: absolute;
-    left: 5em;
     padding-top: 41px;
   }
   .enigma-logo {
