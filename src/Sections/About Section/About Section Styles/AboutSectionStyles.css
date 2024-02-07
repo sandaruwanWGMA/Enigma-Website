@@ -52,7 +52,7 @@
   bottom: 0;
   width: 40%; */
   position: absolute;
-  top: calc(100vh + 50%);
+  top: calc(50%);
   left: 10%;
   transform: translate(0%, -50%);
   width: 40%;
@@ -62,7 +62,7 @@
 .floating-img {
   position: absolute;
   right: 0;
-  bottom: -100vh;
+  bottom: 0;
 }
 
 .img-overlay {
@@ -71,7 +71,7 @@
   width: 100vw;
   height: 100vh;
   z-index: -1;
-  top: 100vh;
+  top: 0;
 }
 
 @media screen and (max-width: 1280px) {
