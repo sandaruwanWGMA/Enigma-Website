@@ -69,11 +69,11 @@
   justify-content: space-around;
 }
 .bottom-box {
-  margin-top: 44px;
+  margin-top: 34px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 36px;
+  gap: 10px;
 }
 
 .navigation {

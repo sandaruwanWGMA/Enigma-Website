@@ -8,6 +8,7 @@ import { ReactComponent as FacebookIcon } from "../../assets/Images-home-page/fa
 import { ReactComponent as LinkedInIcon } from "../../assets/Images-home-page/linkedin-icon.svg";
 import { ReactComponent as InstagramIcon } from "../../assets/Images-home-page/instagram-icon.svg";
 import { ReactComponent as Enigma } from "../../assets/Images-home-page/Enigma.svg";
+import fb_icon from "../../assets/Images-home-page/fb.png";
 import EnigmaMobile from "../../assets/Images-home-page/enigma mobile.svg";
 import rectangle from "../../assets/Images-home-page/Rectangle 1.png";
 import "./Home Section Styles/HomeStyles.css";
@@ -59,11 +60,7 @@ function HomeSection(props) {
           className="facebook-icon"
         >
           <FacebookIcon className="facebook-icon icon" />
-          {/* <img
-            src={FacebookIconi}
-            alt="facebook-icon"
-            className="facebook-icon"
-          /> */}
+          {/* <img src={fb_icon} alt="facebook-icon" className="facebook-icon" /> */}
         </a>
         <a
           href="https://www.instagram.com/"
