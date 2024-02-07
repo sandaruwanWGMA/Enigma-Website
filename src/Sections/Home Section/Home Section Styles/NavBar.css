@@ -119,9 +119,9 @@ nav a {
   .toggle-btn {
     display: block;
     position: absolute;
-    width: 100vw;
-    top: 0;
-    margin: 8px;
+    right: 0;
+    top: 60px;
+    /* margin: 8px; */
     /* color: white; */
     background-color: transparent;
     border: none;

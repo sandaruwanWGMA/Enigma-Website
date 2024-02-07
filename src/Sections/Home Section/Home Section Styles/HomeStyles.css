@@ -72,6 +72,12 @@
   left: 5em;
   padding-top: 30px;
 }
+.enigma-mobile {
+  display: none;
+  position: absolute;
+  left: 5em;
+  padding-top: 30px;
+}
 .home-bg-img-8-plus {
   display: none;
 }
@@ -84,6 +90,15 @@
 }
 
 @media screen and (max-width: 1020px) {
+  .enigma {
+    display: none;
+  }
+  .enigma-mobile {
+    display: inline;
+    position: absolute;
+    left: 5em;
+    padding-top: 41px;
+  }
   .enigma-logo {
     top: 50%;
     width: 50%;
@@ -91,11 +106,12 @@
 }
 
 @media screen and (max-width: 830px) {
-  .home-section {
-    width: 100vw;
-  }
   .enigma {
     display: none;
+  }
+
+  .home-section {
+    width: 100vw;
   }
 
   /* .nav-bar {

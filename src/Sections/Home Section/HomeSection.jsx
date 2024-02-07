@@ -8,6 +8,7 @@ import { ReactComponent as FacebookIcon } from "../../assets/Images-home-page/fa
 import { ReactComponent as LinkedInIcon } from "../../assets/Images-home-page/linkedin-icon.svg";
 import { ReactComponent as InstagramIcon } from "../../assets/Images-home-page/instagram-icon.svg";
 import { ReactComponent as Enigma } from "../../assets/Images-home-page/Enigma.svg";
+import EnigmaMobile from "../../assets/Images-home-page/enigma mobile.svg";
 import rectangle from "../../assets/Images-home-page/Rectangle 1.png";
 import "./Home Section Styles/HomeStyles.css";
 import CountdownTimer from "./Home Section Components/CountdownTimer";
@@ -24,6 +25,7 @@ function HomeSection(props) {
   return (
     <section id="home" className="home-section">
       <div className="nav-bar">
+        <img src={EnigmaMobile} className="enigma-mobile" alt="e2"></img>
         <Enigma className="enigma"></Enigma>
         <NavBar
           scrollToAbout={scrollToAbout}
