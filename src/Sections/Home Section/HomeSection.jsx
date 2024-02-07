@@ -46,12 +46,16 @@ function HomeSection(props) {
           rel="noopener noreferrer"
           className="linkedin-icon"
         >
-          <LinkedInIcon className="linkedin-icon icon" />
+          {/* <LinkedInIcon className="linkedin-icon icon" /> */}
           {/* <img
             src={LinkedInIconi}
             alt="linkedin-icon"
             className="linkedin-icon"
           /> */}
+          <i
+            class="bi bi-linkedin"
+            style={{ fontSize: "50px", color: "gray" }}
+          ></i>
         </a>
         <a
           href="https://www.facebook.com/"
@@ -59,8 +63,12 @@ function HomeSection(props) {
           rel="noopener noreferrer"
           className="facebook-icon"
         >
-          <FacebookIcon className="facebook-icon icon" />
+          {/* <FacebookIcon className="facebook-icon icon" /> */}
           {/* <img src={fb_icon} alt="facebook-icon" className="facebook-icon" /> */}
+          <i
+            class="bi bi-facebook bg-secondary p-2"
+            style={{ fontSize: "50px", color: "gray" }}
+          ></i>
         </a>
         <a
           href="https://www.instagram.com/"
@@ -68,8 +76,12 @@ function HomeSection(props) {
           rel="noopener noreferrer"
           className="instagram-icon"
         >
-          <InstagramIcon className="instagram-icon icon" />
+          {/* <InstagramIcon className="instagram-icon icon" /> */}
           {/* <img src={InstagramIconi}></img> */}
+          <i
+            class="bi bi-instagram"
+            style={{ fontSize: "50px", color: "gray" }}
+          ></i>
         </a>
       </div>
       <div className="image-overlay"></div>
