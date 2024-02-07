@@ -85,6 +85,28 @@
   }
 }
 
+@media screen and (max-width: 830px) {
+  .countdown-timer {
+    width: 344px;
+    height: 90px;
+    gap: 0.6rem;
+  }
+  .elipse-logo {
+    width: 75px;
+    height: 75px;
+  }
+  .elipse-container {
+    margin: 1px;
+  }
+  .elipse-number {
+    font-size: 30px;
+    transform: translateY(60%);
+  }
+  .label p {
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width: 420px) {
   .countdown-timer {
     width: 344px;

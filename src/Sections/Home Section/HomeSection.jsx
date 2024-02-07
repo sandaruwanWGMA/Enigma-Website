@@ -29,7 +29,8 @@ function HomeSection(props) {
           scrollToAbout={scrollToAbout}
           style={{
             position: "absolute",
-            right: "10em",
+            top: "10px",
+            right: "4em",
             zIndex: 1,
           }}
         />
