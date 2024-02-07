@@ -1,0 +1,25 @@
+.social-media a .facebook-icon,
+.social-media a .linkedin-icon,
+.social-media a .instagram-icon {
+  height: 50px;
+}
+
+.social-media a .facebook-icon {
+  padding-top: 10px;
+}
+
+.social-media a .instagram-icon {
+  padding-top: 10px;
+  padding-bottom: 3em;
+}
+
+.social-media a {
+  display: inline-block;
+  position: relative;
+}
+
+@media screen and (max-width: 830px) {
+  .social-media a {
+    display: none;
+  }
+}

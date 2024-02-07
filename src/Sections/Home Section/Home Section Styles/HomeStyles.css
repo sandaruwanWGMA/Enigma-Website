@@ -1,0 +1,177 @@
+.home-bg-img {
+  width: 100%;
+  height: 100vh;
+  z-index: -2;
+  position: relative;
+}
+
+.home-section {
+  position: relative;
+  height: 100vh;
+}
+
+.enigma-logo {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-overlay {
+  position: absolute;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+}
+
+.social-media {
+  position: absolute;
+  right: 5em;
+  padding-top: 40px;
+  height: calc(100vh - 40px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rectangle {
+  position: relative;
+}
+
+.reg-btn {
+  padding: 0;
+  margin: 0;
+  border: none;
+  position: absolute;
+  left: 50vw;
+  transform: translate(-50%, 0);
+  bottom: 3em;
+  background-color: transparent;
+}
+
+.reg-btn:hover {
+  cursor: pointer;
+}
+
+.reg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  color: #09320a;
+  font-size: 23px;
+  font-family: "Quantico", sans-serif;
+  font-weight: 900;
+}
+.enigma {
+  position: absolute;
+  left: 5em;
+  padding-top: 30px;
+}
+.enigma-mobile {
+  display: none;
+  position: absolute;
+  left: 5em;
+  padding-top: 30px;
+}
+.home-bg-img-8-plus {
+  display: none;
+}
+
+@media screen and (max-width: 1210px) {
+  .enigma-logo {
+    top: 48%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .enigma {
+    display: none;
+  }
+  .enigma-mobile {
+    display: inline;
+    position: absolute;
+    left: 5em;
+    padding-top: 41px;
+  }
+  .enigma-logo {
+    top: 50%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .enigma {
+    display: none;
+  }
+
+  .home-section {
+    width: 100vw;
+  }
+
+  /* .nav-bar {
+    display: none;
+  } */
+  .enigma-logo {
+    top: 50%;
+    width: 400px;
+    height: 2458px;
+  }
+  .reg-btn {
+    width: 242px;
+    height: 60px;
+  }
+  .reg-text {
+    font-size: 21px;
+  }
+  .home-bg-img-8-plus {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    z-index: -2;
+    position: relative;
+  }
+  .home-bg-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .home-section {
+    width: 100vw;
+  }
+  .enigma {
+    display: none;
+  }
+
+  /* .nav-bar {
+    display: none;
+  } */
+  .enigma-logo {
+    top: 50%;
+    width: 350px;
+    height: 198px;
+  }
+  .reg-btn {
+    width: 242px;
+    height: 60px;
+  }
+  .reg-text {
+    font-size: 21px;
+  }
+  .home-bg-img-8-plus {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    z-index: -2;
+    position: relative;
+  }
+  .home-bg-img {
+    display: none;
+  }
+}
