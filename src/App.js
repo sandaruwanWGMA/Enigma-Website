@@ -7,9 +7,10 @@ import ContactUs from "./Sections/ContactUs/ContactUs.jsx";
 import AwardSection from "./Sections/AwardSection/AwardSection.jsx";
 import Accordition from "./Sections/FAQ/Accordition";
 import FullPageScrolling from "./ReactFullPageScroll.jsx";
+import AboutSection from "./Sections/About Section/AboutSection";
 
 const App = () => {
-  return <FullPageScrolling></FullPageScrolling>;
+  return <AboutSection />;
 };
 
 export default App;
