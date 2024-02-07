@@ -6,18 +6,10 @@ import EventTimeline from "./Sections/EventTimeline/EventTimeline.jsx";
 import ContactUs from "./Sections/ContactUs/ContactUs.jsx";
 import AwardSection from "./Sections/AwardSection/AwardSection.jsx";
 import Accordition from "./Sections/FAQ/Accordition";
+import FullPageScrolling from "./ReactFullPageScroll.jsx";
 
 const App = () => {
-  return (
-    <>
-      <HomeSection></HomeSection>
-      <EventTimeline></EventTimeline>
-      <Guidelines></Guidelines>
-      <ContactUs></ContactUs>
-      <AwardSection></AwardSection>
-      <Accordition></Accordition>
-    </>
-  );
+  return <FullPageScrolling></FullPageScrolling>;
 };
 
 export default App;

@@ -1,0 +1,113 @@
+@font-face {
+  font-family: codePredators;
+  src: url(../../../assets/fonts/CodePredators-Regular.ttf);
+}
+
+@font-face {
+  font-family: PatrickHandSC;
+  src: url(../../../assets/fonts/PatrickHandSC-Regular.ttf);
+}
+
+@font-face {
+  font-family: Quantico;
+  src: url(../../../assets/fonts/Quantico-Regular.ttf);
+}
+
+.official-partners-title {
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, 0);
+  font-family: "CodePredators";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 66px;
+  line-height: 48px;
+  text-align: center;
+  color: #f2b924;
+}
+
+.official-partners-section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.bg-world-war {
+  width: 100vw;
+  height: 100vh;
+}
+
+.rec {
+  position: absolute;
+  bottom: 12%;
+  width: 80%;
+  left: 10%;
+  height: 30%;
+}
+
+.army-man {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.logos {
+  display: flex;
+  position: absolute;
+  width: 80%;
+  bottom: calc(12% + 15vh);
+  transform: translate(0, 50%);
+  left: 8%;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 900px) {
+  .official-partners-title {
+    width: 100%;
+    font-size: 52px;
+  }
+  .army-man {
+    width: 260px;
+    height: 190px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .official-partners-title {
+    width: 100%;
+    font-size: 35px;
+  }
+  .army-man {
+    width: 136px;
+    height: 106px;
+    bottom: 69%;
+  }
+  .rec {
+    bottom: 6%;
+    height: 65%;
+    width: 60%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .official-partners-title {
+    width: 100%;
+    font-size: 32px;
+  }
+  .army-man {
+    width: 136px;
+    height: 106px;
+    bottom: 69%;
+  }
+  .rec {
+    bottom: 6%;
+    height: 65%;
+    width: 60%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
