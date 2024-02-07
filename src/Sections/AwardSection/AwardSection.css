@@ -119,6 +119,10 @@
 
 /* tab reponsive */
 @media screen and (max-width: 768px) {
+  .cover {
+    display: none;
+  }
+
   .mobile-cover {
     height: 100vh;
     background-image: url("../../assets/images-award-page/bgmobile.svg");
