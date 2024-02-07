@@ -7,6 +7,10 @@ import "../Home Section/Home Section Styles/SocialIcons.css";
 import { ReactComponent as FacebookIcon } from "../../assets/Images-home-page/facebook-icon.svg";
 import { ReactComponent as LinkedInIcon } from "../../assets/Images-home-page/linkedin-icon.svg";
 import { ReactComponent as InstagramIcon } from "../../assets/Images-home-page/instagram-icon.svg";
+
+import FacebookIconi from "../../assets/Images-home-page/facebook-icon.svg";
+import LinkedInIconi from "../../assets/Images-home-page/linkedin-icon.svg";
+import InstagramIconi from "../../assets/Images-home-page/instagram-icon.svg";
 import { ReactComponent as Enigma } from "../../assets/Images-home-page/Enigma.svg";
 import EnigmaMobile from "../../assets/Images-home-page/enigma mobile.svg";
 import rectangle from "../../assets/Images-home-page/Rectangle 1.png";
@@ -46,6 +50,11 @@ function HomeSection(props) {
           className="linkedin-icon"
         >
           <LinkedInIcon className="linkedin-icon" />
+          {/* <img
+            src={LinkedInIconi}
+            alt="linkedin-icon"
+            className="linkedin-icon"
+          /> */}
         </a>
         <a
           href="https://www.facebook.com/"
@@ -54,6 +63,11 @@ function HomeSection(props) {
           className="facebook-icon"
         >
           <FacebookIcon className="facebook-icon" />
+          {/* <img
+            src={FacebookIconi}
+            alt="facebook-icon"
+            className="facebook-icon"
+          /> */}
         </a>
         <a
           href="https://www.instagram.com/"
@@ -62,6 +76,7 @@ function HomeSection(props) {
           className="instagram-icon"
         >
           <InstagramIcon className="instagram-icon" />
+          {/* <img src={InstagramIconi}></img> */}
         </a>
       </div>
       <div className="image-overlay"></div>
