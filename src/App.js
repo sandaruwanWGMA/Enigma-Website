@@ -4,6 +4,7 @@ import HomeSection from "./Sections/Home Section/HomeSection.jsx";
 import Guidelines from "./Sections/Guidelines/Guidelines.jsx";
 import EventTimeline from "./Sections/EventTimeline/EventTimeline.jsx";
 import ContactUs from "./Sections/ContactUs/ContactUs.jsx";
+import AwardSection from "./Sections/";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <EventTimeline></EventTimeline>
       <Guidelines></Guidelines>
       <ContactUs></ContactUs>
+      <AwardSection></AwardSection>
     </>
   );
 };
