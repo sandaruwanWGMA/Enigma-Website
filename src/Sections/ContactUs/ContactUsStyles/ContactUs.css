@@ -19,7 +19,7 @@
 
 .ContactUsMobile {
   width: 100%;
-  height: auto;
+  height: 100vh;
   position: relative;
   display: flex;
   justify-content: center;
