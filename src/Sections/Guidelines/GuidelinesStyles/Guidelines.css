@@ -128,7 +128,7 @@
   .backgroundImg {
     top: 0px;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
     position: relative;
   }
@@ -270,8 +270,12 @@
 
 @media screen and (min-width: 768px) {
   #guidelineTopic {
+    position: absolute;
+    left: 0;
+    transform: translate(-28%, 0);
+    top: 130px;
     margin-top: 10px;
-    font-size: 40px;
+    font-size: 60px;
   }
 
   #guidelineContent {
@@ -283,18 +287,20 @@
   .guidelineContent {
     margin-bottom: 20px;
     font-size: 23px;
-    line-height: 25px;
+    font-size: 36px;
+    line-height: 33px;
   }
 
   .guidelineBookletdiv {
-    padding: 13px;
+    padding: 28px;
     margin-bottom: 10px;
+    width: 400px;
   }
 
   .guidelineBookletText {
     margin: 0px 0px 0px 0px;
     text-align: center;
-    font-size: 12px;
+    font-size: 24px;
   }
 
   .cloud {

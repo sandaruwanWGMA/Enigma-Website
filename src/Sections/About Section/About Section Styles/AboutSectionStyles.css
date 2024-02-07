@@ -171,7 +171,7 @@
   .title-text {
     text-align: center;
     margin: 0;
-    font-size: 50px;
+    font-size: 70px;
     padding: 24px 0;
   }
   .content {
@@ -189,7 +189,7 @@
   .description p {
     margin: 0;
     display: inline-block;
-    font-size: 21px;
+    font-size: 31px;
     word-break: break-word;
   }
   .description li {

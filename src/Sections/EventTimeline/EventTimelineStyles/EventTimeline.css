@@ -19,14 +19,14 @@
 
 .TimelineMobile {
   width: 100%;
-  height: auto;
+  height: 100vh;
   position: relative;
   display: flex;
   justify-content: center;
 }
 
 .timeline {
-  display: none;
+  display: block;
 }
 
 .timelineMobile {
