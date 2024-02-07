@@ -75,7 +75,7 @@
 .enigma-mobile {
   display: none;
   position: absolute;
-  left: 5em;
+  left: 0;
   padding-top: 30px;
 }
 .home-bg-img-8-plus {
@@ -96,7 +96,7 @@
   .enigma-mobile {
     display: inline;
     position: absolute;
-    left: 5em;
+    left: 2em;
     padding-top: 41px;
   }
   .enigma-logo {
