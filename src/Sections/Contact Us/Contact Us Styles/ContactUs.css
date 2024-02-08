@@ -160,7 +160,7 @@
     display: grid;
     grid-template-columns: auto auto; /* Two columns */
     grid-template-rows: auto auto; /* Two rows */
-    width: 63%;
+    width: 53%;
     height: 60%;
     top: 50%;
   }
@@ -191,8 +191,8 @@
     display: grid;
     grid-template-columns: auto auto; /* Two columns */
     grid-template-rows: auto auto; /* Two rows */
-    width: 70%;
-    height: 60%;
+    width: 56%;
+    height: 40%;
     top: 50%;
   }
 }
@@ -222,8 +222,8 @@
     display: grid;
     grid-template-columns: auto auto; /* Two columns */
     grid-template-rows: auto auto; /* Two rows */
-    width: 70%;
-    height: 60%;
+    width: 54%;
+    height: 40%;
     top: 50%;
   }
 }
