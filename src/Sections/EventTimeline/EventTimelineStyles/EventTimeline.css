@@ -25,10 +25,6 @@
   justify-content: center;
 }
 
-.timeline {
-  display: none;
-}
-
 .timelineMobile {
   width: 100%;
   height: auto;
@@ -98,17 +94,45 @@
 
   .Timeline {
     width: 100%;
-    height: auto;
+    height: 100vh;
     position: relative;
     display: flex;
     justify-content: center;
   }
 
-  .timeline {
+  .timeline475 {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     display: block;
+  }
+
+  .timeline600 {
+    display: none;
+  }
+
+  .timeline768 {
+    display: none;
+  }
+
+  .timeline992 {
+    display: none;
+  }
+
+  .timeline1094 {
+    display: none;
+  }
+
+  .timeline1200 {
+    display: none;
+  }
+
+  .timeline1400 {
+    display: none;
+  }
+
+  .timeline1530 {
+    display: none;
   }
 
   .eventTimeline {
@@ -129,31 +153,44 @@
     font-style: normal;
     font-weight: 400;
     line-height: 48px;
-    font-size: 30px;
-    margin-top: 10px;
+    font-size: 40px;
+    margin-top: 30px;
     height: 20%;
   }
 }
 
 @media screen and (min-width: 600px) {
+  .timeline475 {
+    display: none;
+  }
+
+  .timeline600 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
   #eventTimeline {
     line-height: 48px;
-    font-size: 35px;
-    margin-top: 12px;
+    font-size: 45px;
+    margin-top: 30px;
     height: 20%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  #eventTimeline {
-    line-height: 48px;
-    font-size: 48px;
-    margin-top: 25px;
-    height: 20%;
+  .timeline600 {
+    display: none;
   }
-}
 
-@media screen and (min-width: 992px) {
+  .timeline768 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
   #eventTimeline {
     line-height: 48px;
     font-size: 55px;
@@ -162,10 +199,61 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
+  .timeline768 {
+    display: none;
+  }
+
+  .timeline992 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  #eventTimeline {
+    line-height: 48px;
+    font-size: 65px;
+    margin-top: 40px;
+    height: 20%;
+  }
+}
+
+@media screen and (min-width: 1094px) {
+  .timeline992 {
+    display: none;
+  }
+
+  .timeline1094 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
   #eventTimeline {
     line-height: 48px;
     font-size: 68px;
+    margin-top: 50px;
+    height: 20%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .timeline1094 {
+    display: none;
+  }
+
+  .timeline1200 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  #eventTimeline {
+    line-height: 48px;
+    font-size: 70px;
     margin-top: 50px;
     height: 20%;
   }
@@ -183,7 +271,7 @@
 @media screen and (min-width: 1530px) {
   #eventTimeline {
     line-height: 48px;
-    font-size: 85px;
+    font-size: 90px;
     margin-top: 70px;
     height: 20%;
   }
