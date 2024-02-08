@@ -1,0 +1,42 @@
+@font-face {
+  font-family: codePredators;
+  src: url(../../../assets/fonts/CodePredators-Regular.ttf);
+}
+
+@font-face {
+  font-family: PatrickHandSC;
+  src: url(../../../assets/fonts/PatrickHandSC-Regular.ttf);
+}
+
+@font-face {
+  font-family: Quantico;
+  src: url(../../../assets/fonts/Quantico-Regular.ttf);
+}
+.profile-container p {
+  margin: 0;
+}
+
+.profile-container {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: auto;
+}
+
+.profile-details {
+  text-align: center;
+}
+
+.name {
+  font-family: Quantico;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.info {
+  font-family: PatrickHandSC;
+  font-size: 18px;
+  color: #fff;
+}
