@@ -32,7 +32,7 @@
 .timelineMobile {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .eventTimelineMobile {
@@ -60,12 +60,17 @@
   position: relative;
   display: flex;
   justify-content: center;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(25, 21, 22),
+    rgb(28, 38, 36)
+  );
 }
 
 .timelineMobile {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .eventTimelineMobile {
@@ -98,15 +103,20 @@
 
   .Timeline {
     width: 100%;
-    height: auto;
+    height: 100vh;
     position: relative;
     display: flex;
     justify-content: center;
+    background-image: linear-gradient(
+      to bottom,
+      rgb(25, 21, 22),
+      rgb(20, 27, 26)
+    );
   }
 
   .timeline {
     width: 100%;
-    height: auto;
+    height: 100vh;
     object-fit: cover;
     display: block;
   }
