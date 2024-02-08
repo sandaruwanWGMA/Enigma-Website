@@ -16,11 +16,7 @@
   align-items: center; */
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(
-    to right,
-    rgb(4, 37, 27) 69%,
-    rgb(3, 30, 22) 0%
-  );
+  background-image: linear-gradient(to right, rgb(3, 30, 22), rgb(4, 37, 27));
 }
 
 .profile-sec {
@@ -72,6 +68,16 @@
   font-size: 66px;
   color: #f2b924;
   margin: 0;
+}
+
+.fingers {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.3;
+  width: 400px;
+  height: 400px;
+  filter: brightness(150%);
 }
 
 @media screen and (max-width: 1230px) {
