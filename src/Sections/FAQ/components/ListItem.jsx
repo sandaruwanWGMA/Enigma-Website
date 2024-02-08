@@ -18,7 +18,7 @@ export default function ListItem({ open, toggle, title, desc }) {
         </div>
       </div>
       <Collapse isOpened={open}>
-        <div className="pb-[20px] px-[50px] duration-500 text-white font-patrick">
+        <div className="text-[22px] pb-[20px] px-[50px] duration-500 text-white font-patrick">
           {desc}
         </div>
       </Collapse>

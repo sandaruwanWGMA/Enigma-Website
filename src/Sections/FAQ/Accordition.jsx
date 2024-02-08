@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ListItem from "./components/ListItem";
-import BgCover from "./assets/bgcover.png";
+import BgCover from "./assests/bgcover.png";
+// import BgNewCover from "./assests/bgnew.svg";
 import "./Accordition.css";
 
 export default function Accordition() {
@@ -47,7 +48,7 @@ export default function Accordition() {
   ]);
 
   return (
-    <div className="bg-cover bg-center h-screen overflow-hidden">
+    <div className="slides bg-cover bg-center h-screen overflow-hidden">
       <img className="w-full h-full z-0 absolute" src={BgCover} alt="bgcover" />
 
       <div className="z-2 relative">

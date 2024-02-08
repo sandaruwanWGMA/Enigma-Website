@@ -1,0 +1,10 @@
+.horizontal-line {
+  /* position: absolute; */
+  /* right: 5em; */
+  height: 1px;
+  background-color: #fff;
+  /* margin: 0 auto; */
+  /* padding-top: 42px; */
+  /* margin-bottom: 2em; */
+  margin: 0 56px;
+}

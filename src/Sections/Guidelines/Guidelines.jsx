@@ -1,5 +1,6 @@
 import React from "react";
 import guidelineBackground from "../../assets/Guidelines/guidelineBackground.svg";
+import guidelineBackgroundMobile from "../../assets/Guidelines/guidelineBackgroundMobile.svg";
 import soldier from "../../assets/Guidelines/soldier.svg";
 import Cloud from "../../assets/Guidelines/Cloud.svg";
 import "./GuidelinesStyles/Guidelines.css";
@@ -7,7 +8,7 @@ import "./GuidelinesStyles/Guidelines.css";
 function Guidelines(props) {
   return (
     <section>
-      <div className="guideline">
+      <div className="guideline" style={{ height: "100vh" }}>
         <img
           className="backgroundImg"
           src={guidelineBackground}
@@ -22,32 +23,45 @@ function Guidelines(props) {
           </div>
           <div id="guidelineContent">
             <h5 className="guidelineContent">
-              ● Only undergraduates of the University of Moratuwa are eligible
-              for the workshop series. Students of the 23rd Batch are strongly
-              encouraged to join.
+              ● Only undergraduates of the University of Moratuwa will be
+              eligible to participate in the Hackathon.
             </h5>
             <h5 className="guidelineContent">
-              ● Any student willing to participate must register using the link
-              provided.
-            </h5>
-            <h5 className="guidelineContent">
-              ● If a workshop session is to be held physically on campus, a
-              student may attend the session physically in person, or virtually,
-              by joining the online hybrid session.
-            </h5>
-            <h5 className="guidelineContent">
-              ● Only students registered for the workshop series are eligible to
-              compete in the mini hackathon.
-            </h5>
-            <h5 className="guidelineContent">
-              ● Participants are required to have attended all sessions of the
-              workshop series to be eligible to receive the e-Certificate of
-              Completion of the workshop series.
+              ● Any programming language that is provided by the Hackerrank
+              platform can be used in the Hackathon.
             </h5>
           </div>
           <div id="guidelineBooklet">
             <div className="guidelineBookletdiv">
               <h5 className="guidelineBookletText">DOWNLOAD BOOKLET</h5>
+              <img src={Cloud} alt="" className="cloud"></img>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="guidelineMobile">
+        <img
+          src={guidelineBackgroundMobile}
+          alt=""
+          className="guidelineBackgroundMobile"
+        />
+        <div className="guidelineTextsMobile">
+          <div className="guidelineTopicMobile">
+            <h1 id="guidelineTopicMobile">Guidelines</h1>
+          </div>
+          <div id="guidelineContentMobile">
+            <h5 className="guidelineContentMobile">
+              ● Only undergraduates of the University of Moratuwa will be
+              eligible to participate in the Hackathon.
+            </h5>
+            <h5 className="guidelineContentMobile">
+              ● Any programming language that is provided by the Hackerrank
+              platform can be used in the Hackathon.
+            </h5>
+          </div>
+          <div id="guidelineBookletMobile">
+            <div className="guidelineBookletdivMobile">
+              <h5 className="guidelineBookletTextMobile">DOWNLOAD BOOKLET</h5>
               <img src={Cloud} alt=""></img>
             </div>
           </div>

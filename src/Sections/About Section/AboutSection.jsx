@@ -1,12 +1,18 @@
 import React from "react";
 import about_bg_img from "../../assets/Images-about-page/about bg image.png";
+import about_bg_img_8_plus from "../../assets/Images-about-page/about-bg-8-plus.jpeg";
 import floating_img from "../../assets/Images-about-page/about floating image.png";
 import "./About Section Styles/AboutSectionStyles.css";
 
 function AboutSection(props) {
   return (
-    <section id="about">
+    <section className="about">
       <img src={about_bg_img} alt="about bg image" className="about-bg-img" />
+      <img
+        src={about_bg_img_8_plus}
+        alt="about bg image2"
+        className="about-bg-img-8-plus"
+      />
       <div className="img-overlay"></div>
       <div className="content">
         <div className="title">
@@ -14,10 +20,12 @@ function AboutSection(props) {
         </div>
         <div className="description">
           <p>
-            Enigma is an intra-university coding competition organized by
-            MoraMaths, consisting of
+            ENIGMA ‘24 is a novel initiative pioneered by the Mathematics
+            Society of the University of Moratuwa, that comprises an
+            intra-university programming competition, open to all undergraduates
+            of the university.
           </p>
-          <ul>
+          {/* <ul>
             <li>
               A six-week workshop series, focusing on Python Programming and
               Mathematics, aimed specifically at the 23rd Batch of University of
@@ -27,18 +35,19 @@ function AboutSection(props) {
               A hackathon comprising two rounds, open to all undergraduates
               within the university.
             </li>
-          </ul>
+          </ul> */}
           <p>
-            Taking part in Enigma will not only leave you with strong skills in
-            both mathematics and programming, but also offer you a view of
-            mathematics from a different, previously unseen perspective, further
-            igniting your passion for the subject.
+            This stands as an unparalleled opportunity for participants to
+            confront programming challenges woven intricately into mathematics,
+            providing them an opportunity to deepen their knowledge of both
+            subjects at the same time.
           </p>
           <p>
-            This will be an excellent opportunity for you to improve your
-            problem-solving skills and gain a deeper understanding of
-            mathematics and programming, and of course, have fun with your
-            colleagues!
+            ENIGMA ‘24 will set its participants on an exciting journey, where
+            they will refine their programming skills, enhance their
+            problem-solving skills through the application of mathematical
+            concepts, and foster their teamwork skills, all of which are
+            integral competencies required in today’s competitive landscape.
           </p>
         </div>
       </div>
