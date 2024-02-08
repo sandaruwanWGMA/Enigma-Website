@@ -1,17 +1,27 @@
 import React from "react";
 import ProfileComponent from "./Contact Us Components/ProfileComponent";
 import notice_board from "../../assets/images-contact-us/notice board.png";
+import notice_board_mobile from "../../assets/images-contact-us/notice-board-mobile.png";
 import janeesha from "../../assets/images-contact-us/janeesha.png";
 import vinu from "../../assets/images-contact-us/vinu.png";
 import methma from "../../assets/images-contact-us/methma.png";
 import sasnika from "../../assets/images-contact-us/sasnika.png";
+import eagle from "../../assets/images-contact-us/eagle sign.svg";
 import "./Contact Us Styles/ContactUs.css";
 
 function ContactUs(props) {
   return (
-    <section>
-      <div profile-sec>
-        <img src={notice_board}></img>
+    <section className="contactus-sec">
+      <p className="contactus-title">CONTACT US</p>
+      <div className="shadow"></div>
+      <div className="profile-sec">
+        <img src={notice_board} className="notice-board" alt="board"></img>
+        <img
+          src={notice_board_mobile}
+          className="notice-board-mobile"
+          alt="board"
+        ></img>
+        <img src={eagle} className="eagle" alt="eagle"></img>
         <div className="profile-com-set">
           <ProfileComponent
             profileImg={janeesha}
