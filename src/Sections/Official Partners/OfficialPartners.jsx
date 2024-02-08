@@ -16,7 +16,9 @@ function OfficialPartners(props) {
       {/* <BGImage className="bg-world-war" /> */}
       <img src={rec} alt="rectangle" className="rec"></img>
       <img src={army_man} alt="army man" className="army-man"></img>
-      <div className="logos"></div>
+      <div className="logos">
+        <p className="on-boarding">ON BOARDING PROCESS</p>
+      </div>
       <span className="official-partners-title">OFFICIAL PARTNERS</span>
     </section>
   );

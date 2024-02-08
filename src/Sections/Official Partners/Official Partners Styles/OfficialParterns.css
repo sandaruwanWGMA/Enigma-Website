@@ -12,6 +12,12 @@
   font-family: Quantico;
   src: url(../../../assets/fonts/Quantico-Regular.ttf);
 }
+.on-boarding {
+  font-family: Quantico;
+  color: white;
+  font-size: 46px;
+  text-wrap: wrap;
+}
 
 .official-partners-title {
   position: absolute;
