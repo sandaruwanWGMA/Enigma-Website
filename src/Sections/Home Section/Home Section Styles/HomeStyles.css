@@ -27,7 +27,7 @@
 
 .social-media {
   position: absolute;
-  right: 5em;
+  right: 4em;
   padding-top: 40px;
   height: calc(100vh - 40px);
   display: flex;
