@@ -101,7 +101,6 @@ function HomeSection(props) {
         }}
       ></CountdownTimer>
       <button className="reg-btn">
-        <img src={rectangle} alt="rectangle" className="rectangle"></img>
         <span className="reg-text">REGISTER NOW</span>
       </button>
     </section>

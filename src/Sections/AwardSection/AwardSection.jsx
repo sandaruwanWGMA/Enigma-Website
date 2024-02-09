@@ -24,7 +24,7 @@ export default function AwardSection() {
               />
               <div className="text">
                 <div className="title-list">1ST RUNNERS UP </div>
-                <div className="desc">RS 75 000</div>
+                <div className="desc">RS 15 000</div>
               </div>
             </div>
             <div className="list-item-two">
@@ -36,7 +36,7 @@ export default function AwardSection() {
               />
               <div className="text">
                 <div className="title-list">WINNER </div>
-                <div className="desc">RS 100 000</div>
+                <div className="desc">RS 25 000</div>
               </div>
             </div>
             <div className="list-item-one list-item-three">
@@ -48,7 +48,7 @@ export default function AwardSection() {
               />
               <div className="text">
                 <div className="title-list">2ND RUNNERS UP </div>
-                <div className="desc">RS 50 000</div>
+                <div className="desc">RS 10 000</div>
               </div>
             </div>
           </div>

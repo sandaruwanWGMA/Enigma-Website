@@ -42,6 +42,8 @@
 }
 
 .reg-btn {
+  width: 242px;
+  height: 60px;
   padding: 0;
   margin: 0;
   border: none;
@@ -49,7 +51,8 @@
   left: 50vw;
   transform: translate(-50%, 0);
   bottom: 3em;
-  background-color: transparent;
+  background-color: #f2b924;
+  border-radius: 42px;
 }
 
 .reg-btn:hover {
@@ -67,6 +70,7 @@
   font-size: 23px;
   font-family: "Quantico", sans-serif;
   font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .enigma {
   position: absolute;
