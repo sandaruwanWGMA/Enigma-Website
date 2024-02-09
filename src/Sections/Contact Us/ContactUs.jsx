@@ -1,5 +1,6 @@
 import React from "react";
 import ProfileComponent from "./Contact Us Components/ProfileComponent";
+import fingers from "../../assets/images-contact-us/fingers.svg";
 import notice_board from "../../assets/images-contact-us/notice board.png";
 import notice_board_mobile from "../../assets/images-contact-us/notice-board-mobile.png";
 import janeesha from "../../assets/images-contact-us/janeesha.png";
@@ -12,6 +13,7 @@ import "./Contact Us Styles/ContactUs.css";
 function ContactUs(props) {
   return (
     <section className="contactus-sec">
+      <img className="fingers" src={fingers}></img>
       <p className="contactus-title">CONTACT US</p>
       <div className="shadow"></div>
       <div className="profile-sec">
