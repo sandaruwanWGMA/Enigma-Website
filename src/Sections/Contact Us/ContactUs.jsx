@@ -27,8 +27,8 @@ function ContactUs(props) {
         <div className="profile-com-set">
           <ProfileComponent
             profileImg={janeesha}
-            first_name={"Vinu"}
-            last_name={"Kaveesha"}
+            first_name={"Janeesha"}
+            last_name={"wickramasinghe"}
             role={"Enigma'24 Chair Person"}
             number={"+94 77 621 2186"}
             email={"wickramasinghejj.21@uom.lk"}
@@ -38,24 +38,24 @@ function ContactUs(props) {
             first_name={"Vinu"}
             last_name={"Kaveesha"}
             role={"Enigma'24 Chair Person"}
-            number={"+94 77 621 2186"}
-            email={"wickramasinghejj.21@uom.lk"}
+            number={"+94 76 499 7265"}
+            email={"dezoysapvk.21@uom.lk"}
           ></ProfileComponent>
           <ProfileComponent
             profileImg={methma}
-            first_name={"Vinu"}
-            last_name={"Kaveesha"}
+            first_name={"Methma"}
+            last_name={"Weragoda"}
             role={"Enigma'24 Chair Person"}
-            number={"+94 77 621 2186"}
-            email={"wickramasinghejj.21@uom.lk"}
+            number={"+94 71 959 3024"}
+            email={"weragoda.21@uom.lk"}
           ></ProfileComponent>
           <ProfileComponent
             profileImg={sasnika}
-            first_name={"Vinu"}
-            last_name={"Kaveesha"}
-            role={"Enigma'24 Chair Person"}
-            number={"+94 77 621 2186"}
-            email={"wickramasinghejj.21@uom.lk"}
+            first_name={"Sasnika"}
+            last_name={"Suhan"}
+            role={"HR & Delegates Pilar Lead"}
+            number={"+94 74 122 4726"}
+            email={"wadugess.21@uom.lk"}
           ></ProfileComponent>
         </div>
       </div>
