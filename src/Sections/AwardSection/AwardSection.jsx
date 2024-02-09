@@ -68,14 +68,14 @@ export default function AwardSection() {
           <img src={ItemTwo} alt="1" border="0" className="mobile-image-one" />
           <div className="mobile-text">
             <div className="mobile-title-list">Winner</div>
-            <div className="mobile-desc">RS 100 000</div>
+            <div className="mobile-desc">RS 25 000</div>
           </div>
         </div>
         <div className="mobile-prizes-container-two">
           <img src={ItemOne} alt="1" border="0" className="mobile-image-one" />
           <div className="mobile-text">
             <div className="mobile-title-list">1ND RUNNERS UP</div>
-            <div className="mobile-desc">RS 75 000</div>
+            <div className="mobile-desc">RS 15 000</div>
           </div>
         </div>
 
@@ -88,7 +88,7 @@ export default function AwardSection() {
           />
           <div className="mobile-text">
             <div className="mobile-title-list">2ND RUNNERS UP</div>
-            <div className="mobile-desc">RS 50 000</div>
+            <div className="mobile-desc">RS 10 000</div>
           </div>
         </div>
       </div>
