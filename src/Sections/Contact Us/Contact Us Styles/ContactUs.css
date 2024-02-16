@@ -7,9 +7,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 50%;
+  top: 60%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
 }
 
 .ProfileComponent-dev {
@@ -47,7 +47,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  height: 70%;
+  height: 100%;
   width: 90vw;
 }
 
@@ -62,9 +62,9 @@
 
 .notice-board {
   position: absolute;
+  top: 58%;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -42%);
   z-index: 0;
   width: 1177px;
   height: 499px;
@@ -140,21 +140,49 @@
 }
 
 @media screen and (max-width: 860px) {
-  .notice-board-tablet-dev {
+  /* .notice-board-tablet-dev {
     display: block;
-    position: absolute;
-    left: 50%;
+    position: relative;
     top: 50%;
-    transform: translate(-50%, -50%);
+    left: 50%;
+    transform: translate(50%, -50%);
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .notice-board {
+  .notice-board-tablet {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -42%);
+  } */
+  .notice-board-dev {
     display: none;
   }
+
+  .notice-board-tablet-dev {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .notice-board-tablet {
+    position: absolute;
+    top: 0;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    z-index: 0;
+    width: 550px;
+    height: auto;
+  }
+
   .contactus-title {
     font-size: 60px;
   }
@@ -167,6 +195,19 @@
     display: grid;
     grid-template-columns: auto auto; /* Two columns */
     grid-template-rows: auto auto; /* Two rows */
+  }
+  .profile-com-set {
+    /* width: 60%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 2; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -45 %);
   }
 }
 
