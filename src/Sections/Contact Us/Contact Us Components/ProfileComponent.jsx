@@ -11,7 +11,9 @@ function ProfileComponent({
 }) {
   return (
     <div className="profile-container">
-      <img src={profileImg} alt="profile" className="profile-img" />
+      <div className="profile-img">
+        <img src={profileImg} alt="profile" className="img" width={300} />
+      </div>
       <div className="profile-details">
         <p className="first-name name">{first_name}</p>
         <p className="last-name name">{last_name}</p>

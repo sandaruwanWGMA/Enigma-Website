@@ -12,6 +12,7 @@
   font-family: Quantico;
   src: url(../../../assets/fonts/Quantico-Regular.ttf);
 }
+
 .profile-container p {
   margin: 0;
   text-transform: uppercase;
@@ -34,17 +35,22 @@
 .name {
   font-family: Quantico;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .info {
   font-family: PatrickHandSC;
-  font-size: 18px;
+  font-size: 15px;
   color: #fff;
 }
 
 .profile-img {
-  width: 224px;
+  width: 230px;
+  height: auto;
+}
+
+.img {
+  width: px;
 }
 
 @media screen and (max-width: 1230px) {
@@ -55,7 +61,7 @@
     font-size: 15px;
   }
   .info {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -67,7 +73,7 @@
     font-size: 13px;
   }
   .info {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 
@@ -76,10 +82,10 @@
     width: 160px;
   }
   .name {
-    font-size: 13px;
+    font-size: 12px;
   }
   .info {
-    font-size: 12px;
+    font-size: 9px;
   }
 }
 
