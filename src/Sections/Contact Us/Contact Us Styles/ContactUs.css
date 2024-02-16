@@ -1,25 +1,36 @@
 .profile-com-set {
+  width: 60%;
   display: flex;
   flex-direction: row;
   position: absolute;
-  /* gap: 48px; */
   z-index: 2;
-  top: 58%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -42%);
+  transform: translate(-50%, -50%);
+}
+
+.ProfileComponent-dev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .contactus-sec {
   position: relative;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   width: 100vw;
   height: 100vh;
   background-image: linear-gradient(to right, rgb(3, 30, 22), rgb(4, 37, 27));
 }
 
 .profile-sec {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
 }
 
 .shadow {
@@ -32,22 +43,35 @@
     rgba(4, 37, 27, 0.01) 100%
   );
   position: absolute;
-  bottom: 0;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -50%);
   z-index: 1;
   height: 70%;
   width: 90vw;
 }
 
+.notice-board-dev {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 .notice-board {
   position: absolute;
   left: 50%;
-  top: 60%;
+  top: 50%;
   transform: translate(-50%, -50%);
   z-index: 0;
   width: 1177px;
   height: 499px;
+}
+
+.notice-board-tablet-dev {
+  display: none;
 }
 
 .notice-board-mobile {
@@ -64,11 +88,13 @@
 }
 
 .contactus-title {
+  top: 0;
   text-align: center;
   font-family: codePredators;
-  font-size: 66px;
+  font-size: 90px;
   color: #f2b924;
   margin: 0;
+  z-index: 5;
 }
 
 .fingers {
@@ -92,7 +118,7 @@
     width: 900px;
   }
   .contactus-title {
-    font-size: 59px;
+    font-size: 80px;
   }
   .eagle {
     width: 300px;
@@ -105,7 +131,7 @@
     width: 800px;
   }
   .contactus-title {
-    font-size: 53px;
+    font-size: 70px;
   }
   .eagle {
     width: 288px;
@@ -114,13 +140,17 @@
 }
 
 @media screen and (max-width: 860px) {
-  .notice-board-mobile {
+  .notice-board-tablet-dev {
     display: block;
     position: absolute;
     left: 50%;
-    top: 30%;
-    transform: translate(-50%, -20%);
-    width: 70%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .notice-board {
     display: none;
@@ -129,29 +159,18 @@
     font-size: 60px;
   }
   .eagle {
-    top: 108px;
-    width: 328px;
-    height: 220px;
+    top: 80px;
+    width: 250px;
+    height: auto;
   }
   .profile-com-set {
     display: grid;
     grid-template-columns: auto auto; /* Two columns */
     grid-template-rows: auto auto; /* Two rows */
-    width: 66%;
-    height: 60%;
-    top: 50%;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .notice-board-mobile {
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 30%;
-    transform: translate(-50%, -20%);
-    width: 66%;
-  }
   .notice-board {
     display: none;
   }
@@ -159,24 +178,69 @@
     font-size: 60px;
   }
   .eagle {
-    top: 97px;
-    width: 308px;
-    height: 200px;
+    top: 70px;
+    width: 250px;
+    height: auto;
   }
   .profile-com-set {
     display: grid;
     grid-template-columns: auto auto; /* Two columns */
     grid-template-rows: auto auto; /* Two rows */
-    width: 53%;
-    height: 60%;
-    top: 50%;
   }
+
   .on-boarding {
     font-size: 33px;
+  }
+
+  .shadow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    height: 100%;
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .notice-board {
+    display: none;
+  }
+  .contactus-title {
+    font-size: 55px;
+  }
+  .eagle {
+    top: 100px;
+    width: 230px;
+    height: auto;
+  }
+  .profile-com-set {
+    display: grid;
+    grid-template-columns: auto auto; /* Two columns */
+    grid-template-rows: auto auto; /* Two rows */
+  }
+
+  .on-boarding {
+    font-size: 33px;
+  }
+
+  .shadow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    height: 100%;
+    width: 100vw;
   }
 }
 
 @media screen and (max-width: 500px) {
+  .notice-board-tablet-dev {
+    display: none;
+  }
+
   .notice-board-mobile {
     display: block;
     position: absolute;
@@ -208,6 +272,16 @@
   .on-boarding {
     font-size: 27px;
   }
+
+  .shadow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    height: 100%;
+    width: 90vw;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -224,20 +298,17 @@
     display: none;
   }
   .contactus-title {
-    font-size: 37px;
+    font-size: 43px;
   }
   .eagle {
     top: 66px;
-    width: 208px;
-    height: 128px;
+    width: 168px;
+    height: auto;
   }
   .profile-com-set {
     display: grid;
     grid-template-columns: auto auto; /* Two columns */
     grid-template-rows: auto auto; /* Two rows */
-    width: 54%;
-    height: 40%;
-    top: 50%;
   }
   .on-boarding {
     font-size: 12px;

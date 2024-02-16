@@ -47,10 +47,13 @@
 .profile-img {
   width: 230px;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img {
-  width: px;
+  width: 70%;
 }
 
 @media screen and (max-width: 1230px) {
@@ -90,23 +93,41 @@
 }
 
 @media screen and (max-width: 860px) {
-  .profile-img {
-    width: 190px;
+  .profile-container {
+    margin-bottom: 2px;
   }
-  .name {
-    font-size: 17px;
-  }
-  .info {
-    font-size: 14px;
-  }
-}
 
-@media screen and (max-width: 500px) {
   .profile-img {
-    width: 140px;
+    width: 150px;
   }
   .name {
     font-size: 12px;
+  }
+  .info {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .profile-container {
+    margin-bottom: 2px;
+  }
+
+  .profile-img {
+    width: 130px;
+  }
+  .name {
+    font-size: 11px;
+  }
+  .info {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .profile-img {
+    width: 120px;
+  }
+  .name {
+    font-size: 11px;
   }
   .info {
     font-size: 8px;
