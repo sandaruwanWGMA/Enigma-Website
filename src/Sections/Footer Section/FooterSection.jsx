@@ -10,11 +10,11 @@ function FooterSection(props) {
           <p className="footer-title">ENIGMA</p>
           <div className="h-line"></div>
         </div>
-        <p className="description-f">Inter-University Hackathon organized by</p>
+        <p className="description-f">Intra-University Hackathon organized by</p>
         <img src={MoraMathIcon} />
-        <a className="more-info">
+        {/* <a className="more-info">
           <span>CLICK HERE FOR MORE INFO</span>
-        </a>
+        </a> */}
         <p className="copyright">Copyright © 2023 FOC</p>
       </div>
     </div>
