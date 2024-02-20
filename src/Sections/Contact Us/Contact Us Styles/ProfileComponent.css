@@ -20,15 +20,17 @@
 .profile-container {
   width: auto;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-direction: column;
-  width: auto;
 }
 
 .profile-details {
   text-align: center;
   transform: translateX(-6px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .name {
@@ -44,8 +46,8 @@
 }
 
 .profile-img {
-  width: 224px;
-  height: 100px;
+  width: 141px;
+  height: 143px;
 }
 
 @media screen and (max-width: 1230px) {
