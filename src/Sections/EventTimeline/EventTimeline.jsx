@@ -13,7 +13,7 @@ import "./EventTimelineStyles/EventTimeline.css";
 
 function EventTimeline(props) {
   return (
-    <section>
+    <section id="timeline">
       <div className="Timeline">
         <img src={Timeline475} alt="" className="timeline475" />
         <img src={Timeline600} alt="" className="timeline600" />

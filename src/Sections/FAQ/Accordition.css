@@ -24,3 +24,9 @@
   color: rgb(250 204 21);
   font-family: codePredators;
 }
+
+@media screen and (max-width: 768px) {
+  .h-full {
+    height: 100vh;
+  }
+}

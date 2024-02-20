@@ -6,7 +6,7 @@ import "./About Section Styles/AboutSectionStyles.css";
 
 function AboutSection(props) {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <img src={about_bg_img} alt="about bg image" className="about-bg-img" />
       <img
         src={about_bg_img_8_plus}

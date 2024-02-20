@@ -12,7 +12,7 @@ import "./Contact Us Styles/ContactUs.css";
 
 function ContactUs(props) {
   return (
-    <section className="contactus-sec">
+    <section className="contactus-sec" id="contact">
       <img className="fingers" src={fingers}></img>
       <p className="contactus-title">CONTACT US</p>
       <div className="shadow"></div>

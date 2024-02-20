@@ -10,7 +10,7 @@ import "./AwardSection.css";
 
 export default function AwardSection() {
   return (
-    <>
+    <section id="awards">
       <section className="cover">
         <div className="text-container">
           <div className="title-p">Awards</div>
@@ -92,6 +92,6 @@ export default function AwardSection() {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }
