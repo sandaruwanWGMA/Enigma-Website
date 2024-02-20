@@ -41,7 +41,7 @@ function HomeSection(props) {
       <div className="social-media">
         <div className="vertical-line"></div>
         <a
-          href="https://www.linkedin.com/"
+          href="https://www.linkedin.com/company/uommaths/"
           target="_blank"
           rel="noopener noreferrer"
           className="linkedin-icon"
@@ -58,7 +58,7 @@ function HomeSection(props) {
           ></i>
         </a>
         <a
-          href="https://www.facebook.com/"
+          href="https://www.facebook.com/profile.php?id=100090785496427&sfnsn=wa&mibextid=RUbZ1f"
           target="_blank"
           rel="noopener noreferrer"
           className="facebook-icon"
@@ -71,7 +71,7 @@ function HomeSection(props) {
           ></i>
         </a>
         <a
-          href="https://www.instagram.com/"
+          href="https://www.instagram.com/moramath.uom?igsh=YWRnZHQ2enRvM2F0"
           target="_blank"
           rel="noopener noreferrer"
           className="instagram-icon"
