@@ -100,9 +100,9 @@ function HomeSection(props) {
           transform: "translate(-50%, -50%)",
         }}
       ></CountdownTimer>
-      <button className="reg-btn">
+      <a className="reg-btn" href="/RegisterNow">
         <span className="reg-text">REGISTER NOW</span>
-      </button>
+      </a>
     </section>
   );
 }

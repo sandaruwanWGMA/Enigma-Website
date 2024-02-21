@@ -49,7 +49,7 @@ const NavBar = ({ style, scrollToAbout }) => {
           <div className="horizontal-line"></div>
           <div className="social-icons-mob">
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/company/uommaths/"
               target="_blank"
               rel="noopener noreferrer"
               className="linkedin-icon"
@@ -57,7 +57,7 @@ const NavBar = ({ style, scrollToAbout }) => {
               <LinkedInIcon className="linkedin-icon icon-mob" />
             </a>
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/profile.php?id=100090785496427&sfnsn=wa&mibextid=RUbZ1f"
               target="_blank"
               rel="noopener noreferrer"
               className="facebook-icon"
@@ -65,7 +65,7 @@ const NavBar = ({ style, scrollToAbout }) => {
               <FacebookIcon className="facebook-icon icon-mob" />
             </a>
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/moramath.uom?igsh=YWRnZHQ2enRvM2F0"
               target="_blank"
               rel="noopener noreferrer"
               className="instagram-icon"
@@ -76,25 +76,25 @@ const NavBar = ({ style, scrollToAbout }) => {
         </div>
       </nav>
       <nav style={style} className={isOpen ? "open-m" : "navigation"}>
-        <a href="#home" className="nav-links">
+        <a href="#home_" className="nav-links">
           Home
         </a>
-        <a href="#about" className="nav-links">
+        <a href="#about_" className="nav-links">
           About
         </a>
-        <a href="#timeline" className="nav-links">
+        <a href="#timeline_" className="nav-links">
           Timeline
         </a>
-        <a href="#guidelines" className="nav-links">
+        <a href="#guidelines_" className="nav-links">
           Guidelines
         </a>
-        <a href="#awards" className="nav-links">
+        <a href="#awards_" className="nav-links">
           Awards
         </a>
-        <a href="#contact" className="nav-links">
+        <a href="#contact_" className="nav-links">
           Contact Us
         </a>
-        <a href="#faq" className="nav-links">
+        <a href="#faq_" className="nav-links">
           FAQ
         </a>
         {/* <a onClick={scrollToAbout} href="#more">
