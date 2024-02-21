@@ -13,11 +13,12 @@
     "react": "^18.2.0",
     "react-collapse": "^5.1.1",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
     "react-image-edit": "^0.2.5",
     "react-router-dom": "^6.21.3",
-    "react-icons": "^5.0.1",
     "react-scripts": "5.0.1",
     "react-transition-group": "^4.4.5",
+    "styled-components": "^6.1.8",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -47,6 +48,11 @@
   "devDependencies": {
     "autoprefixer": "^10.4.17",
     "postcss": "^8.4.33",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.1",
+    "@babel/core": "^7.21.4",
+    "htmlnano": "2.0.3",
+    "parcel": "^2.8.0",
+    "parcel-reporter-static-files-copy": "^1.5.0",
+    "process": "^0.11.10"
   }
 }
