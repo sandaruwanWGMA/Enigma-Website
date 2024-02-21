@@ -15,7 +15,10 @@ export default function Accordition() {
   const [list, setList] = useState([
     {
       title: "What is the Registration Procedure for the Hackathon?",
-      desc: "Participants must register as teams. Registration should be done through the ENIGMA website. Participants are expected to create \n o a team name \n o a dedicated team email address (accessible by all members of the team)",
+      desc:
+        "Participants must register as teams. Registration should be done through the ENIGMA website. Participants are expected to create  a team name" +
+        " or " +
+        "a dedicated team email address (accessible by all members of the team)",
     },
     {
       title: "How many members should be there in a team?",
