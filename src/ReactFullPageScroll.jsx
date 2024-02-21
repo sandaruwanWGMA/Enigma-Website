@@ -92,15 +92,15 @@ const ReactFullPageScroll = () => {
         pluginWrapper={pluginWrapper}
         navigation
         anchors={[
-          "home",
-          "about",
-          "timeline",
-          "guidelines",
-          "partners",
-          "awards",
-          "contact",
-          "faq",
-          "footer",
+          "home_",
+          "about_",
+          "timeline_",
+          "guidelines_",
+          "partners_",
+          "awards_",
+          "contact_",
+          "faq_",
+          "footer_",
         ]}
         sectionSelector={SECTION_SEL}
         onLeave={onLeave}
