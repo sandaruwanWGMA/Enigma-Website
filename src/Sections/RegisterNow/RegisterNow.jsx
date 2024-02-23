@@ -31,6 +31,10 @@ export const RegisterNow = () => {
     const leaderID = 12345;
     const leaderWhatsapp = "712345";
     const leaderEmail = "leader@gmail";
+    const teamMembers = {
+      Member1: { Name: "mem1", Number: "012" },
+      Member2: { Name: "mem1", Number: "012" },
+    };
 
     try {
       const data = await getDocs(teamList);
@@ -57,6 +61,7 @@ export const RegisterNow = () => {
               leaderID,
               leaderWhatsapp,
               leaderEmail,
+              teamMembers,
             });
             console.log("Registered Successfully");
           } catch {
