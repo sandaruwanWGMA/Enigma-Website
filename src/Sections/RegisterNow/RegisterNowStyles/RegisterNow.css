@@ -143,3 +143,7 @@ body {
 .add-member-btn:hover {
   cursor: pointer;
 }
+
+.error-message{
+  color: rgb(255, 51, 51);
+}

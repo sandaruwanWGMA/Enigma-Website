@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function FullLengthField({label, defaultValue, top}) {
+function FullLengthField({label, defaultValue, top, onChange = ()=>{}}) {
     const [value, setValue] = useState(defaultValue);
 
     const handleFocus = () => {
@@ -15,6 +15,11 @@ function FullLengthField({label, defaultValue, top}) {
         }
     };
 
+    const localOnChange = (e) => {
+        onChange(e.target.value)
+        setValue(e.target.value)
+    }
+
     return (
         <div className="absolute w-[1223px] h-[72px] left-0" style={{top: top}}>
             <div className="field-header w-[162px] h-[23px] top-0 left-[24px] [font-family:'Patrick_Hand_SC',Helvetica] text-white text-[20px] absolute font-normal tracking-[0] leading-[40px] whitespace-nowrap">
@@ -27,7 +32,7 @@ function FullLengthField({label, defaultValue, top}) {
                     value={value}
                     onFocus={handleFocus}
                     onBlur={handleBlur}
-                    onChange={(e) => setValue(e.target.value)}
+                    onChange={localOnChange}
                     style={{ backgroundColor: 'transparent', border: 'none', outline: 'none' }}
                 />
             </div>
