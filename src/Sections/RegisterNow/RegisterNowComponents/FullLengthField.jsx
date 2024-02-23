@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 function FullLengthField({label, defaultValue, top, onChange = ()=>{}}) {
     const [value, setValue] = useState(defaultValue);
+    const [errorMessage, setErrorMessage] = useState('THIS TEAM NAME ALREADY EXISTS.');
 
     const handleFocus = () => {
         if (value === defaultValue) {
@@ -21,7 +22,7 @@ function FullLengthField({label, defaultValue, top, onChange = ()=>{}}) {
     }
 
     return (
-        <div className="absolute w-[1223px] h-[72px] left-0" style={{top: top}}>
+        <div className="absolute w-[1223px] h-[81px] left-0" style={{top: top}}>
             <div className="field-header w-[162px] h-[23px] top-0 left-[24px] [font-family:'Patrick_Hand_SC',Helvetica] text-white text-[20px] absolute font-normal tracking-[0] leading-[40px] whitespace-nowrap">
                 {label}
             </div>
@@ -35,6 +36,9 @@ function FullLengthField({label, defaultValue, top, onChange = ()=>{}}) {
                     onChange={localOnChange}
                     style={{ backgroundColor: 'transparent', border: 'none', outline: 'none' }}
                 />
+            </div>
+            <div className="error-message absolute h-[12px] top-[69px] left-[24px] [font-family:'Patrick_Hand_SC',Helvetica] font-normal text-white text-[12px] whitespace-nowrap">
+                {errorMessage}
             </div>
         </div>
     );

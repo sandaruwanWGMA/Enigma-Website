@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 function HalfLengthField({label, defaultValue, top, left}) {
     const [value, setValue] = useState(defaultValue);
+    const [errorMessage, setErrorMessage] = useState('THIS TEAM NAME ALREADY EXISTS.');
 
     const handleFocus = () => {
         if (value === defaultValue) {
@@ -16,7 +17,7 @@ function HalfLengthField({label, defaultValue, top, left}) {
     };
 
     return (
-        <div className="absolute w-[607px] h-[72px]" style={{top: top, left:left}}>
+        <div className="absolute w-[607px] h-[81px]" style={{top: top, left:left}}>
             <div className="field-header absolute w-[162px] h-[23px] top-0 left-[24px] [font-family:'Patrick_Hand_SC',Helvetica] font-normal text-white text-[20px] tracking-[0] leading-[40px] whitespace-nowrap">
                 {label}
             </div>
@@ -30,6 +31,9 @@ function HalfLengthField({label, defaultValue, top, left}) {
                     onChange={(e) => setValue(e.target.value)}
                     style={{ backgroundColor: 'transparent', border: 'none', outline: 'none' }}
                 />
+            </div>
+            <div className="error-message absolute h-[12px] top-[69px] left-[24px] [font-family:'Patrick_Hand_SC',Helvetica] font-normal text-white text-[12px] whitespace-nowrap">
+                {errorMessage}
             </div>
         </div>
     );
