@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-function FullLengthField({label, defaultValue, top, onChange = ()=>{}}) {
+function FullLengthField({label, defaultValue, top, onChange = ()=>{}, errorMessage}) {
     const [value, setValue] = useState(defaultValue);
-    const [errorMessage, setErrorMessage] = useState('THIS TEAM NAME ALREADY EXISTS.');
+    // const [errorMessage, setErrorMessage] = useState('THIS TEAM NAME ALREADY EXISTS.');
 
     const handleFocus = () => {
         if (value === defaultValue) {
