@@ -14,7 +14,7 @@ export const RegisterNow = () => {
     const [teamEmailInput, setTeamEmail] = useState('XTREAM CODERS');
     const [leaderNameInput, setLeaderName] = useState('XTREAM CODERS');
     const [leaderIdInput, setLeaderId] = useState('XTREAM CODERS');
-    const [leaderWhatsappInput, setLeaderWhatsapp] = useState('XTREAM CODERS');
+    const [leaderWhatsappInput, setLeaderWhatsapp] = useState('JHCZDJXF KBFJKD');
     const [leaderEmailInput, setLeaderEmail] = useState('UGDJHSGF@GMAIL.COM');
     const [numberOfMembersInput, setNumberOfMembers] = useState('XTREAM CODERS');
 
@@ -27,6 +27,7 @@ export const RegisterNow = () => {
     const [numberOfMembersError, setNumberOfMembersError] = useState('');
 
     const [members, setMembers] = useState([]);
+    const [memberDetails, setMemberDetails] = useState([]);
 
     const [addMembersClickCount, setAddMembersClickCount] = useState(0);
     const [pageHeight, setPageHeight] = useState(985);
@@ -37,8 +38,7 @@ export const RegisterNow = () => {
 
     function handleSubmitClick() {
         // do validations
-        alert("SUBMITTED")
-        callDatabase();
+        callDatabase()
     }
 
     async function callDatabase() {
@@ -50,10 +50,7 @@ export const RegisterNow = () => {
         const leaderWhatsapp = leaderWhatsappInput;
         const leaderEmail = leaderEmailInput;
         const memberCount = numberOfMembersInput;
-        const teamMembers = {
-            Member1: { Name: "mem1", Number: "012" },
-            Member2: { Name: "mem1", Number: "012" },
-        };
+        const teamMembers = memberDetails;
 
         try {
             const data = await getDocs(teamList);
@@ -83,27 +80,22 @@ export const RegisterNow = () => {
                             memberCount,
                             teamMembers,
                         });
-                        console.log("Registered Successfully");
+                        alert("Registered Successfully");
                     } catch {
-                        console.log("something went wrong");
+                        alert("Something Went Wrong");
                     }
                 } else {
-                    console.log("team name already taken");
+                    fieldStates[0] = 0;
+                    setTeamEmailError('TEAM NAME ALREADY TAKEN.');
                 }
             } else {
-                console.log("email taken");
+                fieldStates[1] = 0;
+                setTeamEmailError('TEAM EMAIL ALREADY TAKEN.');
             }
         } catch (err) {
-            console.log("something went wrong");
+            alert("Something Went Wrong");
         }
     }
-
-
-    // Mock function to simulate checking the database
-    const checkTeamName = (teamName) => {
-        const existingTeamNames = ['XTREAM CODERS', 'TEAM ALPHA', 'TEAM BETA']; // Add more team names as needed
-        return existingTeamNames.includes(teamName.toUpperCase());
-    };
 
     const handleAddMemberClick = () => {
         if (addMembersClickCount < 2) {
@@ -112,10 +104,18 @@ export const RegisterNow = () => {
             setPageHeight(prevHeight => prevHeight + 260);
             setMembers([...members,
                 {
-                    memberName:'JHCZDJXF KBFJKD', memberNameError:'',
-                    memberId:'JHCZDJXF KBFJKD', memberIdError:'',
-                    memberWhatsapp:'JHCZDJXF KBFJKD', memberWhatsappError:'',
-                    memberEmail:'UGDJHSGF@GMAIL.COM', memberEmailError:''
+                    memberName:'', memberNameError:'',
+                    memberId:'', memberIdError:'',
+                    memberWhatsapp:'', memberWhatsappError:'',
+                    memberEmail:'', memberEmailError:''
+                }
+            ]);
+            setMemberDetails([...memberDetails,
+                {
+                    memberName:'',
+                    memberId:'',
+                    memberWhatsapp:'',
+                    memberEmail:''
                 }
             ]);
         } else {
@@ -126,19 +126,14 @@ export const RegisterNow = () => {
 
     const handleTeamNameChange = (newTeamName) => {
         setTeamName(newTeamName);
-
-        if (checkTeamName(newTeamName)) {
-            setTeamNameError('THIS TEAM NAME ALREADY EXISTS.');
-        } else {
-            setTeamNameError('');
-            const errorNum = validateTeamName(newTeamName);
-            const error =
-                errorNum === -1 ? ''
-                : errorNum === 0 ? 'TEAM NAME IS REQUIRED.'
-                : 'UNKNOWN ERROR IN VALIDATION';
-            fieldStates[0] = errorNum < 0 ? 1 : 0;
-            setTeamNameError(error);
-        }
+        setTeamNameError('');
+        const errorNum = validateTeamName(newTeamName);
+        const error =
+            errorNum === -1 ? ''
+            : errorNum === 0 ? 'TEAM NAME IS REQUIRED.'
+            : 'UNKNOWN ERROR IN VALIDATION';
+        fieldStates[0] = errorNum < 0 ? 1 : 0;
+        setTeamNameError(error);
     };
     const handleTeamEmailChange = (newTeamEmail) => {
         setTeamEmail(newTeamEmail);
@@ -219,6 +214,7 @@ export const RegisterNow = () => {
             : 'UNKNOWN ERROR IN VALIDATION';
         fieldStates[7 + 4*index] = errorNum < 0 ? 1 : 0;
         setMembers(newMembers);
+        memberDetails[index].memberName = newMemberName;
     };
     const handleMemberIdChange = (index, newMemberId) => {
         const newMembers = [...members];
@@ -231,6 +227,7 @@ export const RegisterNow = () => {
             : 'UNKNOWN ERROR IN VALIDATION';
         fieldStates[8 + 4*index] = errorNum < 0 ? 1 : 0;
         setMembers(newMembers);
+        memberDetails[index].memberId = newMemberId;
     };
     const handleMemberWhatsappChange = (index, newMemberWhatsapp) => {
         const newMembers = [...members];
@@ -243,6 +240,7 @@ export const RegisterNow = () => {
             : 'UNKNOWN ERROR IN VALIDATION';
         fieldStates[9 + 4*index] = errorNum < 0 ? 1 : 0;
         setMembers(newMembers);
+        memberDetails[index].memberWhatsapp = newMemberWhatsapp;
     };
     const handleMemberEmailChange = (index, newMemberEmail) => {
         const newMembers = [...members];
@@ -255,6 +253,7 @@ export const RegisterNow = () => {
             : 'UNKNOWN ERROR IN VALIDATION';
         fieldStates[10 + 4*index] = errorNum < 0 ? 1 : 0;
         setMembers(newMembers);
+        memberDetails[index].memberEmail = newMemberEmail;
     };
 
 
