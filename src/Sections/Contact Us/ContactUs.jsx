@@ -3,10 +3,11 @@ import ProfileComponent from "./Contact Us Components/ProfileComponent";
 import fingers from "../../assets/images-contact-us/fingers.svg";
 import notice_board from "../../assets/images-contact-us/notice board.png";
 import notice_board_mobile from "../../assets/images-contact-us/notice-board-mobile.png";
-import janeesha from "../../assets/images-contact-us/janeesha.png";
-import vinu from "../../assets/images-contact-us/vinu.png";
-import methma from "../../assets/images-contact-us/methma.png";
-import sasnika from "../../assets/images-contact-us/sasnika.png";
+import personBoard from "../../assets/images-contact-us/member_board.png";
+import janeesha from "../../assets/images-contact-us/JANEESHA_.png";
+import vinu from "../../assets/images-contact-us/VINU_.png";
+import methma from "../../assets/images-contact-us/METHMA_.png";
+import sasnika from "../../assets/images-contact-us/SASNIKA_.png";
 import eagle from "../../assets/images-contact-us/eagle sign.svg";
 import "./Contact Us Styles/ContactUs.css";
 
@@ -26,7 +27,8 @@ function ContactUs(props) {
         <img src={eagle} className="eagle" alt="eagle"></img>
         <div className="profile-com-set">
           <ProfileComponent
-            profileImg={janeesha}
+            personBoard={personBoard}
+            person={janeesha}
             first_name={"Janeesha"}
             last_name={"wickramasinghe"}
             role={"Enigma'24 Chair Person"}
@@ -34,7 +36,8 @@ function ContactUs(props) {
             email={"wickramasinghejj.21@uom.lk"}
           ></ProfileComponent>
           <ProfileComponent
-            profileImg={vinu}
+            personBoard={personBoard}
+            person={janeesha}
             first_name={"Vinu"}
             last_name={"Kaveesha"}
             role={"Enigma'24 Chair Person"}
@@ -42,7 +45,8 @@ function ContactUs(props) {
             email={"dezoysapvk.21@uom.lk"}
           ></ProfileComponent>
           <ProfileComponent
-            profileImg={methma}
+            personBoard={personBoard}
+            person={janeesha}
             first_name={"Methma"}
             last_name={"Weragoda"}
             role={"Enigma'24 Chair Person"}
@@ -50,7 +54,8 @@ function ContactUs(props) {
             email={"weragoda.21@uom.lk"}
           ></ProfileComponent>
           <ProfileComponent
-            profileImg={sasnika}
+            personBoard={personBoard}
+            person={janeesha}
             first_name={"Sasnika"}
             last_name={"Suhan"}
             role={"HR & Delegates Pilar Lead"}

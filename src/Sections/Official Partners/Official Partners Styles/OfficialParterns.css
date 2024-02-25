@@ -12,6 +12,11 @@
   font-family: Quantico;
   src: url(../../../assets/fonts/Quantico-Regular.ttf);
 }
+
+.logo {
+  height: 300px;
+}
+
 .on-boarding {
   font-family: Quantico;
   color: white;
@@ -100,6 +105,15 @@
 }
 
 @media screen and (max-width: 380px) {
+  .logos {
+    flex-direction: column;
+    align-items: center;
+    bottom: calc(12% + 20vh);
+  }
+  .logo {
+    width: 200px;
+    height: 80%;
+  }
   .official-partners-title {
     width: 100%;
     font-size: 32px;
