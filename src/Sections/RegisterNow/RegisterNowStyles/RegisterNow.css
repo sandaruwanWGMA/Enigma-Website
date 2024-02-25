@@ -129,12 +129,30 @@ body {
   font-weight: 400;
 }
 
+@media (max-width: 650px) {
+  .register-now-heading {
+    font-size: 11vw;
+  }
+}
+
 .form-header{
   font-family: "Quantico", serif;
 }
 
+@media (max-width: 650px) {
+  .form-header {
+    font-size: 6vw;
+  }
+}
+
 .field-header{
   font-family: "Patrick Hand SC", cursive;
+}
+
+@media (max-width: 650px) {
+  .field-header {
+    font-size: 4.5vw;
+  }
 }
 
 .form-field  {
@@ -147,10 +165,23 @@ body {
   flex-direction: row;
 }
 
+@media (max-width: 650px) {
+  .form-field input{
+    font-size: 4vw;
+  }
+}
+
 .add-member-btn:hover {
   cursor: pointer;
 }
 
 .error-message{
   color: rgb(255, 51, 51);
+  word-wrap: break-word;
+}
+
+@media (max-width: 650px) {
+  .error-message {
+    font-size: 2.5vw;
+  }
 }

@@ -256,7 +256,7 @@ export const RegisterNow = () => {
         memberDetails[index].memberEmail = newMemberEmail;
     };
 
-
+    
     const validateTeamName = (value) => {
         if (value.trim() === '') {
             return 0;

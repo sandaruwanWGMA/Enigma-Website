@@ -37,7 +37,7 @@ function HalfLengthField({label, defaultValue, onChange = ()=>{}, errorMessage})
                     style={{ backgroundColor: 'transparent', border: 'none', outline: 'none', width: 'calc(100% - 24px)'}}
                 />
             </div>
-            <div className="error-message absolute h-[12px] top-[69px] left-[24px] [font-family:'Patrick_Hand_SC',Helvetica] font-normal text-white text-[12px] whitespace-nowrap">
+            <div className="error-message absolute h-[12px] top-[69px] left-[24px] [font-family:'Patrick_Hand_SC',Helvetica] font-normal text-white text-[12px] whitespace-normal overflow-wrap-break-word">
                 {errorMessage}
             </div>
         </div>
