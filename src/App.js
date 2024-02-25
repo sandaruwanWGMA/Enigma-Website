@@ -5,7 +5,14 @@ import HomeSection from "./Sections/Home Section/HomeSection";
 import FullPageScrolling from "./ReactFullPageScroll";
 
 const App = () => {
-  return <FullPageScrolling />;
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<FullPageScrolling />} />
+        <Route path="/RegisterNow" element={<RegisterNow />} />
+      </Routes>
+    </Router>
+  );
 };
 
 export default App;
