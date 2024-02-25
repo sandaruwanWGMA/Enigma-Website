@@ -31,10 +31,13 @@ export const RegisterNow = () => {
     const [addMembersClickCount, setAddMembersClickCount] = useState(0);
     const [pageHeight, setPageHeight] = useState(985);
 
+    const [fieldStates, setFieldStates] = useState([0,0,0,0,0,0,0]);
+
     const teamList = collection(db, "teams");
 
     function handleSubmitClick() {
         // do validations
+        alert("SUBMITTED")
         callDatabase();
     }
 
@@ -46,6 +49,7 @@ export const RegisterNow = () => {
         const leaderID = leaderIdInput;
         const leaderWhatsapp = leaderWhatsappInput;
         const leaderEmail = leaderEmailInput;
+        const memberCount = numberOfMembersInput;
         const teamMembers = {
             Member1: { Name: "mem1", Number: "012" },
             Member2: { Name: "mem1", Number: "012" },
@@ -76,6 +80,7 @@ export const RegisterNow = () => {
                             leaderID,
                             leaderWhatsapp,
                             leaderEmail,
+                            memberCount,
                             teamMembers,
                         });
                         console.log("Registered Successfully");
@@ -103,6 +108,7 @@ export const RegisterNow = () => {
     const handleAddMemberClick = () => {
         if (addMembersClickCount < 2) {
             setAddMembersClickCount(prevCount => prevCount + 1);
+            setFieldStates([...fieldStates,0,0,0,0])
             setPageHeight(prevHeight => prevHeight + 260);
             setMembers([...members,
                 {
@@ -125,131 +131,193 @@ export const RegisterNow = () => {
             setTeamNameError('THIS TEAM NAME ALREADY EXISTS.');
         } else {
             setTeamNameError('');
-            const error = validateTeamName(newTeamName)
+            const errorNum = validateTeamName(newTeamName);
+            const error =
+                errorNum === -1 ? ''
+                : errorNum === 0 ? 'TEAM NAME IS REQUIRED.'
+                : 'UNKNOWN ERROR IN VALIDATION';
+            fieldStates[0] = errorNum < 0 ? 1 : 0;
             setTeamNameError(error);
         }
     };
     const handleTeamEmailChange = (newTeamEmail) => {
         setTeamEmail(newTeamEmail);
-        const error = validateEmail(newTeamEmail);
+        const errorNum = validateEmail(newTeamEmail);
+        const error =
+            errorNum === -1 ? ''
+            : errorNum === 0 ? 'TEAM EMAIL IS REQUIRED.'
+            : errorNum === 1 ? 'PLEASE ENTER A VALID EMAIL ADDRESS.'
+            : 'UNKNOWN ERROR IN VALIDATION';
+        fieldStates[1] = errorNum < 0 ? 1 : 0;
         setTeamEmailError(error);
     };
     const handleLeaderNameChange = (newLeaderName) => {
         setLeaderName(newLeaderName);
-        const error = validateMemberName(newLeaderName);
+        const errorNum = validateMemberName(newLeaderName);
+        const error =
+            errorNum === -1 ? ''
+            : errorNum === 0 ? 'LEADER NAME IS REQUIRED.'
+            : errorNum === 1 ? 'PLEASE ENTER A VALID NAME.'
+            : 'UNKNOWN ERROR IN VALIDATION';
+        fieldStates[2] = errorNum < 0 ? 1 : 0;
         setLeaderNameError(error);
     };
     const handleLeaderIdChange = (newLeaderId) => {
         setLeaderId(newLeaderId);
-        const error = validateId(newLeaderId);
+        const errorNum = validateId(newLeaderId);
+        const error =
+            errorNum === -1 ? ''
+            : errorNum === 0 ? 'LEADER ID IS REQUIRED.'
+            : errorNum === 1 ? 'PLEASE ENTER A VALID ID.'
+            : 'UNKNOWN ERROR IN VALIDATION';
+        fieldStates[3] = errorNum < 0 ? 1 : 0;
         setLeaderIdError(error);
     };
     const handleLeaderWhatsappChange = (newLeaderWhatsapp) => {
         setLeaderWhatsapp(newLeaderWhatsapp);
-        const error = validateWhatsapp(newLeaderWhatsapp);
+        const errorNum = validateWhatsapp(newLeaderWhatsapp);
+        const error =
+            errorNum === -1 ? ''
+            : errorNum === 0 ? 'LEADER WHATSAPP NUMBER IS REQUIRED.'
+            : errorNum === 1 ? 'PLEASE ENTER A VALID WHATSAPP NUMBER.'
+            : 'UNKNOWN ERROR IN VALIDATION';
+        fieldStates[4] = errorNum < 0 ? 1 : 0;
         setLeaderWhatsappError(error);
     };
     const handleLeaderEmailChange = (newLeaderEmail) => {
         setLeaderEmail(newLeaderEmail);
-        const error = validateEmail(newLeaderEmail);
+        const errorNum = validateEmail(newLeaderEmail);
+        const error =
+            errorNum === -1 ? ''
+            : errorNum === 0 ? 'LEADER EMAIL IS REQUIRED.'
+            : errorNum === 1 ? 'PLEASE ENTER A VALID EMAIL.'
+            : 'UNKNOWN ERROR IN VALIDATION';
+        fieldStates[5] = errorNum < 0 ? 1 : 0;
         setLeaderEmailError(error);
     };
     const handleNumberOfMembersChange = (newMemberCount) => {
         setNumberOfMembers(newMemberCount);
-        const error = validateMemberCount(newMemberCount);
+        const errorNum = validateMemberCount(newMemberCount);
+        const error =
+            errorNum === -1 ? ''
+            : errorNum === 0 ? 'MEMBER COUNT IS REQUIRED.'
+            : errorNum === 1 ? 'PLEASE ENTER A NUMERICAL VALUE.'
+            : errorNum === 2 ? 'AT LEAST 1 MEMBER SHOULD BE IN THE TEAM.'
+            : errorNum === 3 ? 'NO MORE THAN 3 MEMBERS SHOULD BE IN THE TEAM.'
+            : 'UNKNOWN ERROR IN VALIDATION';
+        fieldStates[6] = errorNum < 0 ? 1 : 0;
         setNumberOfMembersError(error);
     };
     const handleMemberNameChange = (index, newMemberName) => {
         const newMembers = [...members];
         newMembers[index].memberName = newMemberName;
-        newMembers[index].memberNameError = validateMemberName(newMemberName);
+        const errorNum = validateMemberName(newMemberName);
+        newMembers[index].memberNameError =
+            errorNum === -1 ? ''
+            : errorNum === 0 ? 'MEMBER NAME IS REQUIRED.'
+            : errorNum === 1 ? 'PLEASE ENTER A VALID NAME.'
+            : 'UNKNOWN ERROR IN VALIDATION';
+        fieldStates[7 + 4*index] = errorNum < 0 ? 1 : 0;
         setMembers(newMembers);
     };
     const handleMemberIdChange = (index, newMemberId) => {
         const newMembers = [...members];
         newMembers[index].memberId = newMemberId;
-        newMembers[index].memberIdError = validateId(newMemberId);
+        const errorNum = validateId(newMemberId);
+        newMembers[index].memberIdError =
+            errorNum === -1 ? ''
+            : errorNum === 0 ? 'MEMBER ID IS REQUIRED.'
+            : errorNum === 1 ? 'PLEASE ENTER A VALID ID.'
+            : 'UNKNOWN ERROR IN VALIDATION';
+        fieldStates[8 + 4*index] = errorNum < 0 ? 1 : 0;
         setMembers(newMembers);
     };
     const handleMemberWhatsappChange = (index, newMemberWhatsapp) => {
         const newMembers = [...members];
         newMembers[index].memberWhatsapp = newMemberWhatsapp;
-        newMembers[index].memberWhatsappError = validateWhatsapp(newMemberWhatsapp);
+        const errorNum = validateWhatsapp(newMemberWhatsapp);
+        newMembers[index].memberWhatsappError =
+            errorNum === -1 ? ''
+            : errorNum === 0 ? 'MEMBER WHATSAPP NUMBER IS REQUIRED.'
+            : errorNum === 1 ? 'PLEASE ENTER A VALID WHATSAPP NUMBER.'
+            : 'UNKNOWN ERROR IN VALIDATION';
+        fieldStates[9 + 4*index] = errorNum < 0 ? 1 : 0;
         setMembers(newMembers);
     };
     const handleMemberEmailChange = (index, newMemberEmail) => {
         const newMembers = [...members];
         newMembers[index].memberEmail = newMemberEmail;
-        newMembers[index].memberEmailError = validateEmail(newMemberEmail);
+        const errorNum = validateEmail(newMemberEmail);
+        newMembers[index].memberEmailError =
+            errorNum === -1 ? ''
+            : errorNum === 0 ? 'MEMBER EMAIL IS REQUIRED.'
+            : errorNum === 1 ? 'PLEASE ENTER A VALID EMAIL.'
+            : 'UNKNOWN ERROR IN VALIDATION';
+        fieldStates[10 + 4*index] = errorNum < 0 ? 1 : 0;
         setMembers(newMembers);
     };
 
 
     const validateTeamName = (value) => {
         if (value.trim() === '') {
-            return 'TEAM NAME IS REQUIRED.';
+            return 0;
         }
         // Add more validation rules as needed
-        return null;
+        return -1;
     };
-
-    const validateEmail = (value) => {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (value.trim() === '') {
-            return 'EMAIL IS REQUIRED.';
-        } else if (!emailRegex.test(value)) {
-            return 'PLEASE ENTER A VALID EMAIL ADDRESS.';
-        }
-        // Add more validation rules as needed
-        return '';
-    };
-
-    const validateId = (value) => {
-        const idRegex = /^[0-9]{6}[A-z]$|^[0-9]{2}[A-z]{2}[0-9]{4}$|^[0-9]{10}[V,v]$|^[0-9]{12}$/;
-        if (value.trim() === '') {
-            return 'ID IS REQUIRED.';
-        } else if (!idRegex.test(value)) {
-            return 'PLEASE ENTER A VALID ID.';
-        }
-        // Add more validation rules as needed
-        return '';
-    };
-
-    const validateWhatsapp = (value) => {
-        const whatsappRegex = /^(07|\+947)[0-9]{8}$/;
-        if (value.trim() === '') {
-            return 'WHATSAPP NUMBER IS REQUIRED.';
-        } else if (!whatsappRegex.test(value)) {
-            return 'PLEASE ENTER A VALID WHATSAPP NUMBER.';
-        }
-        // Add more validation rules as needed
-        return '';
-    };
-
     const validateMemberName = (value) => {
         const memberNameRegex = /^[A-z][A-z ]*$/;
         if (value.trim() === '') {
-            return 'NAME IS REQUIRED.';
+            return 0;
         } else if (!memberNameRegex.test(value)) {
-            return 'PLEASE ENTER A VALID NAME.';
+            return 1;
         }
         // Add more validation rules as needed
-        return '';
+        return -1;
     };
-
+    const validateId = (value) => {
+        const idRegex = /^[0-9]{6}[A-z]$|^[0-9]{2}[A-z]{2}[0-9]{4}$|^[0-9]{10}[V,v]$|^[0-9]{12}$/;
+        if (value.trim() === '') {
+            return 0;
+        } else if (!idRegex.test(value)) {
+            return 1;
+        }
+        // Add more validation rules as needed
+        return -1;
+    };
+    const validateWhatsapp = (value) => {
+        const whatsappRegex = /^(07|\+947)[0-9]{8}$/;
+        if (value.trim() === '') {
+            return 0;
+        } else if (!whatsappRegex.test(value)) {
+            return 1;
+        }
+        // Add more validation rules as needed
+        return -1;
+    };
+    const validateEmail = (value) => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (value.trim() === '') {
+            return 0;
+        } else if (!emailRegex.test(value)) {
+            return 1;
+        }
+        // Add more validation rules as needed
+        return -1;
+    };
     const validateMemberCount = (value) => {
         const countRegex = /^[0-9]+$/;
         if (value.trim() === '') {
-            return 'MEMBER COUNT IS REQUIRED.';
+            return 0;
         } else if (!countRegex.test(value)) {
-            return 'PLEASE ENTER A NUMERICAL VALUE.';
+            return 1;
         } else if(value<1) {
-            return 'AT LEAST 1 MEMBER SHOULD BE IN THE TEAM.';
+            return 2;
         } else if(value>3) {
-            return 'NO MORE THAN 3 MEMBERS SHOULD BE IN THE TEAM.';
+            return 3;
         }
         // Add more validation rules as needed
-        return '';
+        return -1;
     };
 
     return (
@@ -336,7 +404,7 @@ export const RegisterNow = () => {
                 <div className="absolute w-full h-[69px] bottom-[40px] flex flex-col justify-center align-middle">
                     <div className="relative w-full h-[69px] justify-center align-middle">
                         <div className="relative submit-frame">
-                            <button className="submit-btn" onClick={handleSubmitClick}>
+                            <button disabled={fieldStates.some(fieldState=>fieldState===0)} className="submit-btn" onClick={handleSubmitClick}>
                                 <div className="submit-padding"/>
                                 <a className="submit-txt">SUBMIT</a>
                             </button>
