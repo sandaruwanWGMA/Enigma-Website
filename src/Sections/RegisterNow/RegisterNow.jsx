@@ -41,7 +41,83 @@ export const RegisterNow = () => {
 
   function handleSubmitClick() {
     // do validations
-    callDatabase();
+    let isValid = true;
+
+    // Validate team name
+    const teamNameError = validateTeamName(teamNameInput);
+    if (teamNameError) {
+      setTeamNameError(teamNameError);
+      isValid = false;
+    }
+
+    // Validate team email
+    const teamEmailError = validateEmail(teamEmailInput);
+    if (teamEmailError) {
+      setTeamEmailError(teamEmailError);
+      isValid = false;
+    }
+
+    // Validate leader name
+    const leaderNameError = validateMemberName(leaderNameInput);
+    if (leaderNameError) {
+      setLeaderNameError(leaderNameError);
+      isValid = false;
+    }
+
+    // Validate leader ID
+    const leaderIdError = validateId(leaderIdInput);
+    if (leaderIdError) {
+      setLeaderIdError(leaderIdError);
+      isValid = false;
+    }
+
+    // Validate leader Whatsapp
+    const leaderWhatsappError = validateWhatsapp(leaderWhatsappInput);
+    if (leaderWhatsappError) {
+      setLeaderWhatsappError(leaderWhatsappError);
+      isValid = false;
+    }
+
+    // Validate leader email
+    const leaderEmailError = validateEmail(leaderEmailInput);
+    if (leaderEmailError) {
+      setLeaderEmailError(leaderEmailError);
+      isValid = false;
+    }
+
+    // Validate number of members
+    const numberOfMembersError = validateMemberCount(numberOfMembersInput);
+    if (numberOfMembersError) {
+      setNumberOfMembersError(numberOfMembersError);
+      isValid = false;
+    }
+
+    // Validate each member
+    members.forEach((member, index) => {
+      const memberNameError = validateMemberName(member.memberName);
+      const memberIdError = validateId(member.memberId);
+      const memberWhatsappError = validateWhatsapp(member.memberWhatsapp);
+      const memberEmailError = validateEmail(member.memberEmail);
+
+      if (
+        memberNameError ||
+        memberIdError ||
+        memberWhatsappError ||
+        memberEmailError
+      ) {
+        const newMembers = [...members];
+        newMembers[index].memberNameError = memberNameError;
+        newMembers[index].memberIdError = memberIdError;
+        newMembers[index].memberWhatsappError = memberWhatsappError;
+        newMembers[index].memberEmailError = memberEmailError;
+        setMembers(newMembers);
+        isValid = false;
+      }
+    });
+
+    if (isValid) {
+      callDatabase();
+    }
   }
 
   async function callDatabase() {
@@ -52,10 +128,17 @@ export const RegisterNow = () => {
     const leaderID = leaderIdInput;
     const leaderWhatsapp = leaderWhatsappInput;
     const leaderEmail = leaderEmailInput;
-    const teamMembers = {
-      Member1: { Name: "mem1", Number: "012" },
-      Member2: { Name: "mem1", Number: "012" },
-    };
+    const teamMembers = {};
+
+    // Assuming 'members' is an array of member data collected from your form
+    members.forEach((member, index) => {
+      teamMembers[`Member${index + 1}`] = {
+        Name: member.memberName,
+        Number: member.memberNumber,
+        Email: member.memberEmail,
+        ID: member.memberId,
+      };
+    });
 
     try {
       const data = await getDocs(teamList);
@@ -100,10 +183,10 @@ export const RegisterNow = () => {
   }
 
   // Mock function to simulate checking the database
-  const checkTeamName = (teamName) => {
-    const existingTeamNames = ["XTREAM CODERS", "TEAM ALPHA", "TEAM BETA"]; // Add more team names as needed
-    return existingTeamNames.includes(teamName.toUpperCase());
-  };
+  //   const checkTeamName = (teamName) => {
+  //     const existingTeamNames = ["XTREAM CODERS", "TEAM ALPHA", "TEAM BETA"]; // Add more team names as needed
+  //     return existingTeamNames.includes(teamName.toUpperCase());
+  //   };
 
   const handleAddMemberClick = () => {
     if (addMembersClickCount < 2) {
@@ -130,14 +213,11 @@ export const RegisterNow = () => {
   const handleTeamNameChange = (newTeamName) => {
     setTeamName(newTeamName);
 
-    if (checkTeamName(newTeamName)) {
-      setTeamNameError("THIS TEAM NAME ALREADY EXISTS.");
-    } else {
-      setTeamNameError("");
-      const error = validateTeamName(newTeamName);
-      setTeamNameError(error);
-    }
+    // Validate the new team name
+    const error = validateTeamName(newTeamName);
+    setTeamNameError(error);
   };
+
   const handleTeamEmailChange = (newTeamEmail) => {
     setTeamEmail(newTeamEmail);
     const error = validateEmail(newTeamEmail);
