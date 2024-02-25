@@ -27,13 +27,14 @@
 
 .social-media {
   position: absolute;
-  right: 5em;
+  right: 4em;
   padding-top: 40px;
   height: calc(100vh - 40px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* margin-bottom: 16px; */
 }
 
 .rectangle {
@@ -41,6 +42,8 @@
 }
 
 .reg-btn {
+  width: 242px;
+  height: 60px;
   padding: 0;
   margin: 0;
   border: none;
@@ -48,7 +51,8 @@
   left: 50vw;
   transform: translate(-50%, 0);
   bottom: 3em;
-  background-color: transparent;
+  background-color: #f2b924;
+  border-radius: 42px;
 }
 
 .reg-btn:hover {
@@ -66,9 +70,113 @@
   font-size: 23px;
   font-family: "Quantico", sans-serif;
   font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 .enigma {
   position: absolute;
-  left: 5em;
+  left: 2em;
+  padding-top: 36px;
+}
+.enigma-mobile {
+  display: none;
+  position: absolute;
+  left: 2em;
   padding-top: 30px;
+}
+.home-bg-img-8-plus {
+  display: none;
+}
+
+@media screen and (max-width: 1210px) {
+  .enigma-logo {
+    top: 48%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .enigma {
+    display: none;
+  }
+  .enigma-mobile {
+    display: inline;
+    position: absolute;
+    padding-top: 41px;
+  }
+  .enigma-logo {
+    top: 50%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .enigma {
+    display: none;
+  }
+
+  .home-section {
+    width: 100vw;
+  }
+
+  /* .nav-bar {
+    display: none;
+  } */
+  .enigma-logo {
+    top: 50%;
+    width: 400px;
+    height: 2458px;
+  }
+  .reg-btn {
+    width: 242px;
+    height: 60px;
+  }
+  .reg-text {
+    font-size: 21px;
+  }
+  .home-bg-img-8-plus {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    z-index: -2;
+    position: relative;
+  }
+  .home-bg-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .home-section {
+    width: 100vw;
+  }
+  .enigma {
+    display: none;
+  }
+
+  /* .nav-bar {
+    display: none;
+  } */
+  .enigma-logo {
+    top: 50%;
+    width: 350px;
+    height: 198px;
+  }
+  .reg-btn {
+    width: 242px;
+    height: 60px;
+  }
+  .reg-text {
+    font-size: 21px;
+  }
+  .home-bg-img-8-plus {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    z-index: -2;
+    position: relative;
+  }
+  .home-bg-img {
+    display: none;
+  }
 }

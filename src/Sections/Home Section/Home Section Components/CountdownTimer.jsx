@@ -11,7 +11,7 @@ const CountdownTimer = ({ style }) => {
     seconds: 0,
   });
 
-  const targetDate = moment("2024-08-20T00:00:00");
+  const targetDate = moment("2024-03-10T00:00:00");
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -39,7 +39,7 @@ const CountdownTimer = ({ style }) => {
   const { days, hours, minutes, seconds } = countdown;
 
   return (
-    <div className="countdown-timer" style={style}>
+    <div style={style} className="countdown-timer">
       <div className="elipse-container">
         <div className="elipse-number" style={{ color: "#F2B924" }}>
           {days}

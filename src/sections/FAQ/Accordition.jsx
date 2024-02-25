@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ListItem from "./components/ListItem";
-import BgCover from "./assets/bgcover.png";
+import BgCover from "./assests/bgcover.png";
+// import BgNewCover from "./assests/bgnew.svg";
 import "./Accordition.css";
 
 export default function Accordition() {
@@ -13,41 +14,43 @@ export default function Accordition() {
   };
   const [list, setList] = useState([
     {
-      title: "What is the level of expertise required for this hackathon?",
-      desc: "Oh, absolutely no experience needed for this Python hackathon! If you can spell 'Python,' you're basically a coding prodigy already. In fact, if you've ever seen a snake or know what 'print' means, you're overqualified. Just bring your enthusiasm and maybe a keyboard (optional), and you'll be hacking away like a pro in no time. Good luck, coding genius",
+      title: "What is the Registration Procedure for the Hackathon?",
+      desc:
+        "Participants must register as teams. Registration should be done through the ENIGMA website. Participants are expected to create  a team name" +
+        " or " +
+        "a dedicated team email address (accessible by all members of the team)",
     },
     {
-      title: "Is internet access allowed during the competition?",
-      desc: "Yes, you can use the internet to research and find answers to your questions. However, you cannot use the internet to ask questions to anyone outside of your team. You also cannot use the internet to find code to copy and paste into your project.",
+      title: "How many members should be there in a team?",
+      desc: "Each participating team must comprise a minimum of 1 member and a maximum of 3 members. ",
     },
     {
-      title: "Is there a penalty for incorrect submissions?",
-      desc: "No, there is no penalty for incorrect submissions. You can submit as many times as you want, and we will only grade your last submission.",
+      title: "Is it mandatory to create an email address for a team? ",
+      desc: "Yes, it is mandatory for participants to create a dedicated email address, intended solely for team communication and registration. All official correspondence will be directed to this designated email address.",
     },
     {
-      title:
-        "Will there be an opportunity for questions or clarifications during the competition?",
-      desc: "Yes, we will have a Discord server where you can ask questions and get clarifications. We will also have a live Q&A session during the competition.",
+      title: "What is the procedure for inquiries? ",
+      desc: "Contestants are encouraged to address any registration-related inquiries and any questions regarding the proceedings of the event directly to the organizing committee of ENIGMA, via their respective designated emails. Contact information will be provided upon request.",
     },
     {
-      title:
-        "Will there be an opportunity for questions or clarifications during the competition?",
-      desc: "Yes, we will have a Discord server where you can ask questions and get clarifications. We will also have a live Q&A session during the competition.",
+      title: "Who is eligible to participate in the hackathon? ",
+      desc: "Only undergraduates of the University of Moratuwa.",
     },
     {
-      title:
-        "Will there be an opportunity for questions or clarifications during the competition?",
-      desc: "Yes, we will have a Discord server where you can ask questions and get clarifications. We will also have a live Q&A session during the competition.",
+      title: "What programming languages can be used for the hackathon?",
+      desc: "Any language which is provided in the Hackerrank platform.",
     },
     {
-      title:
-        "Will there be an opportunity for questions or clarifications during the competition?",
-      desc: "Yes, we will have a Discord server where you can ask questions and get clarifications. We will also have a live Q&A session during the competition.",
+      title: "What is the procedure to qualify for the second round?",
+      desc: "Only the top 10 teams from the first round will qualify for the second round.",
     },
   ]);
 
   return (
-    <div className="bg-cover bg-center h-screen overflow-hidden">
+    <section
+      className="slides bg-cover bg-center h-screen overflow-hidden"
+      id="faq"
+    >
       <img className="w-full h-full z-0 absolute" src={BgCover} alt="bgcover" />
 
       <div className="z-2 relative">
@@ -68,6 +71,6 @@ export default function Accordition() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

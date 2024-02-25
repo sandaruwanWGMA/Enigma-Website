@@ -1,0 +1,197 @@
+@font-face {
+  font-family: codePredators;
+  src: url(../../../assets/fonts/CodePredators-Regular.ttf);
+}
+
+@font-face {
+  font-family: PatrickHandSC;
+  src: url(../../../assets/fonts/PatrickHandSC-Regular.ttf);
+}
+
+@font-face {
+  font-family: Quantico;
+  src: url(../../../assets/fonts/Quantico-Regular.ttf);
+}
+
+.footer-sec {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, #133126 0%, #021810 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.h-line {
+  background-color: white;
+  height: 3px;
+  width: 100%;
+}
+.footer-title {
+  font-size: 84px;
+  font-family: CodePredators;
+  color: #f2b924;
+  margin: 0;
+  /* margin-top: 54px; */
+  margin-bottom: 4px;
+}
+
+.description-f {
+  font-size: 43px;
+  font-family: PatrickHandSC;
+  color: #fff;
+}
+.more-info {
+  position: relative;
+  display: block; /* Display as block */
+  font-size: 31px;
+  font-family: PatrickHandSC;
+  color: #f2b924;
+}
+
+.title-container {
+  text-align: center;
+  width: 100%;
+}
+
+.more-info:hover {
+  cursor: pointer;
+}
+
+.more-info span {
+  text-decoration: none; /* Remove default underline */
+  display: inline-block; /* Display as inline-block to force the width to match the content */
+  position: relative; /* Position relative for absolute positioning of the underline */
+}
+
+.more-info span::after {
+  content: ""; /* Create pseudo-element for the underline */
+  position: absolute; /* Position absolutely relative to the span */
+  bottom: -1px;
+  left: 0; /* Align the underline with the text */
+  width: 100%; /* Full width */
+  height: 1px; /* Thickness of the underline */
+  background-color: #f2b924; /* Color of the underline */
+}
+
+.copyright {
+  font-size: 27px;
+  font-family: PatrickHandSC;
+  color: #fff;
+}
+
+.footer-container img {
+  width: 299px;
+  height: 199px;
+  margin-bottom: 8px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  /* height: 80%; */
+  align-content: space-around;
+}
+
+@media screen and (max-width: 850px) {
+  .footer-title {
+    font-size: 64px;
+  }
+
+  .description-f {
+    font-size: 33px;
+  }
+  .footer-container img {
+    width: 230px;
+    height: 130px;
+  }
+  .copyright {
+    font-size: 20px;
+  }
+  .more-info {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .footer-title {
+    font-size: 50px;
+  }
+
+  .description-f {
+    font-size: 26px;
+  }
+  .footer-container img {
+    width: 200px;
+    height: 100px;
+  }
+  .copyright {
+    font-size: 16px;
+  }
+  .more-info {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .footer-title {
+    font-size: 50px;
+  }
+
+  .description-f {
+    font-size: 23px;
+  }
+  .footer-container img {
+    width: 200px;
+    height: 100px;
+  }
+  .copyright {
+    font-size: 16px;
+  }
+  .more-info {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .footer-title {
+    font-size: 40px;
+  }
+
+  .description-f {
+    font-size: 20px;
+  }
+  .footer-container img {
+    width: 170px;
+    height: 83px;
+  }
+  .copyright {
+    font-size: 13px;
+  }
+  .more-info {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .footer-title {
+    font-size: 30px;
+  }
+
+  .description-f {
+    font-size: 18px;
+  }
+  .footer-container img {
+    width: 200px;
+    height: 100px;
+  }
+  .copyright {
+    font-size: 14px;
+  }
+  .more-info {
+    font-size: 14px;
+  }
+}

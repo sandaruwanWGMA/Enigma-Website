@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: codePredators;
   src: url(../../assets/fonts/CodePredators-Regular.ttf);
@@ -19,4 +23,10 @@
   text-align: center;
   color: rgb(250 204 21);
   font-family: codePredators;
+}
+
+@media screen and (max-width: 768px) {
+  .h-full {
+    height: 100vh;
+  }
 }
