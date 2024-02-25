@@ -370,6 +370,7 @@ export const RegisterNow = () => {
       <div className="absolute w-full" style={{ height: pageHeight + "px" }}>
         <img
           className="absolute w-full h-full top-0 left-0"
+          style={{ height: "100%" }}
           alt="register-now-bg"
           src={RegisterNowBG}
         />

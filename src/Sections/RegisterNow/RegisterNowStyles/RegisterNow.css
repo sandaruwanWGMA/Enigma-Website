@@ -50,7 +50,7 @@ body {
 .register-now-bg-image {
   top: -50px;
   width: 110%;
-  height: 160vh;
+  height: 100%;
   z-index: -2;
   position: absolute;
 }
