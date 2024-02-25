@@ -237,10 +237,16 @@
     grid-template-rows: auto auto; /* Two rows */
     width: 54%;
     height: 40%;
-    top: 50%;
+    top: 47%;
     left: 46%;
   }
   .on-boarding {
     font-size: 12px;
+  }
+  .person-board {
+    height: 60px;
+  }
+  .profile-img {
+    height: 60px;
   }
 }

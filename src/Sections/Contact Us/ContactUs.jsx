@@ -37,7 +37,7 @@ function ContactUs(props) {
           ></ProfileComponent>
           <ProfileComponent
             personBoard={personBoard}
-            person={janeesha}
+            person={vinu}
             first_name={"Vinu"}
             last_name={"Kaveesha"}
             role={"Enigma'24 Chair Person"}
@@ -46,7 +46,7 @@ function ContactUs(props) {
           ></ProfileComponent>
           <ProfileComponent
             personBoard={personBoard}
-            person={janeesha}
+            person={methma}
             first_name={"Methma"}
             last_name={"Weragoda"}
             role={"Enigma'24 Chair Person"}
@@ -55,7 +55,7 @@ function ContactUs(props) {
           ></ProfileComponent>
           <ProfileComponent
             personBoard={personBoard}
-            person={janeesha}
+            person={sasnika}
             first_name={"Sasnika"}
             last_name={"Suhan"}
             role={"HR & Delegates Pilar Lead"}
