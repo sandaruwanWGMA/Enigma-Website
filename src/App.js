@@ -10,14 +10,12 @@ import ContactUs from "./Sections/Contact Us/ContactUs";
 
 const App = () => {
   return (
-    // <Router>
-    //   <Routes>
-    //     <Route path="/" element={<FullPageScrolling />} />
-    //     <Route path="/RegisterNow" element={<RegisterNow />} />
-    //   </Routes>
-    // </Router>
-    // <ImageComponent person_board={pb} person={vinu} />
-    <ContactUs />
+    <Router>
+      <Routes>
+        <Route path="/" element={<FullPageScrolling />} />
+        <Route path="/RegisterNow" element={<RegisterNow />} />
+      </Routes>
+    </Router>
   );
 };
 
