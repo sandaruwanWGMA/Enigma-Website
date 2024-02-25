@@ -5,8 +5,8 @@ import "../RegisterNow/RegisterNowStyles/RegisterNow.css";
 import React, {useState} from "react";
 import FullLengthField from "./RegisterNowComponents/FullLengthField";
 import MemberDetailsCard from "./RegisterNowComponents/MemberDetailsCard";
-import { db } from "../../firebase-config";
-import { collection, doc, setDoc, getDocs, query, where, } from "firebase/firestore";
+import {db} from "../../firebase-config";
+import {collection, doc, getDocs, query, setDoc, where,} from "firebase/firestore";
 
 
 export const RegisterNow = () => {
@@ -26,56 +26,10 @@ export const RegisterNow = () => {
     const [leaderEmailError, setLeaderEmailError] = useState('');
     const [numberOfMembersError, setNumberOfMembersError] = useState('');
 
-    const [member1NameInput, setMember1Name] = useState('XTREAM CODERS');
-    const [member1IdInput, setMember1Id] = useState('XTREAM CODERS');
-    const [member1WhatsappInput, setMember1Whatsapp] = useState('XTREAM CODERS');
-    const [member1EmailInput, setMember1Email] = useState('UGDJHSGF@GMAIL.COM');
-    const [member2NameInput, setMember2Name] = useState('XTREAM CODERS');
-    const [member2IdInput, setMember2Id] = useState('XTREAM CODERS');
-    const [member2WhatsappInput, setMember2Whatsapp] = useState('XTREAM CODERS');
-    const [member2EmailInput, setMember2Email] = useState('UGDJHSGF@GMAIL.COM');
-
-    const [member1NameError, setMember1NameError] = useState('');
-    const [member1IdError, setMember1IdError] = useState('');
-    const [member1WhatsappError, setMember1WhatsappError] = useState('');
-    const [member1EmailError, setMember1EmailError] = useState('');
-    const [member2NameError, setMember2NameError] = useState('');
-    const [member2IdError, setMember2IdError] = useState('');
-    const [member2WhatsappError, setMember2WhatsappError] = useState('');
-    const [member2EmailError, setMember2EmailError] = useState('');
-
-    const memberInputs = [
-        {
-            memberNameInput:member1NameInput, setMemberName:setMember1Name,
-            memberIdInput:member1IdInput, setMemberId:setMember1Id,
-            memberWhatsappInput:member1WhatsappInput, setMemberWhatsapp:setMember1Whatsapp,
-            memberEmailInput:member1EmailInput, setMemberEmail:setMember1Email,
-        },
-        {
-            memberNameInput:member2NameInput, setMemberName:setMember2Name,
-            memberIdInput:member2IdInput, setMemberId:setMember2Id,
-            memberWhatsappInput:member2WhatsappInput, setMemberWhatsapp:setMember2Whatsapp,
-            memberEmailInput:member2EmailInput, setMemberEmail:setMember2Email,
-        }
-    ];
-    const memberErrors = [
-        {
-            memberNameError:member1NameError, setMemberNameError:setMember1NameError,
-            memberIdError:member1IdError, setMemberIdError:setMember1IdError,
-            memberWhatsappError:member1WhatsappError, setMemberWhatsappError:setMember1WhatsappError,
-            memberEmailError:member1EmailError, setMemberEmailError:setMember1EmailError,
-        },
-        {
-            memberNameError:member2NameError, setMemberNameError:setMember2NameError,
-            memberIdError:member2IdError, setMemberIdError:setMember2IdError,
-            memberWhatsappError:member2WhatsappError, setMemberWhatsappError:setMember2WhatsappError,
-            memberEmailError:member2EmailError, setMemberEmailError:setMember2EmailError,
-        }
-    ];
+    const [members, setMembers] = useState([]);
 
     const [addMembersClickCount, setAddMembersClickCount] = useState(0);
     const [pageHeight, setPageHeight] = useState(985);
-    const [components, setComponents] = useState([]);
 
     const teamList = collection(db, "teams");
 
@@ -148,52 +102,15 @@ export const RegisterNow = () => {
 
     const handleAddMemberClick = () => {
         if (addMembersClickCount < 2) {
-            const setMemberName = memberInputs[addMembersClickCount].setMemberName;
-            const setMemberId = memberInputs[addMembersClickCount].setMemberId;
-            const setMemberWhatsapp = memberInputs[addMembersClickCount].setMemberWhatsapp;
-            const setMemberEmail = memberInputs[addMembersClickCount].setMemberEmail;
-
-            const memberNameError = memberErrors[addMembersClickCount].memberNameError;
-            const memberIdError = memberErrors[addMembersClickCount].memberIdError;
-            const memberWhatsappError = memberErrors[addMembersClickCount].memberWhatsappError;
-            const memberEmailError = memberErrors[addMembersClickCount].memberEmailError;
-
-            const setMemberNameError = memberErrors[addMembersClickCount].setMemberNameError;
-            const setMemberIdError = memberErrors[addMembersClickCount].setMemberIdError;
-            const setMemberWhatsappError = memberErrors[addMembersClickCount].setMemberWhatsappError;
-            const setMemberEmailError = memberErrors[addMembersClickCount].setMemberEmailError;
-
-            const handleMemberNameChange = (newMemberName) => {
-                setMemberName(newMemberName);
-                const error = validateMemberName(newMemberName);
-                setMemberNameError(error);
-            };
-            const handleMemberIdChange = (newMemberId) => {
-                setMemberId(newMemberId);
-                const error = validateId(newMemberId);
-                setMemberIdError(error);
-            };
-            const handleMemberWhatsappChange = (newMemberWhatsapp) => {
-                setMemberWhatsapp(newMemberWhatsapp);
-                const error = validateWhatsapp(newMemberWhatsapp);
-                setMemberWhatsappError(error);
-            };
-            const handleMemberEmailChange = (newMemberEmail) => {
-                setMemberEmail(newMemberEmail);
-                const error = validateEmail(newMemberEmail);
-                setMemberEmailError(error);
-            };
-
             setAddMembersClickCount(prevCount => prevCount + 1);
             setPageHeight(prevHeight => prevHeight + 260);
-            setComponents(prevComponents => [...prevComponents,
-                <div className="relative h-[260px]">
-                    <div
-                        className="form-header relative w-[300px] h-[48px] left-[5px] [font-family:'Quantico',Helvetica] font-normal text-[#f2b824] text-[23px] text-left tracking-[0] leading-[35px] whitespace-nowrap">
-                        MEMBER {addMembersClickCount + 1} DETAILS :
-                    </div>
-                    <MemberDetailsCard nameOnChange={handleMemberNameChange} idOnChange={handleMemberIdChange} whatsappOnChange={handleMemberWhatsappChange} emailOnChange={handleMemberEmailChange} nameErrorMessage={memberNameError} idErrorMessage={memberIdError} whatsappErrorMessage={memberWhatsappError} emailErrorMessage={memberEmailError}/>
-                </div>
+            setMembers([...members,
+                {
+                    memberName:'JHCZDJXF KBFJKD', memberNameError:'',
+                    memberId:'JHCZDJXF KBFJKD', memberIdError:'',
+                    memberWhatsapp:'JHCZDJXF KBFJKD', memberWhatsappError:'',
+                    memberEmail:'UGDJHSGF@GMAIL.COM', memberEmailError:''
+                }
             ]);
         } else {
             setAddMembersClickCount(prevCount => prevCount + 1);
@@ -242,9 +159,30 @@ export const RegisterNow = () => {
         const error = validateMemberCount(newMemberCount);
         setNumberOfMembersError(error);
     };
-
-
-
+    const handleMemberNameChange = (index, newMemberName) => {
+        const newMembers = [...members];
+        newMembers[index].memberName = newMemberName;
+        newMembers[index].memberNameError = validateMemberName(newMemberName);
+        setMembers(newMembers);
+    };
+    const handleMemberIdChange = (index, newMemberId) => {
+        const newMembers = [...members];
+        newMembers[index].memberId = newMemberId;
+        newMembers[index].memberIdError = validateId(newMemberId);
+        setMembers(newMembers);
+    };
+    const handleMemberWhatsappChange = (index, newMemberWhatsapp) => {
+        const newMembers = [...members];
+        newMembers[index].memberWhatsapp = newMemberWhatsapp;
+        newMembers[index].memberWhatsappError = validateWhatsapp(newMemberWhatsapp);
+        setMembers(newMembers);
+    };
+    const handleMemberEmailChange = (index, newMemberEmail) => {
+        const newMembers = [...members];
+        newMembers[index].memberEmail = newMemberEmail;
+        newMembers[index].memberEmailError = validateEmail(newMemberEmail);
+        setMembers(newMembers);
+    };
 
 
     const validateTeamName = (value) => {
@@ -383,7 +321,15 @@ export const RegisterNow = () => {
                             />
                         </button>
                         <div className="relative w-full">
-                            {components}
+                            {members.map((member, index) => (
+                                <div key={index} className="relative h-[260px]">
+                                    <div
+                                        className="form-header relative w-[300px] h-[48px] left-[5px] [font-family:'Quantico',Helvetica] font-normal text-[#f2b824] text-[23px] text-left tracking-[0] leading-[35px] whitespace-nowrap">
+                                        MEMBER {index + 1} DETAILS :
+                                    </div>
+                                    <MemberDetailsCard nameOnChange={(newMemberName) => handleMemberNameChange(index, newMemberName)} idOnChange={(newMemberId) => handleMemberIdChange(index, newMemberId)} whatsappOnChange={(newMemberWhatsapp) => handleMemberWhatsappChange(index, newMemberWhatsapp)} emailOnChange={(newMemberEmail) => handleMemberEmailChange(index, newMemberEmail)} nameErrorMessage={member.memberNameError} idErrorMessage={member.memberIdError} whatsappErrorMessage={member.memberWhatsappError} emailErrorMessage={member.memberEmailError}/>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
