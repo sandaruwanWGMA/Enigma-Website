@@ -365,19 +365,23 @@ export const RegisterNow = () => {
   };
 
   return (
-    <div className="bg-white flex flex-row justify-center w-full">
+    <div
+      className="bg-white flex flex-row justify-center w-full"
+      style={{ overflow: "hidden" }}
+    >
       <div
         className="absolute w-full"
         style={{ height: pageHeight + 60 + "px" }}
       >
         <img
-          className="absolute w-full h-full top-0 left-0"
+          className="absolute top-0 left-0"
+          style={{ height: "100%", width: "100vw" }}
           alt="register-now-bg"
           src={RegisterNowBG}
         />
       </div>
       <div className="w-full relative" style={{ height: pageHeight + "px" }}>
-        <div className="relative w-full h-[90px] mt-[30px]">
+        <div className="relative h-[90px] mt-[30px]" style={{ width: "100vw" }}>
           <h1 className="register-now-heading ">REGISTER NOW</h1>
         </div>
         <div
