@@ -86,7 +86,7 @@ export const RegisterNow = () => {
                     }
                 } else {
                     fieldStates[0] = 0;
-                    setTeamEmailError('TEAM NAME ALREADY TAKEN.');
+                    setTeamNameError('TEAM NAME ALREADY TAKEN.');
                 }
             } else {
                 fieldStates[1] = 0;
