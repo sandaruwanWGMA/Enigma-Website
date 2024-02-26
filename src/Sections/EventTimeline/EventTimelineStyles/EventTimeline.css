@@ -339,10 +339,21 @@
 }
 
 @media screen and (min-width: 1400px) {
+  .timeline1200 {
+    display: none;
+  }
+
+  .timeline1400 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
   #eventTimeline {
     line-height: 48px;
-    font-size: 75px;
-    margin-top: 60px;
+    font-size: 70px;
+    margin-top: 50px;
     height: 20%;
   }
 }
@@ -350,8 +361,8 @@
 @media screen and (min-width: 1530px) {
   #eventTimeline {
     line-height: 48px;
-    font-size: 90px;
-    margin-top: 70px;
+    font-size: 80px;
+    margin-top: 60px;
     height: 20%;
   }
 }
