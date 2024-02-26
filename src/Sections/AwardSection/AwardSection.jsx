@@ -14,6 +14,7 @@ export default function AwardSection() {
       <section className="cover">
         <div className="text-container">
           <div className="title-p">Awards</div>
+          <div className="img-over"></div>
           <div className="prizes-container">
             <div className="list-item-one">
               <img

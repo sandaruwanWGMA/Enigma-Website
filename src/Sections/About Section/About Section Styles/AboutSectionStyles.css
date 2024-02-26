@@ -171,14 +171,13 @@
   .title-text {
     text-align: center;
     margin: 0;
-    font-size: 70px;
+    font-size: 60px;
     padding: 24px 0;
   }
   .content {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    max-width: 736px;
     left: 0;
     padding: 0 24px;
     display: flex;
@@ -189,7 +188,7 @@
   .description p {
     margin: 0;
     display: inline-block;
-    font-size: 31px;
+    font-size: 21px;
     word-break: break-word;
   }
   .description li {

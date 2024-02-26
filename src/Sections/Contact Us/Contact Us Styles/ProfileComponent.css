@@ -107,6 +107,7 @@
 @media screen and (max-width: 860px) {
   .profile-container {
     justify-content: center;
+    gap: 44px;
   }
   .profile-img {
     width: 110px;
@@ -117,6 +118,10 @@
   }
   .info {
     font-size: 14px;
+  }
+  .person {
+    height: 110%;
+    transform: translate(-50%, -70%);
   }
 }
 
