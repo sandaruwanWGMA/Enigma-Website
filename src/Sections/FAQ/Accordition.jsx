@@ -51,7 +51,12 @@ export default function Accordition() {
       className="slides bg-cover bg-center h-screen overflow-hidden"
       id="faq"
     >
-      <img className="w-full h-full z-0 absolute" src={BgCover} alt="bgcover" />
+      <img
+        className="w-full z-0 absolute"
+        style={{ height: "100vh" }}
+        src={BgCover}
+        alt="bgcover"
+      />
 
       <div className="z-2 relative">
         <div style={{ height: "50px" }}></div>
