@@ -499,7 +499,10 @@ export const RegisterNow = () => {
             </div>
           </div>
         </div>
-        <div className="absolute w-full h-[69px] bottom-[-12px] flex flex-col justify-center align-middle">
+        <div
+          className="absolute w-full h-[69px] bottom-[-12px] flex flex-col justify-center align-middle"
+          style={{ zIndex: "99" }}
+        >
           <div className="notice">
             <i class="bi bi-exclamation-triangle-fill"></i>
             <p className="policy">
