@@ -367,7 +367,10 @@ export const RegisterNow = () => {
 
   return (
     <div className="bg-white flex flex-row justify-center w-full">
-      <div className="absolute w-full" style={{ height: pageHeight + "px" }}>
+      <div
+        className="absolute w-full"
+        style={{ height: pageHeight + 60 + "px" }}
+      >
         <img
           className="absolute w-full h-full top-0 left-0"
           style={{ height: "100%" }}
@@ -494,7 +497,15 @@ export const RegisterNow = () => {
             </div>
           </div>
         </div>
-        <div className="absolute w-full h-[69px] bottom-[40px] flex flex-col justify-center align-middle">
+        <div className="notice">
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          <p className="policy">
+            Please be informed that the information provided during registration
+            may be disclosed to our sponsors.
+          </p>
+        </div>
+
+        <div className="absolute w-full h-[69px] bottom-[-10px] flex flex-col justify-center align-middle">
           <div className="relative w-full h-[69px] justify-center align-middle">
             <div className="relative submit-frame">
               <button

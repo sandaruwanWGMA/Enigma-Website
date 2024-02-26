@@ -47,6 +47,20 @@ body {
   --br-31xl: 50px;
 }
 
+.policy {
+  color: white;
+  font-family: Quantico;
+}
+
+.notice {
+  display: flex;
+  color: white;
+  align-items: flex-start;
+  transform: translate(56px, -14px);
+  gap: 10px;
+  width: 100%;
+}
+
 .register-now-bg-image {
   top: -50px;
   width: 110%;
@@ -111,7 +125,7 @@ body {
 
 .submit-frame {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -126,6 +140,10 @@ body {
 }
 
 @media (max-width: 650px) {
+  .policy {
+    font-size: 3.5vw;
+    margin-left: 10px;
+  }
   .register-now-heading {
     font-size: 11vw;
   }

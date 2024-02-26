@@ -65,13 +65,28 @@
 }
 
 .logos {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   position: absolute;
-  width: 80%;
-  bottom: calc(12% + 15vh);
-  transform: translate(0, 50%);
-  left: 8%;
+  width: 70%;
+  /* bottom: calc(12% + 15vh); */
+  /* transform: translate(0, 50%); */
+  left: 50%;
+  transform: translate(-50%, 13%);
+  bottom: 0;
   justify-content: space-around;
+}
+
+.logos > :first-child {
+  height: 500px;
+  width: 500px;
+}
+
+.logos > :nth-child(2) {
+  justify-self: end;
+  align-self: flex-end;
+  transform: translate(-5%, -36%);
 }
 
 @media screen and (max-width: 900px) {

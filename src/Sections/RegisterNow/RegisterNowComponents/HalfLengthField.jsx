@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../RegisterNowStyles/RegisterNow.css";
+import "../RegisterNowStyles/TextInput.css";
 
 function HalfLengthField({
   label,
@@ -7,7 +8,7 @@ function HalfLengthField({
   onChange = () => {},
   errorMessage,
 }) {
-  const [value, setValue] = useState(defaultValue);
+  const [value, setValue] = useState("");
   // const [errorMessage, setErrorMessage] = useState('THIS TEAM NAME ALREADY EXISTS.');
 
   const handleFocus = () => {
@@ -36,6 +37,7 @@ function HalfLengthField({
         <input
           className="absolute h-[38px] top-[0] left-[24px] [font-family:'Patrick_Hand_SC',Helvetica] font-normal text-white text-[14px] tracking-[0] leading-[25px] whitespace-nowrap"
           type="text"
+          placeholder={defaultValue}
           value={value}
           onFocus={handleFocus}
           onBlur={handleBlur}

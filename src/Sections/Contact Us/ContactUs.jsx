@@ -51,7 +51,7 @@ function ContactUs(props) {
             last_name={"Weragoda"}
             role={"Enigma'24 Chair Person"}
             number={"+94 71 959 3024"}
-            email={"weragoda.21@uom.lk"}
+            email={"weragoda.22@uom.lk"}
           ></ProfileComponent>
           <ProfileComponent
             personBoard={personBoard}
@@ -60,7 +60,7 @@ function ContactUs(props) {
             last_name={"Suhan"}
             role={"HR & Delegates Pilar Lead"}
             number={"+94 74 122 4726"}
-            email={"wadugess.21@uom.lk"}
+            email={"wadugess.22@uom.lk"}
           ></ProfileComponent>
         </div>
       </div>
