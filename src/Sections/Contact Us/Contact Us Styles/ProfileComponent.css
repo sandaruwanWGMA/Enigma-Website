@@ -115,7 +115,7 @@
 @media screen and (max-width: 860px) {
   .profile-container {
     justify-content: center;
-    gap: 44px;
+    gap: 58px;
   }
   .profile-img {
     width: 110px;
@@ -128,8 +128,9 @@
     font-size: 14px;
   }
   .person {
-    height: 110%;
-    transform: translate(-50%, -70%);
+    height: 130%;
+    width: 80px;
+    transform: translate(-50%, -74%);
   }
 }
 

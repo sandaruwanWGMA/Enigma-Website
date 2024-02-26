@@ -237,12 +237,12 @@
   }
   .profile-com-set {
     display: grid;
-    grid-template-columns: auto auto; /* Two columns */
-    grid-template-rows: auto auto; /* Two rows */
-    width: 54%;
-    height: 40%;
-    top: 47%;
-    left: 46%;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    height: 58%;
+    left: 47%;
+    top: 50%;
+    width: 84%;
   }
   .on-boarding {
     font-size: 12px;
