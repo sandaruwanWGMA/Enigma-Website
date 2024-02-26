@@ -66,6 +66,14 @@
 }
 
 @media screen and (max-width: 1230px) {
+  .person {
+    transform: translate(-70%, -50%);
+    width: 60%;
+  }
+  .person-board {
+    width: 140px;
+    height: 160px;
+  }
   .profile-img {
     width: 200px;
     height: 190px;

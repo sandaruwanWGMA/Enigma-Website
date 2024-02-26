@@ -88,6 +88,11 @@
   align-self: flex-end;
   transform: translate(-5%, -36%);
 }
+@media screen and (max-width: 1210px) {
+  .logos {
+    transform: translate(-50%, -20%);
+  }
+}
 
 @media screen and (max-width: 900px) {
   .official-partners-title {

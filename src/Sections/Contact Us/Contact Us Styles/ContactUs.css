@@ -85,6 +85,10 @@
   .notice-board {
     width: 1000px;
   }
+  .profile-com-set {
+    gap: 2px;
+    transform: translate(-48%, -40%);
+  }
 }
 
 @media screen and (max-width: 1070px) {

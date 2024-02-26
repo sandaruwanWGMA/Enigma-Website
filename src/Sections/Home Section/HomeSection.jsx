@@ -4,16 +4,12 @@ import home_bg_8_plus from "../../assets/Images-home-page/home-bg-iphone8plus.jp
 import enigmaLogo from "../../assets/Images-home-page/enigma_logo.svg";
 import "../Home Section/Home Section Styles/VerticalLine.css";
 import "../Home Section/Home Section Styles/SocialIcons.css";
-import { ReactComponent as FacebookIcon } from "../../assets/Images-home-page/facebook-icon.svg";
-import { ReactComponent as LinkedInIcon } from "../../assets/Images-home-page/linkedin-icon.svg";
-import { ReactComponent as InstagramIcon } from "../../assets/Images-home-page/instagram-icon.svg";
 import { ReactComponent as Enigma } from "../../assets/Images-home-page/Enigma.svg";
-import fb_icon from "../../assets/Images-home-page/fb.png";
 import EnigmaMobile from "../../assets/Images-home-page/enigma mobile.svg";
-import rectangle from "../../assets/Images-home-page/Rectangle 1.png";
 import "./Home Section Styles/HomeStyles.css";
 import CountdownTimer from "./Home Section Components/CountdownTimer";
 import NavBar from "./Home Section Components/NabBar";
+import { Link } from "react-router-dom";
 
 function HomeSection(props) {
   const aboutSectionRef = useRef(null);
@@ -100,9 +96,9 @@ function HomeSection(props) {
           transform: "translate(-50%, -50%)",
         }}
       ></CountdownTimer>
-      <a className="reg-btn" href="/RegisterNow" target="_blank">
+      <Link className="reg-btn" to="/RegisterNow" target="_blank">
         <span className="reg-text">REGISTER NOW</span>
-      </a>
+      </Link>
     </section>
   );
 }
