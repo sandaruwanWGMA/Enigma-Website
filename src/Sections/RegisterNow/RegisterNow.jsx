@@ -446,7 +446,7 @@ export const RegisterNow = () => {
               />
             </div>
             {addMembersClickCount > 2 && (
-              <div className="error-message absolute h-[12px] top-[169px] left-[204px] [font-family:'Patrick_Hand_SC',Helvetica] font-normal text-[16px] whitespace-nowrap">
+              <div className="error-message absolute h-[12px] top-[179px] left-[204px] [font-family:'Patrick_Hand_SC',Helvetica] font-normal text-[16px] whitespace-nowrap max-two-mem-err">
                 MAXIMUM OF 2 ADDITIONAL MEMBERS ARE ALLOWED!
               </div>
             )}
@@ -497,15 +497,15 @@ export const RegisterNow = () => {
             </div>
           </div>
         </div>
-        <div className="notice">
-          <i class="bi bi-exclamation-triangle-fill"></i>
-          <p className="policy">
-            Please be informed that the information provided during registration
-            may be disclosed to our sponsors.
-          </p>
-        </div>
 
         <div className="absolute w-full h-[69px] bottom-[-10px] flex flex-col justify-center align-middle">
+          <div className="notice">
+            <i class="bi bi-exclamation-triangle-fill"></i>
+            <p className="policy">
+              Please be informed that the information provided during
+              registration may be disclosed to our sponsors.
+            </p>
+          </div>
           <div className="relative w-full h-[69px] justify-center align-middle">
             <div className="relative submit-frame">
               <button

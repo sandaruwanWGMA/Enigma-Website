@@ -140,6 +140,10 @@ body {
 }
 
 @media (max-width: 650px) {
+  .max-two-mem-err {
+    top: 212px;
+    left: 17px;
+  }
   .policy {
     font-size: 3.5vw;
     margin-left: 10px;
