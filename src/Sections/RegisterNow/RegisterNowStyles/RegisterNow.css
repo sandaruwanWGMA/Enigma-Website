@@ -140,6 +140,10 @@ body {
 }
 
 @media (max-width: 650px) {
+  .notice {
+    width: 80%;
+    transform: translate(56px, -32px);
+  }
   .max-two-mem-err {
     top: 212px;
     left: 17px;
