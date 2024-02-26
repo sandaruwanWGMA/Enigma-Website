@@ -14,7 +14,6 @@ import {
   setDoc,
   where,
 } from "firebase/firestore";
-import "./RegisterNowStyles/RegisterNow.css";
 
 export const RegisterNow = () => {
   const [teamNameInput, setTeamName] = useState("XTREAM CODERS");
@@ -93,7 +92,7 @@ export const RegisterNow = () => {
           }
         } else {
           fieldStates[0] = 0;
-          setTeamEmailError("TEAM NAME ALREADY TAKEN.");
+          setTeamNameError("TEAM NAME ALREADY TAKEN.");
         }
       } else {
         fieldStates[1] = 0;
@@ -373,7 +372,6 @@ export const RegisterNow = () => {
       >
         <img
           className="absolute w-full h-full top-0 left-0"
-          style={{ height: "100%" }}
           alt="register-now-bg"
           src={RegisterNowBG}
         />
@@ -446,7 +444,7 @@ export const RegisterNow = () => {
               />
             </div>
             {addMembersClickCount > 2 && (
-              <div className="error-message absolute h-[12px] top-[179px] left-[204px] [font-family:'Patrick_Hand_SC',Helvetica] font-normal text-[16px] whitespace-nowrap max-two-mem-err">
+              <div className="error-message absolute h-[12px] top-[169px] left-[204px] [font-family:'Patrick_Hand_SC',Helvetica] font-normal text-[16px] whitespace-nowrap">
                 MAXIMUM OF 2 ADDITIONAL MEMBERS ARE ALLOWED!
               </div>
             )}
@@ -497,8 +495,7 @@ export const RegisterNow = () => {
             </div>
           </div>
         </div>
-
-        <div className="absolute w-full h-[69px] bottom-[-10px] flex flex-col justify-center align-middle">
+        <div className="absolute w-full h-[69px] bottom-[-12px] flex flex-col justify-center align-middle">
           <div className="notice">
             <i class="bi bi-exclamation-triangle-fill"></i>
             <p className="policy">

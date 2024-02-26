@@ -39,8 +39,6 @@ function HalfLengthField({
           type="text"
           placeholder={defaultValue}
           value={value}
-          onFocus={handleFocus}
-          onBlur={handleBlur}
           onChange={localOnChange}
           style={{
             backgroundColor: "transparent",
