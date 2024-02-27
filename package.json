@@ -1,6 +1,7 @@
 {
   "name": "enigma-website",
   "version": "0.1.0",
+  "homepage": "https://moramaths.uom.lk/enigma24",
   "private": true,
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
