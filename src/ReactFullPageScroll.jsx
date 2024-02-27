@@ -9,7 +9,6 @@ import AwardSection from "./Sections/AwardSection/AwardSection";
 import Accordition from "./Sections/FAQ/Accordition";
 import FooterSection from "./Sections/Footer Section/FooterSection";
 import ContactUs from "./Sections/Contact Us/ContactUs";
-import NavBar from "./Sections/Home Section/Home Section Components/NabBar";
 
 const ReactFullPageScroll = () => {
   const [isMobile, setIsMobile] = useState(false);
