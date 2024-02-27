@@ -117,7 +117,24 @@
   display: none;
 }
 
+.img-over {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.52);
+  z-index: -1;
+}
+
 /* tab reponsive */
+@media screen and (max-width: 1300px) {
+  .img-over {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .cover {
     display: none;
@@ -197,7 +214,10 @@
   }
 }
 
-@media screen and (max-width: 400px) and (max-height: 700px) {
+@media screen and (max-width: 400px) and (max-height: 830px) {
+  .img-over {
+    display: none;
+  }
   .mobile-prizes-container-three {
     display: block;
     /* align-items: center; */

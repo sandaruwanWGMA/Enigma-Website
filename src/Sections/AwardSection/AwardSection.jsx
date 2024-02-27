@@ -10,10 +10,11 @@ import "./AwardSection.css";
 
 export default function AwardSection() {
   return (
-    <>
+    <section id="awards">
       <section className="cover">
         <div className="text-container">
           <div className="title-p">Awards</div>
+          <div className="img-over"></div>
           <div className="prizes-container">
             <div className="list-item-one">
               <img
@@ -24,7 +25,7 @@ export default function AwardSection() {
               />
               <div className="text">
                 <div className="title-list">1ST RUNNERS UP </div>
-                <div className="desc"></div>
+                <div className="desc">?</div>
               </div>
             </div>
             <div className="list-item-two">
@@ -36,7 +37,7 @@ export default function AwardSection() {
               />
               <div className="text">
                 <div className="title-list">WINNER </div>
-                <div className="desc"></div>
+                <div className="desc">?</div>
               </div>
             </div>
             <div className="list-item-one list-item-three">
@@ -48,7 +49,7 @@ export default function AwardSection() {
               />
               <div className="text">
                 <div className="title-list">2ND RUNNERS UP </div>
-                <div className="desc"></div>
+                <div className="desc">?</div>
               </div>
             </div>
           </div>
@@ -68,14 +69,14 @@ export default function AwardSection() {
           <img src={ItemTwo} alt="1" border="0" className="mobile-image-one" />
           <div className="mobile-text">
             <div className="mobile-title-list">Winner</div>
-            <div className="mobile-desc"></div>
+            <div className="mobile-desc">?</div>
           </div>
         </div>
         <div className="mobile-prizes-container-two">
           <img src={ItemOne} alt="1" border="0" className="mobile-image-one" />
           <div className="mobile-text">
             <div className="mobile-title-list">1ND RUNNERS UP</div>
-            <div className="mobile-desc"></div>
+            <div className="mobile-desc">?</div>
           </div>
         </div>
 
@@ -88,10 +89,10 @@ export default function AwardSection() {
           />
           <div className="mobile-text">
             <div className="mobile-title-list">2ND RUNNERS UP</div>
-            <div className="mobile-desc"></div>
+            <div className="mobile-desc">?</div>
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }

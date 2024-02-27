@@ -71,6 +71,7 @@
   font-family: "Quantico", sans-serif;
   font-weight: 900;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 .enigma {
   position: absolute;
@@ -101,7 +102,7 @@
   .enigma-mobile {
     display: inline;
     position: absolute;
-    padding-top: 41px;
+    padding-top: 30px;
   }
   .enigma-logo {
     top: 50%;

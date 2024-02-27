@@ -46,11 +46,34 @@
 }
 
 .profile-img {
-  width: 141px;
+  width: 111px;
   height: 143px;
 }
 
+.person-board {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.person {
+  position: relative;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+}
+
 @media screen and (max-width: 1230px) {
+  .person {
+    transform: translate(-70%, -50%);
+    width: 60%;
+  }
+  .person-board {
+    width: 140px;
+    height: 160px;
+  }
   .profile-img {
     width: 200px;
     height: 190px;
@@ -92,6 +115,7 @@
 @media screen and (max-width: 860px) {
   .profile-container {
     justify-content: center;
+    gap: 58px;
   }
   .profile-img {
     width: 110px;
@@ -103,20 +127,32 @@
   .info {
     font-size: 14px;
   }
+  .person {
+    height: 130%;
+    width: 80px;
+    transform: translate(-50%, -74%);
+  }
 }
 
 @media screen and (max-width: 500px) {
   .profile-container {
     justify-content: center;
+    gap: 34px;
   }
   .profile-img {
     width: 80px;
-    height: 60px;
+    /* height: 60px; */
   }
   .name {
     font-size: 12px;
   }
   .info {
     font-size: 8px;
+  }
+  .person {
+    height: 70px;
+    width: 66px;
+
+    transform: translate(-50%, -72%);
   }
 }

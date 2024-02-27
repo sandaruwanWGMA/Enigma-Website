@@ -8,7 +8,7 @@ import enigmaBooklet from "../../assets/Enigma Delegate Booklet Final.pdf";
 
 function Guidelines(props) {
   return (
-    <section>
+    <section id="guidelines">
       <div className="guideline" style={{ height: "100vh" }}>
         <img
           className="backgroundImg"

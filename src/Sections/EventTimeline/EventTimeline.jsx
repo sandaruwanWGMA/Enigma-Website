@@ -4,8 +4,9 @@ import Timeline475 from "../../assets/EventTimeline/timeline475.svg";
 import Timeline600 from "../../assets/EventTimeline/timeline600.svg";
 import Timeline768 from "../../assets/EventTimeline/timeline768.svg";
 import Timeline992 from "../../assets/EventTimeline/timeline992.svg";
-import Timeline1200 from "../../assets/EventTimeline/timeline1200.svg";
 import Timeline1094 from "../../assets/EventTimeline/timeline1094.svg";
+import Timeline1200 from "../../assets/EventTimeline/timeline1200.svg";
+import Timeline1400 from "../../assets/EventTimeline/timeline1400.svg";
 
 import iphone12pro from "../../assets/EventTimeline/iPhone12pro.svg";
 import iphone12promax from "../../assets/EventTimeline/iPhone12promax.svg";
@@ -21,7 +22,7 @@ function EventTimeline(props) {
         <img src={Timeline992} alt="" className="timeline992" />
         <img src={Timeline1094} alt="" className="timeline1094" />
         <img src={Timeline1200} alt="" className="timeline1200" />
-
+        <img src={Timeline1400} alt="" className="timeline1400" />
         <div className="eventTimeline">
           <h1 id="eventTimeline">Event TimeLine</h1>
         </div>

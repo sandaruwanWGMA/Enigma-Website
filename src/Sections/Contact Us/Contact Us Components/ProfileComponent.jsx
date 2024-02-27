@@ -1,8 +1,10 @@
 import React from "react";
 import "../Contact Us Styles/ProfileComponent.css";
+import ImageComponent from "./ImageComponent";
 
 function ProfileComponent({
-  profileImg,
+  personBoard,
+  person,
   first_name,
   last_name,
   role,
@@ -11,7 +13,10 @@ function ProfileComponent({
 }) {
   return (
     <div className="profile-container">
-      <img src={profileImg} alt="profile" className="profile-img" />
+      <div className="profile-img">
+        <img src={personBoard} className="person-board"></img>
+        <img src={person} className="person"></img>
+      </div>{" "}
       <div className="profile-details">
         <p className="first-name name">{first_name}</p>
         <p className="last-name name">{last_name}</p>

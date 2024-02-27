@@ -85,6 +85,10 @@
   .notice-board {
     width: 1000px;
   }
+  .profile-com-set {
+    gap: 2px;
+    transform: translate(-48%, -40%);
+  }
 }
 
 @media screen and (max-width: 1070px) {
@@ -233,14 +237,20 @@
   }
   .profile-com-set {
     display: grid;
-    grid-template-columns: auto auto; /* Two columns */
-    grid-template-rows: auto auto; /* Two rows */
-    width: 54%;
-    height: 40%;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    height: 58%;
+    left: 47%;
     top: 50%;
-    left: 46%;
+    width: 84%;
   }
   .on-boarding {
     font-size: 12px;
+  }
+  .person-board {
+    height: 90px;
+  }
+  .profile-img {
+    height: 60px;
   }
 }
