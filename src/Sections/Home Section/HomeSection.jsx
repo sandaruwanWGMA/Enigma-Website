@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
-import home_bg_img from "../../assets/Images-home-page/home_bg_img.jpeg";
-import home_bg_8_plus from "../../assets/Images-home-page/home-bg-iphone8plus.jpeg";
+import home_bg_img from "../../assets/Images-home-page/home_bg_img.png";
+import home_bg_8_plus from "../../assets/Images-home-page/home-bg-iphone8plus.png";
 import enigmaLogo from "../../assets/Images-home-page/enigma_logo.svg";
 import "../Home Section/Home Section Styles/VerticalLine.css";
 import "../Home Section/Home Section Styles/SocialIcons.css";

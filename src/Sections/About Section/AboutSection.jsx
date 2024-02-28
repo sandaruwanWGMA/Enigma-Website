@@ -1,6 +1,6 @@
 import React from "react";
 import about_bg_img from "../../assets/Images-about-page/about bg image.png";
-import about_bg_img_8_plus from "../../assets/Images-about-page/about-bg-8-plus.jpeg";
+import about_bg_img_8_plus from "../../assets/Images-about-page/about-bg-8-plus.png";
 import floating_img from "../../assets/Images-about-page/about floating image.png";
 import "./About Section Styles/AboutSectionStyles.css";
 
