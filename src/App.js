@@ -5,7 +5,7 @@ import FullPageScrolling from "./ReactFullPageScroll";
 
 const App = () => {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <Routes>
         <Route path="/" element={<FullPageScrolling />} />
         <Route path="/RegisterNow" element={<RegisterNow />} />
