@@ -156,3 +156,13 @@
     transform: translate(-50%, -72%);
   }
 }
+
+@media screen and (max-width: 420px) and (min-height: 900px) {
+  .person {
+    height: 84px;
+    transform: translate(-50%, -50%);
+  }
+  .profile-container {
+    gap: 4px;
+  }
+}

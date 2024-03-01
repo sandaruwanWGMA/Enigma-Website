@@ -213,6 +213,14 @@
     font-size: 27px;
   }
 }
+@media screen and (max-width: 420px) {
+  .profile-com-set {
+    row-gap: 64px;
+  }
+  .person-board {
+    height: 100px;
+  }
+}
 
 @media screen and (max-width: 400px) {
   .notice-board-mobile {
