@@ -4,7 +4,7 @@ import guidelineBackgroundMobile from "../../assets/Guidelines/guidelineBackgrou
 import soldier from "../../assets/Guidelines/soldier.svg";
 import Cloud from "../../assets/Guidelines/Cloud.svg";
 import "./GuidelinesStyles/Guidelines.css";
-// import enigmaBooklet from "../../assets/Enigma Delegate Booklet Final.pdf";
+import booklet from "../../assets/Enigma'24 - Crack The Code_Final Hackathon.pdf";
 
 function Guidelines(props) {
   return (
@@ -32,11 +32,7 @@ function Guidelines(props) {
               platform can be used in the Hackathon.
             </h5>
           </div>
-          <a
-            id="guidelineBooklet"
-            href="https://drive.google.com/file/d/1-BpQdymvh_jdIjYGSdcg0pjVieM9Fbz0/view?usp=sharing"
-            target="_blank"
-          >
+          <a id="guidelineBooklet" href={booklet} target="_blank">
             <div className="guidelineBookletdiv">
               <h5 className="guidelineBookletText">DOWNLOAD BOOKLET</h5>
               <img src={Cloud} alt="" className="cloud"></img>
@@ -64,11 +60,7 @@ function Guidelines(props) {
               platform can be used in the Hackathon.
             </h5>
           </div>
-          <a
-            id="guidelineBookletMobile"
-            href="https://drive.google.com/file/d/1-BpQdymvh_jdIjYGSdcg0pjVieM9Fbz0/view?usp=sharing"
-            target="_blank"
-          >
+          <a id="guidelineBookletMobile" href={booklet} target="_blank">
             <div className="guidelineBookletdivMobile">
               <h5 className="guidelineBookletTextMobile">DOWNLOAD BOOKLET</h5>
               <img src={Cloud} alt=""></img>
