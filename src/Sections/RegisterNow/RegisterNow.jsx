@@ -397,13 +397,13 @@ export const RegisterNow = () => {
                 onChange={handleTeamNameChange}
                 errorMessage={teamNameError}
               />
-              <FullLengthField
+              {/* <FullLengthField
                 label="TEAM EMAIL ADDRESS :"
                 defaultValue="UGDJHSGF@GMAIL.COM"
                 top="89px"
                 onChange={handleTeamEmailChange}
                 errorMessage={teamEmailError}
-              />
+              /> */}
             </div>
           </div>
         </div>
