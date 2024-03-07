@@ -17,7 +17,7 @@ import {
 
 export const RegisterNow = () => {
   const [teamNameInput, setTeamName] = useState("XTREAM CODERS");
-  const [teamEmailInput, setTeamEmail] = useState("XTREAM CODERS");
+  // const [teamEmailInput, setTeamEmail] = useState("XTREAM CODERS");
   const [leaderNameInput, setLeaderName] = useState("XTREAM CODERS");
   const [leaderIdInput, setLeaderId] = useState("XTREAM CODERS");
   const [leaderWhatsappInput, setLeaderWhatsapp] = useState("JHCZDJXF KBFJKD");
@@ -36,21 +36,22 @@ export const RegisterNow = () => {
   const [memberDetails, setMemberDetails] = useState([]);
 
   const [addMembersClickCount, setAddMembersClickCount] = useState(0);
-  const [pageHeight, setPageHeight] = useState(985);
+  const [pageHeight, setPageHeight] = useState(890);
 
-  const [fieldStates, setFieldStates] = useState([0, 0, 0, 0, 0, 0, 0]);
+  const [fieldStates, setFieldStates] = useState([0, 1, 0, 0, 0, 0, 0]);
 
   const teamList = collection(db, "teams");
 
   function handleSubmitClick() {
+    console.log("one");
     // do validations
     callDatabase();
+    console.log("one");
   }
 
   async function callDatabase() {
     const teamName = teamNameInput;
     const teamNameLower = teamName.toLowerCase();
-    const teamEmail = teamEmailInput;
     const leaderName = leaderNameInput;
     const leaderID = leaderIdInput;
     const leaderWhatsapp = leaderWhatsappInput;
@@ -63,7 +64,6 @@ export const RegisterNow = () => {
       const filteredData = data.docs.map((item) => ({
         id: item.id,
       }));
-      const emailTaken = filteredData.find((item) => item.id === teamEmail);
 
       const q = query(
         collection(db, "teams"),
@@ -72,31 +72,26 @@ export const RegisterNow = () => {
 
       const querySnapshot = await getDocs(q);
 
-      if (!emailTaken) {
-        if (querySnapshot.docs.length === 0) {
-          try {
-            await setDoc(doc(db, "teams", teamEmail), {
-              teamName,
-              teamEmail,
-              leaderName,
-              teamNameLower,
-              leaderID,
-              leaderWhatsapp,
-              leaderEmail,
-              memberCount,
-              teamMembers,
-            });
-            alert("Registered Successfully");
-          } catch {
-            alert("Something Went Wrong");
-          }
-        } else {
-          fieldStates[0] = 0;
-          setTeamNameError("TEAM NAME ALREADY TAKEN.");
+      if (querySnapshot.docs.length === 0) {
+        try {
+          await setDoc(doc(db, "teams", teamName), {
+            teamName,
+            leaderName,
+            teamNameLower,
+            leaderID,
+            leaderWhatsapp,
+            leaderEmail,
+            memberCount,
+            teamMembers,
+          });
+          alert("Registered Successfully");
+          window.location.reload();
+        } catch {
+          alert("Something Went Wrong");
         }
       } else {
-        fieldStates[1] = 0;
-        setTeamEmailError("TEAM EMAIL ALREADY TAKEN.");
+        fieldStates[0] = 0;
+        setTeamNameError("TEAM NAME ALREADY TAKEN.");
       }
     } catch (err) {
       alert("Something Went Wrong");
@@ -148,20 +143,20 @@ export const RegisterNow = () => {
     fieldStates[0] = errorNum < 0 ? 1 : 0;
     setTeamNameError(error);
   };
-  const handleTeamEmailChange = (newTeamEmail) => {
-    setTeamEmail(newTeamEmail);
-    const errorNum = validateEmail(newTeamEmail);
-    const error =
-      errorNum === -1
-        ? ""
-        : errorNum === 0
-        ? "TEAM EMAIL IS REQUIRED."
-        : errorNum === 1
-        ? "PLEASE ENTER A VALID EMAIL ADDRESS."
-        : "UNKNOWN ERROR IN VALIDATION";
-    fieldStates[1] = errorNum < 0 ? 1 : 0;
-    setTeamEmailError(error);
-  };
+  // const handleTeamEmailChange = (newTeamEmail) => {
+  //   setTeamEmail(newTeamEmail);
+  //   const errorNum = validateEmail(newTeamEmail);
+  //   const error =
+  //     errorNum === -1
+  //       ? ""
+  //       : errorNum === 0
+  //       ? "TEAM EMAIL IS REQUIRED."
+  //       : errorNum === 1
+  //       ? "PLEASE ENTER A VALID EMAIL ADDRESS."
+  //       : "UNKNOWN ERROR IN VALIDATION";
+  //   fieldStates[1] = errorNum < 0 ? 1 : 0;
+  //   setTeamEmailError(error);
+  // };
   const handleLeaderNameChange = (newLeaderName) => {
     setLeaderName(newLeaderName);
     const errorNum = validateMemberName(newLeaderName);
@@ -382,14 +377,14 @@ export const RegisterNow = () => {
           <h1 className="register-now-heading ">REGISTER NOW</h1>
         </div>
         <div
-          className="relative h-[260px] left-[56px]"
-          style={{ width: "calc(100% - 120px)" }}
+          className="relative left-[56px]"
+          style={{ width: "calc(100% - 120px)", height: "170px" }}
         >
-          <div className="relative h-[260px]">
+          <div className="relative">
             <div className="form-header relative w-[300px] h-[48px] left-[5px] [font-family:'Quantico',Helvetica] font-normal text-[#f2b824] text-[23px] text-left tracking-[0] leading-[35px] whitespace-nowrap">
               TEAM DETAILS :
             </div>
-            <div className="relative w-full h-[170px]">
+            <div className="relative w-full">
               <FullLengthField
                 label="TEAM NAME :"
                 defaultValue="XTREAM CODERS"
@@ -397,13 +392,13 @@ export const RegisterNow = () => {
                 onChange={handleTeamNameChange}
                 errorMessage={teamNameError}
               />
-              <FullLengthField
+              {/* <FullLengthField
                 label="TEAM EMAIL ADDRESS :"
                 defaultValue="UGDJHSGF@GMAIL.COM"
                 top="89px"
                 onChange={handleTeamEmailChange}
                 errorMessage={teamEmailError}
-              />
+              /> */}
             </div>
           </div>
         </div>
